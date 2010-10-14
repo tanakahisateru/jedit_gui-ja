@@ -1,35 +1,41 @@
-# plugin.buffertabs.BufferTabsPlugin.name=BufferTabs
-# plugin.buffertabs.BufferTabsPlugin.activate=startup
-# plugin.buffertabs.BufferTabsPlugin.author=Andre Kaplan, Jason Ginchereau, Chris Samuels, Alain Robert
-# plugin.buffertabs.BufferTabsPlugin.version=0.8.3
-# plugin.buffertabs.BufferTabsPlugin.docs=users-guide.html
-# plugin.buffertabs.BufferTabsPlugin.menu-item=buffertabs.toggle-vis
-# 
-# plugin.buffertabs.BufferTabsPlugin.depend.0=jdk 1.3
-# plugin.buffertabs.BufferTabsPlugin.depend.1=jedit 04.02.01.00
+
+
+
+
+
+
+
+
+
+
+
 
 buffertabs.toggle-vis.label=BufferTabs
 
-# plugin.buffertabs.BufferTabsPlugin.option-pane=buffertabs
+
 options.buffertabs.label=BufferTabs
-# options.buffertabs.code=new buffertabs.BufferTabsOptionPane();
+
 
 # Menu
-# buffertabs.popup=\
-    # reload \
-    # close-buffer \
-    # save \
-    # - \
-	# buffertabs.toggle-docks \
-    # - \
-	# close-all \
-    # buffertabs.closeall-except-active \
-	# - \
-    # buffertabs.insert-name \
-    # buffertabs.insert-path \
-    # - \
-    # buffertabs.copy-name \
-    # buffertabs.copy-path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Actions
@@ -39,14 +45,17 @@ buffertabs.copy-name.label=\u30d5\u30a1\u30a4\u30eb\u540d\u3092\u30b3\u30d4\u30f
 buffertabs.copy-path.label=\u30d5\u30a1\u30a4\u30eb\u30d1\u30b9\u3092\u30b3\u30d4\u30fc
 buffertabs.closeall-except-active.label=\u4ed6\u3092\u3059\u3079\u3066\u9589\u3058\u308b
 buffertabs.toggle-docks.label=\u30c9\u30c3\u30af\u8868\u793a\u306e\u5207\u308a\u66ff\u3048
+global-bufferset.label=\u30b0\u30ed\u30fc\u30d0\u30eb\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8
+view-bufferset.label=\u30d3\u30e5\u30fc\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8
+editpane-bufferset.label=\u7de8\u96c6\u30da\u30a4\u30f3\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8
 # Default values
-# buffertabs.color-tabs=false
-# buffertabs.color-selected=true
-# buffertabs.color-mute=true
-# buffertabs.color-variation=false
-# buffertabs.color-foreground=false
-# buffertabs.color-selected-foreground=false
-                                                                                                       
+
+
+
+
+
+
+
 # Option labels
 options.buffertabs.enable.label=Enable BufferTabs by default
 options.buffertabs.icons.label=Use icons to show buffer modified status
