@@ -2,20 +2,12 @@
 ### jEdit user interface definitions,
 ### :tabSize=8:indentSize=8:noTabs=false:
 ### :folding=explicit:collapseFolds=1:
+### :encoding=MS932:
 ###
 ### Copyright (C) 1998, 2005 Slava Pestov
 ###
 
 #{{{ Default user catalog file
-# defaultCatalog=<?xml version="1.0"?>\n\
-	# <!DOCTYPE MODES SYSTEM "catalog.dtd">\n\
-	# \n\
-	# <MODES>\n\
-	# \n\
-	# <!-- Add lines like the following, one for each edit mode you add: -->\n\
-	# <!-- <MODE NAME="foo" FILE="foo.xml" FILE_NAME_GLOB="*.foo" /> -->\n\
-	# \n\
-	# </MODES>
 #}}}
 
 #{{{ Common strings
@@ -28,19 +20,26 @@ common.apply=\u9069\u7528
 common.more=\u3055\u3089\u306b
 common.insert=\u633f\u5165
 common.add=\u8ffd\u52a0
+
 common.remove=\u524a\u9664
+
 common.moveUp=\u4e0a\u3078
+
 common.moveDown=\u4e0b\u3078
+
 
 lineSep.unix=Unix (\\n)
 lineSep.windows=DOS/Windows (\\r\\n)
 lineSep.mac=MacOS (\\r)
 
+
+
+
 #}}}
 
 #{{{ Miscellaneous
-# encodings=ASCII Cp850 Cp1251 Cp1252 ISO8859_1 ISO8859_2 ISO8859_15 \
-	# MacRoman Big5 GBK KOI8_R SJIS UTF-16 UTF-8 UTF-8Y
+
+
 
 history.caption=\u5165\u529b\u5c65\u6b74:
 
@@ -50,101 +49,102 @@ action-set.macros=\u30de\u30af\u30ed
 action-set.plugin=\u30d7\u30e9\u30b0\u30a4\u30f3: {0}
 
 macro-handler.beanshell.label=BeanShell \u30b9\u30af\u30ea\u30d7\u30c8
-macro-handler.beanshell.glob=*.bsh
+
 
 # Plugin activation hooks
-# defer=false
-# startup=true
+
+
+
+
+
 #}}}
 
 #{{{ Tool bar
-# view.toolbar=new-file open-file close-buffer save - print page-setup - \
-	# undo redo cut copy paste - find find-next - new-view unsplit \
-	# split-horizontal split-vertical - buffer-options global-options - \
-	# plugin-manager - help
-# 
-# new-file.icon=New.png
-# open-file.icon=Open.png
-# save.icon=Save.png
-# close-buffer.icon=Cancel.png
-# print.icon=Print.png
-# page-setup.icon=PageSetup.png
-# undo.icon=Undo.png
-# redo.icon=Redo.png
-# cut.icon=Cut.png
-# copy.icon=Copy.png
-# paste.icon=Paste.png
-# find.icon=Find.png
-# find-next.icon=FindAgain.png
-# new-view.icon=NewView.png
-# unsplit.icon=UnSplit.png
-# split-horizontal.icon=SplitHorizontal.png
-# split-vertical.icon=SplitVertical.png
-# buffer-options.icon=Properties.png
-# global-options.icon=Preferences.png
-# 
-# plugin-manager.icon=Plugins.png
-# help.icon=Help.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #{{{ Icon list for tool bar editor
-# icons=AdjustWidth.png \
-	# ArrowD.png \
-	# ArrowL.png \
-	# ArrowR.png \
-	# ArrowU.png \
-	# BrokenImage.png \
-	# ButtonProperties.png \
-	# Cancel.png \
-	# Clear.png \
-	# Copy.png \
-	# CopyToBuffer.png \
-	# CurrentDir.png \
-	# Cut.png \
-	# Delete.png \
-	# Drive.png \
-	# FindAgain.png \
-	# FindInDir.png \
-	# Find.png \
-	# Floppy.png \
-	# Help.png \
-	# Home.png \
-	# Load.png \
-	# Minus.png \
-	# MultipleResults.png \
-	# NewDir.png \
-	# New.png \
-	# NewView.png \
-	# NextFile.png \
-	# Open.png \
-	# PageSetup.png \
-	# ParentDir.png \
-	# Parse.png \
-	# Paste.png \
-	# Pause.png \
-	# Play.png \
-	# Plugins.png \
-	# Plus.png \
-	# Preferences.png \
-	# PreviousFile.png \
-	# Print.png \
-	# Properties.png \
-	# Redo.png \
-	# Reload.png \
-	# Run.png \
-	# RunAgain.png \
-	# RunToBuffer.png \
-	# Save.png \
-	# SaveAll.png \
-	# SaveAs.png \
-	# SingleResult.png \
-	# SplitHorizontal.png \
-	# SplitVertical.png \
-	# Stop.png \
-	# Undo.png \
-	# UnSplit.png \
-	# ZoomIn.png \
-	# ZoomOut.png \
-	# Blank24.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #}}}
 
 view.search.find=\u691c\u7d22:
@@ -156,55 +156,60 @@ view.action.close-tooltip=\u30a2\u30af\u30b7\u30e7\u30f3\u30d0\u30fc\u3092\u96a0
 #}}}
 
 #{{{ Context menu
-# view.context=cut copy paste paste-previous paste-deleted - \
-	# select-block to-upper to-lower - hypersearch-word - \
-	# add-marker - collapse-fold expand-fold narrow-to-fold
+
+
+
 view.context.customize=\u3053\u306e\u30e1\u30cb\u30e5\u30fc\u3092\u30ab\u30b9\u30bf\u30de\u30a4\u30ba...
 #}}}
 
 #{{{ Menu bar
-# view.mbar=file edit search markers folds view utils macros plugins help-menu
+
 
 #{{{ File menu
-# file=new-file \
-     # open-file \
-     # %recent-files \
-     # - \
-     # reload \
-     # reload-all \
-     # %reload-encoding \
-     # - \
-     # close-buffer \
-     # close-all \
-     # - \
-     # save \
-     # save-as \
-     # save-a-copy-as \
-     # save-all \
-     # - \
-     # print \
-     # page-setup \
-     # - \
-     # exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 file.label=\u30d5\u30a1\u30a4\u30eb($F)
 new-file.label=\u65b0\u898f\u4f5c\u6210($N)
+
 open-file.label=\u958b\u304f($O)...
+
 reload.label=\u518d\u8aad\u307f\u8fbc\u307f($R)
+
 reload-all.label=\u3059\u3079\u3066\u518d\u8aad\u307f\u8fbc\u307f($D)...
 close-buffer.label=\u9589\u3058\u308b($C)
 close-all.label=\u3059\u3079\u3066\u9589\u3058\u308b($E)
 save.label=\u4fdd\u5b58($S)
+
 save-as.label=\u540d\u524d\u3092\u4ed8\u3051\u3066\u4fdd\u5b58($A)...
 save-a-copy-as.label=\u8907\u88fd\u306b\u540d\u524d\u3092\u4ed8\u3051\u3066\u4fdd\u5b58($Y)...
 save-all.label=\u3059\u3079\u3066\u4fdd\u5b58($L)...
 print.label=\u5370\u5237($P)...
+
 page-setup.label=\u5370\u5237\u8a2d\u5b9a($G)...
 # Print selection not yet implemented
 #print-selection.label=\u9078\u629e\u7bc4\u56f2\u3092\u5370\u5237($T)...
 exit.label=\u7d42\u4e86($X)
 
 #{{{ Recent Files menu
-# recent-files.code=new RecentFilesProvider();
+
 recent-files.label=\u6700\u8fd1\u958b\u3044\u305f\u30d5\u30a1\u30a4\u30eb($F)
 recent-files.textfield.tooltip=\u3053\u3053\u306b\u30d5\u30a3\u30eb\u30bf\u30d7\u30ec\u30d5\u30a3\u30af\u30b9\u3092\u5165\u529b\u3059\u308b\u3053\u3069\u304c\u3067\u304d\u307e\u3059
 no-recent-files.label=\u6700\u8fd1\u958b\u3044\u305f\u30d5\u30a1\u30a4\u30eb\u306f\u3042\u308a\u307e\u305b\u3093
@@ -217,26 +222,26 @@ reload-encoding.error={0} \u306f\u6709\u52b9\u306a\u30a8\u30f3\u30b3\u30fc\u30c7
 #}}}
 
 #{{{ Edit menu
-# edit=undo \
-     # redo \
-     # - \
-     # cut \
-     # copy \
-     # paste \
-     # %clipboard \
-     # - \
-     # select-all \
-     # %selection \
-     # - \
-     # word-count \
-     # complete-word \
-     # expand-abbrev \
-     # - \
-     # goto-line \
-     # - \
-     # %text \
-     # %indent \
-     # %source
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 edit.label=\u7de8\u96c6($E)
 undo.label=\u5143\u306b\u623b\u3059($U)
 redo.label=\u3084\u308a\u76f4\u3057($R)
@@ -250,22 +255,22 @@ expand-abbrev.label=\u7701\u7565\u8a9e\u306e\u5c55\u958b($X)
 goto-line.label=\u884c\u6307\u5b9a\u3067\u79fb\u52d5($G)...
 
 #{{{ More Clipboard menu
-# clipboard=cut-append \
-	  # copy-append \
-	  # vertical-paste \
-	  # - \
-	  # paste-previous \
-	  # paste-deleted \
-	  # - \
-	  # cut-string-register \
-          # copy-string-register \
-	  # paste-string-register \
-	  # - \
-	  # cut-append-string-register \
-	  # copy-append-string-register \
-	  # vertical-paste-string-register \
-	  # - \
-	  # view-registers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 clipboard.label=\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u62e1\u5f35($B)
 cut-append.label=\u8ffd\u52a0\u5207\u308a\u53d6\u308a($C)
@@ -284,16 +289,16 @@ view-registers.label=\u30ec\u30b8\u30b9\u30bf\u306e\u95b2\u89a7($W)
 #}}}
 
 #{{{ More Selection menu
-# selection=select-none \
-	  # select-word \
-	  # select-line \
-	  # select-paragraph \
-	  # - \
-	  # invert-selection \
-	  # toggle-multi-select \
-	  # toggle-rect-select \
-	  # - \
-          # select-line-range
+
+
+
+
+
+
+
+
+
+
 selection.label=\u9078\u629e\u7bc4\u56f2\u62e1\u5f35($S)
 select-none.label=\u9078\u629e\u89e3\u9664($N)
 select-word.label=\u5358\u8a9e\u3092\u9078\u629e($W)
@@ -306,16 +311,16 @@ select-line-range.label=\u884c\u7bc4\u56f2\u3092\u6307\u5b9a\u3057\u3066\u9078\u
 #}}}
 
 #{{{ Text menu
-# text=delete-line \
-     # delete-start-line \
-     # delete-end-line \
-     # join-lines \
-     # - \
-     # format-paragraph \
-     # delete-paragraph \
-     # - \
-     # to-lower \
-     # to-upper
+
+
+
+
+
+
+
+
+
+
 text.label=\u30c6\u30ad\u30b9\u30c8($T)
 delete-line.label=\u884c\u524a\u9664($D)
 delete-start-line.label=\u884c\u982d\u307e\u3067\u524a\u9664($S)
@@ -328,13 +333,13 @@ to-upper.label=\u5927\u6587\u5b57\u306b\u5909\u63db($U)
 #}}}
 
 #{{{ Indent menu
-# indent=indent-lines \
-       # shift-left \
-       # shift-right \
-       # - \
-       # remove-trailing-ws \
-       # spaces-to-tabs \
-       # tabs-to-spaces
+
+
+
+
+
+
+
 
 indent.label=\u30a4\u30f3\u30c7\u30f3\u30c8($I)
 indent-lines.label=\u884c\u3092\u30a4\u30f3\u30c7\u30f3\u30c8($I)
@@ -346,13 +351,13 @@ tabs-to-spaces.label=\u30bf\u30d6\u3092\u30b9\u30da\u30fc\u30b9\u306b\u5909\u63d
 #}}}
 
 #{{{ Source menu
-# source=range-comment \
-       # line-comment \
-       # - \
-       # select-block \
-       # match-bracket \
-       # prev-bracket \
-       # next-bracket
+
+
+
+
+
+
+
 
 source.label=\u30bd\u30fc\u30b9($E)
 range-comment.label=\u7bc4\u56f2\u30b3\u30e1\u30f3\u30c8($R)
@@ -366,26 +371,26 @@ next-bracket.label=\u6b21\u306e\u62ec\u5f27\u306b\u79fb\u52d5($N)
 #}}}
 
 #{{{ Search menu
-# search=find \
-       # find-next \
-       # find-prev \
-       # - \
-       # search-in-open-buffers \
-       # search-in-directory \
-       # - \
-       # replace-in-selection \
-       # replace-and-find-next \
-       # replace-all \
-       # - \
-       # quick-search \
-       # hypersearch \
-       # quick-search-word \
-       # hypersearch-word \
-       # - \
-       # ignore-case \
-       # regexp \
-       # - \
-       # hypersearch-results
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 search.label=\u691c\u7d22($S)
 find.label=\u691c\u7d22/\u7f6e\u63db($F)...
 find-next.label=\u6b21\u3092\u691c\u7d22($N)
@@ -405,21 +410,21 @@ hypersearch-results.label=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1\u7d50\u679c
 #}}}
 
 #{{{ Markers menu
-# markers=add-marker \
-	  # add-marker-shortcut \
-	  # - \
-	  # remove-all-markers \
-	  # - \
-	  # goto-marker \
-	  # select-marker \
-	  # swap-marker \
-	  # - \
-	  # prev-marker \
-	  # next-marker \
-	  # - \
-	  # view-markers \
-	  # -
-# markers.code=new MarkersProvider();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 markers.label=\u30de\u30fc\u30ab\u30fc($M)
 add-marker.label=\u30de\u30fc\u30ab\u30fc\u306e\u8ffd\u52a0/\u524a\u9664($A)
 add-marker-shortcut.label=\u30de\u30fc\u30ab\u30fc\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3068\u3057\u3066\u8ffd\u52a0($W)
@@ -435,23 +440,23 @@ markers.blank-line=[Blank line]
 
 #{{{ Folding menu
 # folds=collapse-fold \
-      # expand-one-level \
-      # expand-fold \
-      # - \
-      # collapse-all-folds \
-      # expand-folds \
-      # expand-all-folds \
-      # - \
-      # select-fold \
-      # - \
-      # add-explicit-fold \
-      # - \
-      # narrow-to-fold \
-      # narrow-to-selection \
-      # - \
-      # parent-fold \
-      # prev-fold \
-      # next-fold
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 folds.label=\u30d5\u30a9\u30fc\u30eb\u30c9($O)
 collapse-fold.label=\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u9589\u3058\u308b($C)
 expand-one-level.label=\u30d5\u30a9\u30fc\u30eb\u30c9\u968e\u5c64\u3092\u3072\u3068\u3064\u958b\u304f($E)
@@ -469,20 +474,20 @@ next-fold.label=\u6b21\u306e\u30d5\u30a9\u30fc\u30eb\u30c9\u3078\u79fb\u52d5($N)
 #}}}
 
 #{{{ View menu
-# view=new-view \
-     # new-plain-view \
-     # close-view \
-     # - \
-     # prev-buffer \
-     # next-buffer \
-     # recent-buffer \
-     # show-buffer-switcher \
-     # - \
-     # toggle-line-numbers \
-     # - \
-     # %scrolling \
-     # %splitting \
-     # %docking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 view.label=\u30d3\u30e5\u30fc($V)
 new-view.label=\u65b0\u898f\u30d3\u30e5\u30fc($V)
 new-plain-view.label=\u65b0\u898f\u30d7\u30ec\u30fc\u30f3\u30d3\u30e5\u30fc($W)
@@ -495,14 +500,14 @@ toggle-line-numbers.label=\u884c\u756a\u53f7($L)
 show-context-menu.label=\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u30e1\u30cb\u30e5\u30fc\u3092\u8868\u793a
 
 #{{{ Scrolling menu
-# scrolling=scroll-to-current-line \
-	  # center-caret \
-	  # - \
-	  # scroll-up-line \
-	  # scroll-down-line \
-	  # - \
-	  # scroll-up-page \
-	  # scroll-down-page
+
+
+
+
+
+
+
+
 scrolling.label=\u30b9\u30af\u30ed\u30fc\u30eb($G)
 scroll-to-current-line.label=\u73fe\u5728\u884c\u307e\u3067\u30b9\u30af\u30ed\u30fc\u30eb($T)
 center-caret.label=\u30ab\u30fc\u30bd\u30eb\u3092\u30b9\u30af\u30ea\u30fc\u30f3\u306e\u4e2d\u592e\u3078($C)
@@ -513,14 +518,14 @@ scroll-down-page.label=\u6b21\u30da\u30fc\u30b8\u306b\u30b9\u30af\u30ed\u30fc\u3
 #}}}
 
 #{{{ Splitting menu
-# splitting=unsplit-current \
-          # unsplit \
-          # split-horizontal \
-          # split-vertical \
-	  # resplit \
-	  # - \
-          # prev-textarea \
-          # next-textarea
+
+
+
+
+
+
+
+
 splitting.label=\u5206\u5272($S)
 split-horizontal.label=\u6c34\u5e73\u5206\u5272($H)
 split-vertical.label=\u5782\u76f4\u5206\u5272($V)
@@ -532,12 +537,12 @@ next-textarea.label=\u6b21\u306e\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u3078
 #}}}
 
 #{{{ Docking menu
-# docking=left-docking-area \
-	# top-docking-area \
-	# right-docking-area \
-	# bottom-docking-area \
-	# - \
-	# close-docking-area
+
+
+
+
+
+
 docking.label=\u30c9\u30c3\u30ad\u30f3\u30b0($D)
 docking.menu.label=\u30c9\u30c3\u30ad\u30f3\u30b0\u53ef\u80fd\u30e1\u30cb\u30e5\u30fc
 left-docking-area.label=\u5de6\u30c9\u30c3\u30ad\u30f3\u30b0\u9818\u57df\u306b\u30d5\u30a9\u30fc\u30ab\u30b9($L)
@@ -552,24 +557,24 @@ close-docking-area.label=\u73fe\u5728\u306e\u30c9\u30c3\u30ad\u30f3\u30b0\u9818\
 #}}}
 
 #{{{ Utilities menu
-# utils=vfs.browser \
-      # %recent-directories \
-      # - \
-      # %favorites \
-      # %current-directory \
-      # %jedit-directory \
-      # %settings-directory \
-      # - \
-      # %beanshell \
-      # %troubleshooting \
-      # - \
-      # action-bar \
-      # last-action \
-      # - \
-      # buffer-options \
-      # global-options \
-      # - \
-      # %quick-options
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 utils.label=\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3($U)
 vfs.browser.label=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 \u30d6\u30e9\u30a6\u30b6($F)
 action-bar.label=\u30a2\u30af\u30b7\u30e7\u30f3\u30d0\u30fc($A)
@@ -579,14 +584,14 @@ global-options.label=\u30b0\u30ed\u30fc\u30d0\u30eb \u30aa\u30d7\u30b7\u30e7\u30
 
 #{{{ Recent Directories menu
 recent-directories.label=\u6700\u8fd1\u958b\u3044\u305f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea($R)
-# recent-directories.code=new RecentDirectoriesProvider();
+
 no-recent-dirs.label=\u6700\u8fd1\u958b\u3044\u305f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306f\u3042\u308a\u307e\u305b\u3093
 #}}}
 
 #{{{ Favorites menu
-# favorites=add-buffer-to-favorites add-dir-to-favorites edit-favorites -
+
 favorites.label=\u304a\u6c17\u306b\u5165\u308a($V)
-# favorites.code=new FavoritesProvider();
+
 add-buffer-to-favorites.label=\u30d0\u30c3\u30d5\u30a1\u3092\u304a\u6c17\u306b\u5165\u308a\u306b\u8ffd\u52a0
 add-dir-to-favorites.label=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3092\u304a\u6c17\u306b\u5165\u308a\u306b\u8ffd\u52a0
 edit-favorites.label=\u304a\u6c17\u306b\u5165\u308a\u3092\u7de8\u96c6
@@ -594,39 +599,39 @@ edit-favorites.label=\u304a\u6c17\u306b\u5165\u308a\u3092\u7de8\u96c6
 
 #{{{ Current Directory menu
 current-directory.label=\u30ab\u30ec\u30f3\u30c8\u30c7\u30a3\u30ec\u30af\u30c8\u30ea($C)
-# current-directory.code=new DirectoryProvider(null)
+
 #}}}
 
 #{{{ jEdit Home Directory menu
 jedit-directory.label=$jEdit \u30db\u30fc\u30e0\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
-# jedit-directory.code=new DirectoryProvider(jEdit.getJEditHome())
+
 #}}}
 
 #{{{ Settings Directory menu
 settings-directory.label=\u500b\u4eba\u8a2d\u5b9a\u30c7\u30a3\u30ec\u30af\u30c8\u30ea($S)
-# settings-directory.code=settings = jEdit.getSettingsDirectory(); \
-	# if(settings == null) settings = jEdit.getJEditHome(); \
-	# new DirectoryProvider(settings);
+
+
+
 #}}}
 
 #{{{ BeanShell menu
-# beanshell=eval \
-       # eval-for-selected-lines \
-       # eval-selection
+
+
+
 beanshell.label=BeanShell($E)
 eval.label=BeanShell\u5f0f\u3092\u8a55\u4fa1($E)...
-eval-for-selected-lines.label=\u9078\u629e\u884c\u3054\u3068\u306b\u8a55\u4fa1\u5f0f\u3092\u9069\u7528($E)...
+eval-for-selected-lines.label=\u9078\u629e\u884c\u3054\u3068\u306b\u8a55\u4fa1\u5f0f\u3092\u9069\u7528($F)...
 eval-selection.label=\u9078\u629e\u7bc4\u56f2\u3092\u8a55\u4fa1\u3057\u7f6e\u63db($S)
 #}}}
 
 #{{{ Troubleshooting menu
-# troubleshooting=log-viewer \
-		# update-log \
-		# - \
-		# io-progress-monitor \
-		# keyboard-tester \
-		# memory-status \
-		# reload-modes
+
+
+
+
+
+
+
 troubleshooting.label=\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0($T)
 log-viewer.label=\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0($A)
 update-log.label=\u4fdd\u5b58\u3055\u308c\u305f\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0\u3092\u66f4\u65b0($U)
@@ -637,7 +642,7 @@ reload-modes.label=\u7de8\u96c6\u30e2\u30fc\u30c9\u3092\u30ea\u30ed\u30fc\u30c9(
 #}}}
 
 #{{{ Quick options menu
-# quick-options=edit-syntax-style
+
 quick-options.label=\u30af\u30a4\u30c3\u30af\u8a2d\u5b9a($Q)
 edit-syntax-style.label=\u30ab\u30fc\u30bd\u30eb\u4f4d\u7f6e\u306e\u30c8\u30fc\u30af\u30f3\u306e\u30b7\u30f3\u30bf\u30af\u30b9\u30b9\u30bf\u30a4\u30eb\u3092\u7de8\u96c6
 
@@ -646,18 +651,18 @@ edit-syntax-style.label=\u30ab\u30fc\u30bd\u30eb\u4f4d\u7f6e\u306e\u30c8\u30fc\u
 #}}}
 
 #{{{ Macros menu
-# macros=record-macro \
-       # stop-recording \
-       # - \
-       # last-macro \
-       # - \
-       # record-temp-macro \
-       # run-temp-macro \
-       # - \
-       # run-other-macro \
-       # rescan-macros \
-       # -
-# macros.code=new MacrosProvider();
+
+
+
+
+
+
+
+
+
+
+
+
 macros.label=\u30de\u30af\u30ed($C)
 record-macro.label=\u30de\u30af\u30ed\u306e\u8a18\u9332($R)...
 stop-recording.label=\u8a18\u9332\u505c\u6b62($S)
@@ -670,18 +675,18 @@ no-macros.label=\u30de\u30af\u30ed\u304c\u3042\u308a\u307e\u305b\u3093
 #}}}
 
 #{{{ Plugins menu
-# plugins=plugin-manager plugin-options -
+
 plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3($P)
-# plugins.code=new PluginsProvider();
+
 plugin-manager.label=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30de\u30cd\u30fc\u30b8\u30e3($M)...
 plugin-options.label=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30aa\u30d7\u30b7\u30e7\u30f3($O)...
 no-plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3055\u308c\u3066\u3044\u307e\u305b\u3093
 #}}}
 
 #{{{ Help menu
-# help-menu=about \
-     # help \
-     # tip-of-the-day
+
+
+
 help-menu.label=\u30d8\u30eb\u30d7($H)
 about.label=jEdit \u306b\u3064\u3044\u3066($A)...
 help.label=jEdit \u30d8\u30eb\u30d7($H)
@@ -696,7 +701,7 @@ tip-of-the-day.label=\u4eca\u65e5\u306e\u30d2\u30f3\u30c8($T)
                   # // commands to make sure this is what you intended.\n\
                   # // Then, to run this macro, switch to the buffer\n\
                   # // where you would like to execute it and press C+m C+p.
-# 
+ 
 # macro.header=// This is a recorded macro. First, check over the\n\
              # // commands to make sure this is what you intended. Then,\n\
              # // save this buffer, and the macro should appear in the\n\
@@ -751,7 +756,7 @@ select-prev-char.label=\u76f4\u524d\u306e\u6587\u5b57\u3092\u9078\u629e
 select-prev-line.label=\u76f4\u524d\u306e\u884c\u3092\u9078\u629e
 select-prev-page.label=\u76f4\u524d\u306e\u30da\u30fc\u30b8\u3092\u9078\u629e
 select-prev-paragraph.label=\u76f4\u524d\u306e\u6bb5\u843d\u3092\u9078\u629e
-select-prev-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u9078\u629e
+select-prev-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u9078\u629e
 select-prev-word-std.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u9078\u629e (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
 select-visible-end.label=\u672b\u5c3e\u8868\u793a\u884c\u307e\u3067\u3092\u9078\u629e
 select-visible-home.label=\u5148\u982d\u8868\u793a\u884c\u307e\u3067\u3092\u9078\u629e
@@ -838,15 +843,17 @@ view.status.wrap-tooltip=\u30ef\u30fc\u30c9\u30e9\u30c3\u30d7\u30e2\u30fc\u30c9 
 #}}}
 
 #{{{ Status bar component visibility
-# view.status.show-caret-status=true
-# view.status.show-edit-mode=true
-# view.status.show-fold-mode=true
-# view.status.show-encoding=true
-# view.status.show-wrap=true
-# view.status.show-multi-select=true
-# view.status.show-overwrite=true
-# view.status.show-line-seperator=true
-# view.status.show-memory=true
+
+
+
+
+
+
+
+
+
+
+
 #}}}
 
 #}}}
@@ -870,181 +877,181 @@ about.version=jEdit {0} using Java {1}
 # This text scrolls by in the about dialog box.
 # Hack: Since StringTokenizer treats two consequent \n as one token, we
 # insert a space by itself in the text to create blank lines.
-# about.text=jEdit is brought to you by\n\
-	# \ \n\
-	# Slava Pestov\n\
-	# Aaron Bell\n\
-	# Adrian Baker\n\
-	# Alan Ezust\n\
-	# Alessandro Falappa\n\
-	# Alex Levin\n\
-	# Alexander Maryanovsky\n\
-	# Alfonso Garcia\n\
-	# Alwyn Barry\n\
-	# Amedeo Farello\n\
-	# Andre Kaplan\n\
-	# Anthony Roy\n\
-	# Artur Biesiadowski\n\
-	# Aziz Sharif\n\
-	# Barry Carr\n\
-	# Beau Tateyama\n\
-	# Ben Glazer\n\
-	# Ben Sarsgard\n\
-	# Ben Williams\n\
-	# Bertalan Fodor\n\
-	# Bill McMilleon\n\
-	# Bj\ue49an "Vampire" Kautler\n\
-	# Brad Mace\n\
-	# Brant Langer Gurganus\n\
-	# Brett Smith\n\
-	# Bruno Tatibouet\n\
-	# Calvin Yu\n\
-	# Carlos Quiroz\n\
-	# Carmine Lucarelli\n\
-	# Chris Kent\n\
-	# Chris Scott\n\
-	# Christoph Daniel Schulze\n\
-	# Claude Eisenhut\n\
-	# Cullen Linn\n\
-	# Dale Anson\n\
-	# Danny Dig\n\
-	# Dante Fabrizio\n\
-	# David Askew\n\
-	# David Moss\n\
-	# David Taylor\n\
-	# Denis Lambot\n\
-	# Dirk Moebius\n\
-	# Dominic Stolerman\n\
-	# Dusty Phillips\n\
-	# Ed Stewart\n\
-	# Eric Benoit\n\
-	# Eric Ladner\n\
-	# Fan Ho Yin\n\
-	# Francesc Roses\n\
-	# George Hovey\n\
-	# George Latkiewicz\n\
-	# Gerd Knops\n\
-	# Gili Tzabari\n\
-	# Giulio Piancastelli\n\
-	# Greg Cooper\n\
-	# Greg Merrill\n\
-	# Horst Eff\n\
-	# Ian Maclean\n\
-	# Igor Lesik\n\
-	# Israel Olalla\n\
-	# Jakub Rozto\u010Dil\n\
-	# Jamie LaScolea\n\
-	# Jason Ginchereau\n\
-	# Jeffrey Hoyt\n\
-	# Jerry McBride\n\
-	# Jiger Patel\n\
-	# Jim Lawton\n\
-	# Jim Wissner\n\
-	# John Gellene\n\
-	# John Perry\n\
-	# Jonathan Revusky\n\
-	# Jorg Winter\n\
-	# Joseph Erickson\n\
-	# Joseph Schroer\n\
-	# Juha Lindfors\n\
-	# Justin Dieters\n\
-	# Justin Hagstrom\n\
-	# Kasper Graversen\n\
-	# Kazutoshi Satoda\n\
-	# Kenrick Drew\n\
-	# Kevin Burton\n\
-	# Kevin McWhirter\n\
-	# Ken Gentry\n\
-	# Ken Turner\n\
-	# Klaus Hartlage\n\
-	# Konstantin Pribluda\n\
-	# Kris Kopicki\n\
-	# Kristian Ovaska\n\
-	# Krzysztof Krzyzaniak\n\
-	# Lionel Fiol\n\
-	# Magnus Henriksson\n\
-	# Maik Schreiber\n\
-	# Marc Rummel\n\
-	# Marcelo Vanzin\n\
-	# Marcio Marchini\n\
-	# Marco Hunsicker\n\
-	# Marco Gotze\n\
-	# Marcus Jonason\n\
-	# Martin Raspe\n\
-	# Matija Kejzar\n\
-	# Matt Albrecht\n\
-	# Matt Price\n\
-	# Matthew Flower\n\
-	# Matthew Payne\n\
-	# Matthew Price\n\
-	# Matthias Schneider\n\
-	# Matthieu Casanova\n\
-	# Michael Jacobson\n\
-	# Michael Taft\n\
-	# Mike Dillon\n\
-	# Mike Gorski\n\
-	# Mike Hansen\n\
-	# Mirco Bova\n\
-	# Nahuel Foronda\n\
-	# Neil Bertram\n\
-	# Nicholas O'Leary\n\
-	# Nils Krahnstoever\n\
-	# Nitsan Vardi\n\
-	# Ollie Rutherfurd\n\
-	# Patrick Tingen\n\
-	# Paul Libbrecht\n\
-	# Peter Cox\n\
-	# Peter Graves\n\
-	# Philipp Janda\n\
-	# Phillip Mateescu\n\
-	# Ralf Engels\n\
-	# Randolf Mock\n\
-	# Randy Hudson\n\
-	# Rex Young\n\
-	# Richard Ashwell\n\
-	# Richard Beton\n\
-	# Rick Gibbs\n\
-	# Rick Owen\n\
-	# Rob Watson\n\
-	# Robert McKinnon\n\
-	# Robert Swarr\n\
-	# Romain Guy\n\
-	# Rudolf Widmann\n\
-	# Ryan Fowler\n\
-	# Ryan Grove\n\
-	# Saimon Moore\n\
-	# Satguru Srivastava\n\
-	# Scott Allen\n\
-	# Scott Willy\n\
-	# Scott Wyatt\n\
-	# Sebastien Pierre\n\
-	# Sergey Udaltsov\n\
-	# Shlomy Reinstein\n\
-	# Silas Smith\n\
-	# Stefan Kost\n\
-	# Stefano Maestri\n\
-	# Stephen Bartlett\n\
-	# Steve Jakob\n\
-	# Stuart Barlow\n\
-	# Tal Davidson\n\
-	# Thomas Alspaugh\n\
-	# Thomas Bock\n\
-	# Thomas Dilts\n\
-	# Thomas Galvin\n\
-	# Todd Papaioannou\n\
-	# Tom Copeland\n\
-	# Tom Locke\n\
-	# Trevor Harmon\n\
-	# Vicente Salvador\n\
-	# Vinod Kiran\n\
-	# Will Sargent\n\
-	# Will Varfar\n\
-	# Wiktor Adamski\n\
-	# Wojciech Stryjewski\n\
-	# Wolfgang Chico-T\u00F6pfer\n\
-	# \ \n\
-	# I'd also like to thank the users for their\n\
-	# comments, feedback and bug reports.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #}}}
 
 #{{{ Error list dialog, used to report I/O and plugin load errors
@@ -1312,7 +1319,7 @@ search.replaceAllBtn=\u3059\u3079\u3066\u7f6e\u63db(A)
 search.replaceAllBtn.mnemonic=A
 
 # Beep when searching automatically wraps?
-# search.beepOnSearchAutoWrap=false
+
 #}}}
 
 #{{{ Keep searching dialog
@@ -1335,7 +1342,10 @@ hypersearch-results.collapse-child-nodes=\u5b50\u30ce\u30fc\u30c9\u306e\u6298\u3
 hypersearch-results.redo=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1 \u3084\u308a\u76f4\u3057
 hypersearch-results.tree-view=\u30c4\u30ea\u30fc\u30d3\u30e5\u30fc\u5207\u308a\u66ff\u3048
 hypersearch-results.clear.label=\u3059\u3079\u3066\u306e\u30ce\u30fc\u30c9\u3092\u524a\u9664
+
 hypersearch-results.multi.label=\u8907\u6570\u7d50\u679c\u8868\u793a\u306e\u5207\u308a\u66ff\u3048
+
+
 hypersearch-results.file-caption={0} ({1} \u7b87\u6240 / {2} \u884c\u4e2d)
 hypersearch-results.searching=\u691c\u7d22\u4e2d...
 hypersearch-results.no-results=\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002
@@ -1429,6 +1439,7 @@ view-registers.selection=% (\u9078\u629e\u7bc4\u56f2)
 view-registers.none=\u30ec\u30b8\u30b9\u30bf\u306f\u5b9a\u7fa9\u3055\u308c\u3066\u3044\u307e\u305b\u3093
 view-registers.register=\u30ec\u30b8\u30b9\u30bf:
 view-registers.contents=\u5185\u5bb9:
+view-registers.undefined=__UNDEFINED__
 #}}}
 
 #{{{ Close all buffers dialog
@@ -1635,11 +1646,11 @@ options.title-template={0}: {1}
 options.jedit.label=jEdit
 
 # Option pane to show by default
-# options.last=editing
+
 
 #{{{ General pane
 options.general.label=\u4e00\u822c
-# options.general.code=new GeneralOptionPane();
+
 options.general.lineSeparator=\u30c7\u30d5\u30a9\u30eb\u30c8\u6539\u884c\u6587\u5b57:
 options.general.encoding=\u30c7\u30d5\u30a9\u30eb\u30c8\u6587\u5b57\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0:
 options.general.encodingAutodetect=\u53ef\u80fd\u306a\u5834\u5408\u30d5\u30a1\u30a4\u30eb\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u81ea\u52d5\u691c\u51fa
@@ -1674,7 +1685,7 @@ options.general.fallbackEncodings.tooltip=(\u8a66\u9a13\u7684)\u30ed\u30fc\u30c9
 
 #{{{ Abbreviations pane
 options.abbrevs.label=\u7701\u7565\u8a9e
-# options.abbrevs.code=new AbbrevsOptionPane();
+
 options.abbrevs.set=\u7565\u8a9e\u30bb\u30c3\u30c8:
 options.abbrevs.expandOnInput=\u30b9\u30da\u30fc\u30b9\u30ad\u30fc\u3067\u7565\u8a9e\u3092\u5c55\u958b\u3059\u308b
 options.abbrevs.abbrev=\u7565\u8a9e
@@ -1682,11 +1693,15 @@ options.abbrevs.expand=\u5c55\u958b
 options.abbrevs.add=\u8ffd\u52a0...
 options.abbrevs.edit=\u7de8\u96c6...
 options.abbrevs.remove=\u524a\u9664
+
+
+
 #}}}
 
 #{{{ Appearance pane
 options.appearance.label=\u5916\u89b3
-# options.appearance.code=new AppearanceOptionPane();
+
+options.appearance.iconTheme=\u30a2\u30a4\u30b3\u30f3\u30c6\u30fc\u30de:
 options.appearance.fonts.antialias=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u4ee5\u5916\u306e\u30d5\u30a9\u30f3\u30c8\u3092\u30a2\u30f3\u30c1\u30a8\u30a4\u30ea\u30a2\u30b9
 options.appearance.lf.note=Look&Feel \u306e\u5909\u66f4\u3092\u6709\u52b9\u306b\u3059\u308b\u306b\u306f jEdit \u306e\u518d\u8d77\u52d5\u304c\u5fc5\u8981\u3067\u3059
 options.appearance.lf=Swing Look&Feel:
@@ -1711,7 +1726,7 @@ options.appearance.continuousLayout.label=\u30b9\u30d7\u30ea\u30c3\u30c8\u30da\u
 
 #{{{ Context Menu pane
 options.context.label=\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u30e1\u30cb\u30e5\u30fc
-# options.context.code=new ContextOptionPane();
+
 options.context.caption=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u53f3\u30af\u30ea\u30c3\u30af\u30e1\u30cb\u30e5\u30fc\u306e\u9805\u76ee:
 options.context.add=\u8ffd\u52a0...
 options.context.remove=\u524a\u9664
@@ -1725,14 +1740,14 @@ options.context.add.action=\u30b3\u30de\u30f3\u30c9/\u30de\u30af\u30ed:
 
 #{{{ Docking pane
 options.docking.label=\u30c9\u30c3\u30ad\u30f3\u30b0
-# options.docking.code=new DockingOptionPane();
+
 options.docking.title=\u30a6\u30a3\u30f3\u30c9\u30a6
 options.docking.dockPosition=\u30c9\u30c3\u30ad\u30f3\u30b0\u4f4d\u7f6e
 #}}}
 
 #{{{ Editing pane
 options.editing.label=\u7de8\u96c6
-# options.editing.code=new EditingOptionPane();
+
 options.editing.defaultMode=\u30c7\u30d5\u30a9\u30eb\u30c8\u7de8\u96c6\u30e2\u30fc\u30c9:
 options.editing.undoCount=\u30a2\u30f3\u30c9\u30a5\u56de\u6570:
 options.editing.caption-0=\
@@ -1763,7 +1778,7 @@ options.editing.deepIndent=\u6df1\u3044\u30a4\u30f3\u30c7\u30f3\u30c8
 
 #{{{ Encodings pane
 options.encodings.label=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
-# options.encodings.code=new EncodingsOptionPane();
+
 options.encodings.selectEncodings=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30c0\u30a4\u30a2\u30ed\u30b0\u3067\u8868\u793a\u3055\u308c\u308b\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044:
 options.encodings.selectAll=\u3059\u3079\u3066\u9078\u629e
 options.encodings.selectNone=\u9078\u629e\u89e3\u9664
@@ -1771,7 +1786,7 @@ options.encodings.selectNone=\u9078\u629e\u89e3\u9664
 
 #{{{ Gutter pane
 options.gutter.label=\u30ac\u30bf\u30fc
-# options.gutter.code=new GutterOptionPane();
+
 options.gutter.lineNumbers=\u884c\u756a\u53f7
 options.gutter.font=\u30ac\u30bf\u30fc\u30d5\u30a9\u30f3\u30c8:
 options.gutter.foreground=\u884c\u756a\u53f7\u306e\u8272:
@@ -1790,7 +1805,7 @@ options.gutter.noFocusBorderColor=\u30d5\u30a9\u30fc\u30ab\u30b9\u3092\u6301\u30
 
 #{{{ Mouse pane
 options.mouse.label=\u30de\u30a6\u30b9
-# options.mouse.code=new MouseOptionPane();
+
 options.mouse.dragAndDrop=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u3078\u306e\u30c9\u30e9\u30c3\u30b0&\u30c9\u30ed\u30c3\u30d7
 options.mouse.joinNonWordChars=\u30c0\u30d6\u30eb\u30af\u30ea\u30c3\u30af\u30c9\u30e9\u30c3\u30b0\u306f\u975e\u30a2\u30eb\u30d5\u30a1\u30d9\u30c3\u30c8\u6587\u5b57\u3092\u7d50\u5408
 options.mouse.middleMousePaste=\u30af\u30a3\u30c3\u30af\u30b3\u30d4\u30fc\u306b\u4e2d\u30de\u30a6\u30b9\u30dc\u30bf\u30f3\u3092\u4f7f\u7528
@@ -1803,7 +1818,7 @@ options.mouse.gutter.toggle-fold-fully=\u4e0b\u4f4d\u30d5\u30a9\u30fc\u30eb\u30c
 
 #{{{ Plugin Manager pane
 options.plugin-manager.label=\u30d7\u30e9\u30b0\u30a4\u30f3\u30de\u30cd\u30fc\u30b8\u30e3
-# options.plugin-manager.code=new PluginManagerOptionPane();
+
 options.plugin-manager.updateMirrors=\u30df\u30e9\u30fc\u30ea\u30b9\u30c8\u306e\u66f4\u65b0
 options.plugin-manager.workthread=\u30df\u30e9\u30fc\u30ea\u30b9\u30c8\u306e\u66f4\u65b0\u4e2d ...
 options.plugin-manager.downloadSource=\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30bd\u30fc\u30b9\u30b3\u30fc\u30c9\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9
@@ -1818,7 +1833,7 @@ options.plugin-manager.none=\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u30d7\u30e9\u30
 
 #{{{ Printing pane
 options.print.label=\u5370\u5237
-# options.print.code=new PrintOptionPane();
+
 options.print.font=\u5370\u5237\u30d5\u30a9\u30f3\u30c8:
 options.print.fontstyle=\u5370\u5237\u30d5\u30a9\u30f3\u30c8\u30b9\u30bf\u30a4\u30eb:
 options.print.fontsize=\u5370\u5237\u30d5\u30a9\u30f3\u30c8\u30b5\u30a4\u30ba:
@@ -1836,7 +1851,7 @@ options.print.folds=\u30d5\u30a9\u30fc\u30eb\u30c9\u3055\u308c\u305f\u30ea\u30fc
 
 #{{{ Proxy pane
 options.firewall.label=\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0
-# options.firewall.code=new FirewallOptionPane();
+
 options.firewall.http.enabled=HTTP\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0\u3092\u4f7f\u7528
 options.firewall.http.host=HTTP\u30d7\u30ed\u30ad\u30b7 \u30db\u30b9\u30c8:
 options.firewall.http.port=HTTP\u30d7\u30ed\u30ad\u30b7 \u30dd\u30fc\u30c8:
@@ -1850,7 +1865,7 @@ options.firewall.socks.port=SOCKS\u30d7\u30ed\u30ad\u30b7 \u30dd\u30fc\u30c8:
 
 #{{{ Save & Backup pane
 options.save-back.label=\u4fdd\u5b58 & \u30d0\u30c3\u30af\u30a2\u30c3\u30d7
-# options.save-back.code=new SaveBackupOptionPane();
+
 options.save-back.autosave=\u81ea\u52d5\u4fdd\u5b58\u306e\u5468\u671f (\u79d2):
 options.save-back.backups=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u306e\u6700\u5927\u6570:
 options.save-back.backupDirectory=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u30c7\u30a3\u30ec\u30af\u30c8\u30ea:
@@ -1864,7 +1879,7 @@ options.save-back.autosaveUntitled=\u7121\u984c\u30d0\u30c3\u30d5\u30a1\u3092\u8
 
 #{{{ Shortcuts pane
 options.shortcuts.label=\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8
-# options.shortcuts.code=new ShortcutsOptionPane();
+
 options.shortcuts.select.label=\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u306e\u7de8\u96c6:
 options.shortcuts.select.tooltip=\u30b0\u30ed\u30fc\u30d0\u30eb/\u30de\u30af\u30ed/\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3092\u9078\u629e\u3067\u304d\u307e\u3059
 options.shortcuts.name=\u30b3\u30de\u30f3\u30c9
@@ -1909,28 +1924,27 @@ grab-key.prefix-shortcut.message=\
 
 #{{{ Status bar pane
 options.status.label=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc
-# options.status.code=new StatusBarOptionPane();
+
 options.status.visible=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u306e\u8868\u793a
 options.status.foreground=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u306e\u30c6\u30ad\u30b9\u30c8:
 options.status.background=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u306e\u80cc\u666f:
-options.status.show-caret-status=\u30ab\u30fc\u30bd\u30eb\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
-options.status.show-encoding=\u30d0\u30c3\u30d5\u30a1\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u8868\u793a
-options.status.show-edit-mode=\u7de8\u96c6\u30e2\u30fc\u30c9\u3092\u8868\u793a
-options.status.show-fold-mode=\u30d5\u30a9\u30fc\u30eb\u30c9\u30e2\u30fc\u30c9\u3092\u8868\u793a
-options.status.show-wrap=\u30e9\u30c3\u30d7\u30e2\u30fc\u30c9\u3092\u8868\u793a
-options.status.show-multi-select=\u30de\u30eb\u30c1\u9078\u629e\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
-options.status.show-rect-select=\u77e9\u5f62\u9078\u629e\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
-options.status.show-overwrite=\u4e0a\u66f8\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
-options.status.show-line-seperator=\u30d0\u30c3\u30d5\u30a1\u306e\u6539\u884c\u30b3\u30fc\u30c9\u3092\u8868\u793a
-options.status.show-memory=\u30e1\u30e2\u30ea\u30a4\u30f3\u30b8\u30b1\u30fc\u30bf\u3092\u8868\u793a
 options.status.memory.foreground=\u30e1\u30e2\u30ea\u30a4\u30f3\u30b8\u30b1\u30fc\u30bf\u524d\u666f:
 options.status.memory.background=\u30e1\u30e2\u30ea\u30a4\u30f3\u30b8\u30b1\u30fc\u30bf\u80cc\u666f:
-options.status.show-clock=\u6642\u8a08\u3092\u8868\u793a
+options.status.edit.title=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u9805\u76ee\u3092\u7de8\u96c6
+options.status.edit.labelRadioButton=\u30e9\u30d9\u30eb
+options.status.edit.widgetRadioButton=\u30a6\u30a3\u30b8\u30a7\u30c3\u30c8
+options.status.edit.labelLabel=\u30e9\u30d9\u30eb\u3092\u5165\u529b:
+options.status.edit.widgetLabel=\u30a6\u30a3\u30b8\u30a7\u30c3\u30c8\u3092\u9078\u629e:
+#}}}
+
+#{{{ Status bar pane
+
+
 #}}}
 
 #{{{ Syntax Highlighting pane
 options.syntax.label=\u30b7\u30f3\u30bf\u30af\u30b9 \u30cf\u30a4\u30e9\u30a4\u30c8
-# options.syntax.code=new SyntaxHiliteOptionPane();
+
 options.syntax.object=\u30c8\u30fc\u30af\u30f3\u30bf\u30a4\u30d7
 options.syntax.style=\u30c6\u30ad\u30b9\u30c8\u30b9\u30bf\u30a4\u30eb
 options.syntax.foldLine.1=\u9589\u3058\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u884c \u30ec\u30d9\u30eb 1
@@ -1941,7 +1955,7 @@ options.syntax.foldLine.0=\u9589\u3058\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u884c
 
 #{{{ Text Area pane
 options.textarea.label=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2
-# options.textarea.code=new TextAreaOptionPane();
+
 options.textarea.font=\u30c6\u30ad\u30b9\u30c8\u30d5\u30a9\u30f3\u30c8:
 options.textarea.foreground=\u30c6\u30ad\u30b9\u30c8\u8272:
 options.textarea.background=\u80cc\u666f\u8272:
@@ -1966,14 +1980,18 @@ options.textArea.stripTrailingEOL=\u6700\u7d42\u884c\u672b\u3092\u96a0\u3059 (\u
 
 #{{{ Tool Bar pane
 options.toolbar.label=\u30c4\u30fc\u30eb\u30d0\u30fc
-# options.toolbar.code=new ToolBarOptionPane();
+
 options.toolbar.showToolbar=\u30c4\u30fc\u30eb\u30d0\u30fc\u306e\u8868\u793a
 options.toolbar.caption=\u30c4\u30fc\u30eb\u30d0\u30fc\u306b\u8868\u793a\u3055\u308c\u308b\u30dc\u30bf\u30f3:
+
 options.toolbar.add=\u8ffd\u52a0...
 options.toolbar.edit=\u7de8\u96c6...
 options.toolbar.remove=\u524a\u9664
+
 options.toolbar.moveUp=\u4e0a\u3078
+
 options.toolbar.moveDown=\u4e0b\u3078
+
 options.toolbar.edit.title=\u30c4\u30fc\u30eb\u30d0\u30fc\u30a8\u30f3\u30c8\u30ea\u306e\u7de8\u96c6
 options.toolbar.edit.caption=\u30bf\u30a4\u30d7:
 options.toolbar.edit.separator=\u30bb\u30d1\u30ec\u30fc\u30bf
@@ -1987,7 +2005,7 @@ options.toolbar.edit.no-icon=\u30a2\u30a4\u30b3\u30f3\u304c\u9078\u629e\u3055\u3
 
 #{{{ View pane
 options.view.label=\u30d3\u30e5\u30fc
-# options.view.code=new ViewOptionPane();
+
 options.view.viewLayout=\u30d3\u30e5\u30fc\u30ec\u30a4\u30a2\u30a6\u30c8
 options.view.alternateDockingLayout=\u5225\u306e\u30c9\u30c3\u30ad\u30f3\u30b0\u30a6\u30a3\u30f3\u30c9\u30a6\u914d\u7f6e
 options.view.alternateToolBarLayout=\u5225\u306e\u30c4\u30fc\u30eb\u30d0\u30fc\u914d\u7f6e
@@ -2002,14 +2020,14 @@ options.view.bufferSwitcherMaxRowsCount=\u30d0\u30c3\u30d5\u30a1\u30b9\u30a4\u30
 options.browser.label=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 \u30d6\u30e9\u30a6\u30b6
 
 options.browser.colors.label=\u8272
-# options.browser.colors.code=new BrowserColorsOptionPane();
+
 options.browser.colors.glob=\u30d5\u30a1\u30a4\u30eb\u540d\u30d5\u30a3\u30eb\u30bf
 options.browser.colors.color=\u8272
 options.browser.colors.add=\u8ffd\u52a0
 options.browser.colors.remove=\u524a\u9664
 
 options.browser.general.label=\u4e00\u822c
-# options.browser.general.code=new BrowserOptionPane();
+
 options.browser.general.defaultPath=\u30c7\u30d5\u30a9\u30eb\u30c8\u30d1\u30b9:
 options.browser.general.defaultPath.favorites=\u304a\u6c17\u306b\u5165\u308a
 options.browser.general.defaultPath.home=\u30db\u30fc\u30e0\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
@@ -2038,7 +2056,7 @@ font-selector.bold=\u592a\u5b57
 font-selector.italic=\u659c\u4f53
 font-selector.bolditalic=\u592a\u5b57 \u659c\u4f53
 font-selector.preview=\u30d7\u30ec\u30d3\u30e5\u30fc
-# font-selector.long-text=The quick brown fox jumps over the lazy dog.
+
 #}}}
 
 #{{{ Color chooser, used by options.syntaxs
@@ -2066,21 +2084,21 @@ options.no-plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3\u30aa\u30d7\u30b7\u30e7\
 helpviewer.title=jEdit \u30d8\u30eb\u30d7
 helpviewer.loading=\u30ed\u30fc\u30c9\u4e2d...
 helpviewer.back.label=\u623b\u308b
-# helpviewer.back.icon=ArrowL.png
+
 helpviewer.forward.label=\u9032\u3080
-# helpviewer.forward.icon=ArrowR.png
+
 
 helpviewer.toc.loading=\u30ed\u30fc\u30c9\u4e2d...
-# helpviewer.toc.label=Contents
-# helpviewer.toc.welcome=Welcome to jEdit
-# helpviewer.toc.readme=General Information
-# helpviewer.toc.changes=Detailed Change Log
-# helpviewer.toc.todo=To Do List and Known Bugs
-# helpviewer.toc.copying=GNU General Public License
-# helpviewer.toc.copying-doc=GNU Free Documentation License
-# helpviewer.toc.copying-apache=Apache License
-# helpviewer.toc.copying-plugins=Plugin Licensing Amendment
-# helpviewer.toc.plugins=Plugins
+
+
+
+
+
+
+
+
+
+
 
 helpviewer.search.label=\u691c\u7d22
 helpviewer.search.caption=\u691c\u7d22\u8a9e:
@@ -2096,7 +2114,7 @@ tip.next-tip=\u6b21\u306e\u30d2\u30f3\u30c8
 
 tip.not-found=doc/tips \u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u304c\u3042\u308a\u307e\u305b\u3093
 # Show on startup?
-tip.show=true
+
 #}}}
 
 #{{{ Activity log
@@ -2113,7 +2131,7 @@ view-markers.title=\u30de\u30fc\u30ab\u30fc\u30ea\u30b9\u30c8
 
 #{{{ I/O progress monitor
 io-progress-monitor.title=I/O \u9032\u6357\u30e2\u30cb\u30bf
-io-progress-monitor.caption={0} \u4ef6\u3092\u4fdd\u7559\u4e2d.
+io-progress-monitor.caption={0} \u4ef6\u3092\u4fdd\u7559\u4e2d\u3002
 io-progress-monitor.idle=\u30b9\u30ec\u30c3\u30c9 \u30a2\u30a4\u30c9\u30eb\u4e2d
 io-progress-monitor.abort=\u4e2d\u65ad
 
@@ -2132,9 +2150,19 @@ vfs.browser.longtitle=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 \u30d6\u3
 vfs.browser.path=\u30d1\u30b9:
 vfs.browser.path.mnemonic=p
 vfs.browser.filter=\u30d5\u30a3\u30eb\u30bf:
-vfs.browser.default-filter=*[^~#]
-vfs.browser.filter-enabled=true
+
+
 vfs.browser.tree.loading=\u30ed\u30fc\u30c9\u4e2d...
+
+
+
+
+
+
+
+
+
+
 
 vfs.browser.name=\u540d\u524d
 vfs.browser.type=\u7a2e\u985e
@@ -2158,55 +2186,56 @@ vfs.browser.browse.label=\u30d6\u30e9\u30a6\u30ba
 vfs.browser.close.label=\u9589\u3058\u308b
 vfs.browser.copy-path.label=\u30d1\u30b9\u540d\u306e\u30b3\u30d4\u30fc
 vfs.browser.delete.label=\u524a\u9664...
-vfs.browser.delete.shortcut=DELETE
-# vfs.browser.home.icon=Home.png
+
+
 vfs.browser.home.label=\u30db\u30fc\u30e0\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
-# vfs.browser.home.shortcut=~
+
 vfs.browser.insert.label=\u633f\u5165
-# vfs.browser.new-directory.icon=NewDir.png
+
 vfs.browser.new-directory.label=\u65b0\u898f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea...
-vfs.browser.new-directory.shortcut=INSERT
-# vfs.browser.new-file.icon=New.png
+
+
 vfs.browser.new-file.label=\u65b0\u898f\u30d5\u30a1\u30a4\u30eb
-# vfs.browser.new-file.shortcut=C+n
+
 vfs.browser.open.label=\u958b\u304f
 vfs.browser.other-encoding-2.label=\u305d\u306e\u4ed6 ({0})...
 vfs.browser.other-encoding.label=\u305d\u306e\u4ed6...
-# vfs.browser.reload.icon=Reload.png
+
 vfs.browser.reload.label=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306e\u518d\u8aad\u307f\u8fbc\u307f
-# vfs.browser.reload.shortcut=F5
+
 vfs.browser.rename.label=\u540d\u524d\u306e\u5909\u66f4...
-# vfs.browser.rename.shortcut=F2
-# vfs.browser.roots.icon=Drive.png
+
+
 vfs.browser.roots.label=\u30eb\u30fc\u30c8\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
-# vfs.browser.roots.shortcut=/
-# vfs.browser.search-directory.icon=FindInDir.png
+
+
 vfs.browser.search-directory.label=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u5185\u691c\u7d22...
 vfs.browser.show-hidden-files.label=\u96a0\u3057\u30d5\u30a1\u30a4\u30eb\u306e\u8868\u793a
-# vfs.browser.synchronize.icon=CurrentDir.png
+
 vfs.browser.synchronize.label=\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
-# vfs.browser.synchronize.shortcut=-
-# vfs.browser.up.icon=ParentDir.png
+
+
 vfs.browser.up.label=\u89aa\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
-# vfs.browser.up.shortcut=BACK_SPACE
+
+vfs.browser.paste.label=\u30d5\u30a1\u30a4\u30eb\u3092\u3053\u3053\u306b\u8cbc\u308a\u4ed8\u3051
 
 #}}}
 
 #{{{ Tool bar
-# vfs.browser.toolbar-browser=vfs.browser.up \
-			    # vfs.browser.reload \
-			    # vfs.browser.roots \
-			    # vfs.browser.home \
-			    # vfs.browser.synchronize \
-			    # vfs.browser.new-file \
-			    # vfs.browser.new-directory \
-			    # vfs.browser.search-directory
-# vfs.browser.toolbar-dialog=vfs.browser.up \
-			   # vfs.browser.reload \
-			   # vfs.browser.roots \
-			   # vfs.browser.home \
-			   # vfs.browser.synchronize \
-			   # vfs.browser.new-directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #}}}
 
 #{{{ Commands menu
@@ -2215,9 +2244,9 @@ vfs.browser.commands.encoding.label=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u
 vfs.browser.commands.encoding.auto-detect=\u81ea\u52d5\u691c\u51fa
 
 vfs.browser.open-in.label=\u3053\u3053\u3067\u958b\u304f
-# vfs.browser.open-in=vfs.browser.open-view \
-                    # vfs.browser.open-plain-view \
-                    # vfs.browser.open-split
+
+
+
 vfs.browser.open-view.label=\u65b0\u898f\u30d3\u30e5\u30fc
 vfs.browser.open-plain-view.label=\u65b0\u898f\u30d7\u30ec\u30fc\u30f3\u30d3\u30e5\u30fc
 vfs.browser.open-split.label=\u65b0\u898f\u30b9\u30d7\u30ea\u30c3\u30c8
@@ -2240,8 +2269,8 @@ vfs.browser.favorites.no-favorites.label=\u304a\u6c17\u306b\u5165\u308a\u306f\u3
 vfs.browser.dialog.open=\u958b\u304f
 vfs.browser.dialog.save=\u4fdd\u5b58
 vfs.browser.dialog.choose-dir=\u9078\u629e
-vfs.browser.dialog.filename=\u30d5\u30a1\u30a4\u30eb\u540d:
-# vfs.browser.dialog.filename.mnemonic=f
+vfs.browser.dialog.filename=\u30d5\u30a1\u30a4\u30eb\u540d(F):
+vfs.browser.dialog.filename.mnemonic=F
 
 #{{{ Dialogs
 vfs.browser.bad-filter.title=\u7121\u52b9\u306a\u30d5\u30a3\u30eb\u30bf
@@ -2282,8 +2311,8 @@ vfs.status.renaming=\u540d\u524d\u5909\u66f4\u4e2d {0} \u304b\u3089 {1}
 
 plugin-manager.title=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30de\u30cd\u30fc\u30b8\u30e3
 
-# plugin-manager.export-url=http://plugins.jedit.org/export/gzip_plugin_manager.php
-# plugin-manager.mirror-url=http://plugins.jedit.org/export/mirror_list.php
+## plugin-manager.export-url=http://plugins.jedit.org/export/gzip_plugin_manager.php
+## plugin-manager.mirror-url=http://plugins.jedit.org/export/mirror_list.php
 
 plugin-manager.hide-libraries=\u30e9\u30a4\u30d6\u30e9\u30ea\u3092\u975e\u8868\u793a
 
@@ -2296,7 +2325,11 @@ plugin-manager.remove-confirm.message=\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4
 
 plugin-manager.dependency.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u4f9d\u5b58\u95a2\u4fc2
 plugin-manager.dependency.message={0} \u306f\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u304c\u5229\u7528\u3057\u307e\u3059\u3002\n\
-	{0} \u3092\u9078\u629e\u89e3\u9664\u3059\u308b\u3068\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3082\u9078\u629e\u89e3\u9664\u3055\u308c\u307e\u3059:
+	{0} \u3092\u9078\u629e\u89e3\u9664\u3059\u308b\u3068\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u9078\u629e\u89e3\u9664\u3055\u308c\u307e\u3059:
+
+plugin-manager.remove-dependencies.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u4f9d\u5b58\u95a2\u4fc2
+plugin-manager.remove-dependencies.message=\u524a\u9664\u3055\u308c\u308b\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u304c\u5229\u7528\u3057\u307e\u3059\u3002\n\
+	\u3053\u308c\u3089\u3092\u524a\u9664\u3059\u308b\u3068\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u9078\u629e\u89e3\u9664\u3055\u308c\u307e\u3059:
 
 plugin-manager.cleanup.label=\u30af\u30ea\u30fc\u30f3\u30a2\u30c3\u30d7
 plugin-manager.cleanup.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u30c7\u30fc\u30bf\u3092\u30af\u30ea\u30fc\u30f3\u30a2\u30c3\u30d7
@@ -2352,6 +2385,8 @@ manage-plugins.data-size.unknown=<\u4e0d\u660e>
 
 manage-plugins.remove=\u524a\u9664...
 manage-plugins.help=\u30d8\u30eb\u30d7...
+
+
 #}}}
 
 #{{{ Plugin installation
@@ -2367,20 +2402,25 @@ install-plugins.select-all=\u3059\u3079\u3066\u9078\u629e
 install-plugins.install=\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb
 install-plugins.show-updates=\u66f4\u65b0\u306e\u8868\u793a
 
+
+
 install-plugins.info=Author: {0}\n\
 	Released: {1}\n\
 	{2}
 
 update-plugins.title=\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8
 
-plugin-manager.progress=\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u4e2d {0} from mirror {1}
+plugin-manager.progress=\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u4e2d {0} \u30df\u30e9\u30fc {1} \u304b\u3089
 plugin-manager.progress.stop=\u4e2d\u6b62
 #}}}
 
 #{{{ Plugin remove error
 plugin-manager.remove-failed.title=\u524a\u9664\u5931\u6557
 plugin-manager.remove-failed.message=\u30d7\u30e9\u30b0\u30a4\u30f3 {0} \u306f\n\
-	\u524a\u9664\u3055\u308c\u307e\u305b\u3093\u3067\u3057\u305f.
+	\u524a\u9664\u3055\u308c\u307e\u305b\u3093\u3067\u3057\u305f\u3002
 #}}}
 
 #}}}
+
+
+
