@@ -1,0 +1,19 @@
+This files makes your jEdit Japanese UI.
+
+* Windows:
+Copy jedit_gui.props to
+  C:\Program Files\jEdit\properties
+
+Note: UAC might blocks your copy operation.
+
+* Mac:
+Copy jedit_gui.props to
+  /Applications/jEdit.app/Contents/Resources/Java/properties
+e.x.
+$ cp jedit_gui.props /usr/share/jedit/****/properties
+  
+* Linux or other unix:
+Copy jedit_gui.props to
+  /usr/share/jedit/(ver)/properties
+e.x.
+$ sudo cp jedit_gui.props /usr/share/jedit/****/properties
