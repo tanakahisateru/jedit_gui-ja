@@ -1,0 +1,2386 @@
+###
+### jEdit user interface definitions,
+### :tabSize=8:indentSize=8:noTabs=false:
+### :folding=explicit:collapseFolds=1:
+###
+### Copyright (C) 1998, 2005 Slava Pestov
+###
+
+#{{{ Default user catalog file
+# defaultCatalog=<?xml version="1.0"?>\n\
+	# <!DOCTYPE MODES SYSTEM "catalog.dtd">\n\
+	# \n\
+	# <MODES>\n\
+	# \n\
+	# <!-- Add lines like the following, one for each edit mode you add: -->\n\
+	# <!-- <MODE NAME="foo" FILE="foo.xml" FILE_NAME_GLOB="*.foo" /> -->\n\
+	# \n\
+	# </MODES>
+#}}}
+
+#{{{ Common strings
+
+common.ok=\u4e86\u89e3
+common.cancel=\u53d6\u6d88\u3057
+common.close=\u9589\u3058\u308b
+common.error=\u30a8\u30e9\u30fc
+common.apply=\u9069\u7528
+common.more=\u3055\u3089\u306b
+common.insert=\u633f\u5165
+common.add=\u8ffd\u52a0
+common.remove=\u524a\u9664
+common.moveUp=\u4e0a\u3078
+common.moveDown=\u4e0b\u3078
+
+lineSep.unix=Unix (\\n)
+lineSep.windows=DOS/Windows (\\r\\n)
+lineSep.mac=MacOS (\\r)
+
+#}}}
+
+#{{{ Miscellaneous
+# encodings=ASCII Cp850 Cp1251 Cp1252 ISO8859_1 ISO8859_2 ISO8859_15 \
+	# MacRoman Big5 GBK KOI8_R SJIS UTF-16 UTF-8 UTF-8Y
+
+history.caption=\u5165\u529b\u5c65\u6b74:
+
+action-set.jEdit=\u30d3\u30eb\u30c8\u30a4\u30f3 \u30b3\u30de\u30f3\u30c9
+action-set.browser=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 \u30d6\u30e9\u30a6\u30b6
+action-set.macros=\u30de\u30af\u30ed
+action-set.plugin=\u30d7\u30e9\u30b0\u30a4\u30f3: {0}
+
+macro-handler.beanshell.label=BeanShell \u30b9\u30af\u30ea\u30d7\u30c8
+macro-handler.beanshell.glob=*.bsh
+
+# Plugin activation hooks
+# defer=false
+# startup=true
+#}}}
+
+#{{{ Tool bar
+# view.toolbar=new-file open-file close-buffer save - print page-setup - \
+	# undo redo cut copy paste - find find-next - new-view unsplit \
+	# split-horizontal split-vertical - buffer-options global-options - \
+	# plugin-manager - help
+# 
+# new-file.icon=New.png
+# open-file.icon=Open.png
+# save.icon=Save.png
+# close-buffer.icon=Cancel.png
+# print.icon=Print.png
+# page-setup.icon=PageSetup.png
+# undo.icon=Undo.png
+# redo.icon=Redo.png
+# cut.icon=Cut.png
+# copy.icon=Copy.png
+# paste.icon=Paste.png
+# find.icon=Find.png
+# find-next.icon=FindAgain.png
+# new-view.icon=NewView.png
+# unsplit.icon=UnSplit.png
+# split-horizontal.icon=SplitHorizontal.png
+# split-vertical.icon=SplitVertical.png
+# buffer-options.icon=Properties.png
+# global-options.icon=Preferences.png
+# 
+# plugin-manager.icon=Plugins.png
+# help.icon=Help.png
+
+#{{{ Icon list for tool bar editor
+# icons=AdjustWidth.png \
+	# ArrowD.png \
+	# ArrowL.png \
+	# ArrowR.png \
+	# ArrowU.png \
+	# BrokenImage.png \
+	# ButtonProperties.png \
+	# Cancel.png \
+	# Clear.png \
+	# Copy.png \
+	# CopyToBuffer.png \
+	# CurrentDir.png \
+	# Cut.png \
+	# Delete.png \
+	# Drive.png \
+	# FindAgain.png \
+	# FindInDir.png \
+	# Find.png \
+	# Floppy.png \
+	# Help.png \
+	# Home.png \
+	# Load.png \
+	# Minus.png \
+	# MultipleResults.png \
+	# NewDir.png \
+	# New.png \
+	# NewView.png \
+	# NextFile.png \
+	# Open.png \
+	# PageSetup.png \
+	# ParentDir.png \
+	# Parse.png \
+	# Paste.png \
+	# Pause.png \
+	# Play.png \
+	# Plugins.png \
+	# Plus.png \
+	# Preferences.png \
+	# PreviousFile.png \
+	# Print.png \
+	# Properties.png \
+	# Redo.png \
+	# Reload.png \
+	# Run.png \
+	# RunAgain.png \
+	# RunToBuffer.png \
+	# Save.png \
+	# SaveAll.png \
+	# SaveAs.png \
+	# SingleResult.png \
+	# SplitHorizontal.png \
+	# SplitVertical.png \
+	# Stop.png \
+	# Undo.png \
+	# UnSplit.png \
+	# ZoomIn.png \
+	# ZoomOut.png \
+	# Blank24.gif
+#}}}
+
+view.search.find=\u691c\u7d22:
+view.search.close-tooltip=\u691c\u7d22\u30d0\u30fc\u3092\u96a0\u3059
+
+view.action.prompt=\u30a2\u30af\u30b7\u30e7\u30f3:
+view.action.no-completions=\u8a72\u5f53\u3059\u308b\u30a2\u30af\u30b7\u30e7\u30f3\u306f\u3042\u308a\u307e\u305b\u3093
+view.action.close-tooltip=\u30a2\u30af\u30b7\u30e7\u30f3\u30d0\u30fc\u3092\u96a0\u3059
+#}}}
+
+#{{{ Context menu
+# view.context=cut copy paste paste-previous paste-deleted - \
+	# select-block to-upper to-lower - hypersearch-word - \
+	# add-marker - collapse-fold expand-fold narrow-to-fold
+view.context.customize=\u3053\u306e\u30e1\u30cb\u30e5\u30fc\u3092\u30ab\u30b9\u30bf\u30de\u30a4\u30ba...
+#}}}
+
+#{{{ Menu bar
+# view.mbar=file edit search markers folds view utils macros plugins help-menu
+
+#{{{ File menu
+# file=new-file \
+     # open-file \
+     # %recent-files \
+     # - \
+     # reload \
+     # reload-all \
+     # %reload-encoding \
+     # - \
+     # close-buffer \
+     # close-all \
+     # - \
+     # save \
+     # save-as \
+     # save-a-copy-as \
+     # save-all \
+     # - \
+     # print \
+     # page-setup \
+     # - \
+     # exit
+file.label=\u30d5\u30a1\u30a4\u30eb($F)
+new-file.label=\u65b0\u898f\u4f5c\u6210($N)
+open-file.label=\u958b\u304f($O)...
+reload.label=\u518d\u8aad\u307f\u8fbc\u307f($R)
+reload-all.label=\u3059\u3079\u3066\u518d\u8aad\u307f\u8fbc\u307f($D)...
+close-buffer.label=\u9589\u3058\u308b($C)
+close-all.label=\u3059\u3079\u3066\u9589\u3058\u308b($E)
+save.label=\u4fdd\u5b58($S)
+save-as.label=\u540d\u524d\u3092\u4ed8\u3051\u3066\u4fdd\u5b58($A)...
+save-a-copy-as.label=\u8907\u88fd\u306b\u540d\u524d\u3092\u4ed8\u3051\u3066\u4fdd\u5b58($Y)...
+save-all.label=\u3059\u3079\u3066\u4fdd\u5b58($L)...
+print.label=\u5370\u5237($P)...
+page-setup.label=\u5370\u5237\u8a2d\u5b9a($G)...
+# Print selection not yet implemented
+#print-selection.label=\u9078\u629e\u7bc4\u56f2\u3092\u5370\u5237($T)...
+exit.label=\u7d42\u4e86($X)
+
+#{{{ Recent Files menu
+# recent-files.code=new RecentFilesProvider();
+recent-files.label=\u6700\u8fd1\u958b\u3044\u305f\u30d5\u30a1\u30a4\u30eb($F)
+recent-files.textfield.tooltip=\u3053\u3053\u306b\u30d5\u30a3\u30eb\u30bf\u30d7\u30ec\u30d5\u30a3\u30af\u30b9\u3092\u5165\u529b\u3059\u308b\u3053\u3069\u304c\u3067\u304d\u307e\u3059
+no-recent-files.label=\u6700\u8fd1\u958b\u3044\u305f\u30d5\u30a1\u30a4\u30eb\u306f\u3042\u308a\u307e\u305b\u3093
+clear-recent-files.label=\u30d5\u30a1\u30a4\u30eb\u5c65\u6b74\u306e\u30af\u30ea\u30a2
+#}}}
+
+# reload-encoding.code=new ReloadWithEncodingProvider();
+reload-encoding.label=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u6307\u5b9a\u3057\u3066\u518d\u8aad\u307f\u8fbc\u307f($E)
+reload-encoding.error={0} \u306f\u6709\u52b9\u306a\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3067\u306f\u3042\u308a\u307e\u305b\u3093
+#}}}
+
+#{{{ Edit menu
+# edit=undo \
+     # redo \
+     # - \
+     # cut \
+     # copy \
+     # paste \
+     # %clipboard \
+     # - \
+     # select-all \
+     # %selection \
+     # - \
+     # word-count \
+     # complete-word \
+     # expand-abbrev \
+     # - \
+     # goto-line \
+     # - \
+     # %text \
+     # %indent \
+     # %source
+edit.label=\u7de8\u96c6($E)
+undo.label=\u5143\u306b\u623b\u3059($U)
+redo.label=\u3084\u308a\u76f4\u3057($R)
+cut.label=\u5207\u308a\u53d6\u308a($C)
+copy.label=\u30b3\u30d4\u30fc($O)
+paste.label=\u8cbc\u308a\u4ed8\u3051($P)
+select-all.label=\u3059\u3079\u3066\u9078\u629e($A)
+word-count.label=\u5358\u8a9e\u30ab\u30a6\u30f3\u30c8($W)...
+complete-word.label=\u5358\u8a9e\u88dc\u5b8c($M)
+expand-abbrev.label=\u7701\u7565\u8a9e\u306e\u5c55\u958b($X)
+goto-line.label=\u884c\u6307\u5b9a\u3067\u79fb\u52d5($G)...
+
+#{{{ More Clipboard menu
+# clipboard=cut-append \
+	  # copy-append \
+	  # vertical-paste \
+	  # - \
+	  # paste-previous \
+	  # paste-deleted \
+	  # - \
+	  # cut-string-register \
+          # copy-string-register \
+	  # paste-string-register \
+	  # - \
+	  # cut-append-string-register \
+	  # copy-append-string-register \
+	  # vertical-paste-string-register \
+	  # - \
+	  # view-registers
+
+clipboard.label=\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u62e1\u5f35($B)
+cut-append.label=\u8ffd\u52a0\u5207\u308a\u53d6\u308a($C)
+copy-append.label=\u8ffd\u52a0\u30b3\u30d4\u30fc($O)
+vertical-paste.label=\u5782\u76f4\u8cbc\u308a\u4ed8\u3051($V)
+paste-previous.label=\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u5c65\u6b74\u304b\u3089\u8cbc\u308a\u4ed8\u3051($U)...
+paste-deleted.label=\u524a\u9664\u5c65\u6b74\u304b\u3089\u8cbc\u308a\u4ed8\u3051($D)...
+cut-string-register.label=\u30ec\u30b8\u30b9\u30bf\u306b\u5207\u308a\u53d6\u308a($T)
+copy-string-register.label=\u30ec\u30b8\u30b9\u30bf\u306b\u30b3\u30d4\u30fc($P)
+paste-string-register.label=\u30ec\u30b8\u30b9\u30bf\u3092\u8cbc\u308a\u4ed8\u3051($R)
+clear-string-register.label=\u30ec\u30b8\u30b9\u30bf\u3092\u30af\u30ea\u30a2
+cut-append-string-register.label=\u30ec\u30b8\u30b9\u30bf\u306b\u8ffd\u52a0\u5207\u308a\u53d6\u308a($N)
+copy-append-string-register.label=\u30ec\u30b8\u30b9\u30bf\u306b\u8ffd\u52a0\u30b3\u30d4\u30fc($A)
+vertical-paste-string-register.label=\u30ec\u30b8\u30b9\u30bf\u3092\u5782\u76f4\u8cbc\u308a\u4ed8\u3051($E)
+view-registers.label=\u30ec\u30b8\u30b9\u30bf\u306e\u95b2\u89a7($W)
+#}}}
+
+#{{{ More Selection menu
+# selection=select-none \
+	  # select-word \
+	  # select-line \
+	  # select-paragraph \
+	  # - \
+	  # invert-selection \
+	  # toggle-multi-select \
+	  # toggle-rect-select \
+	  # - \
+          # select-line-range
+selection.label=\u9078\u629e\u7bc4\u56f2\u62e1\u5f35($S)
+select-none.label=\u9078\u629e\u89e3\u9664($N)
+select-word.label=\u5358\u8a9e\u3092\u9078\u629e($W)
+select-line.label=\u884c\u3092\u9078\u629e($L)
+select-paragraph.label=\u6bb5\u843d\u306e\u9078\u629e($P)
+invert-selection.label=\u9078\u629e\u7bc4\u56f2\u306e\u53cd\u8ee2($I)
+toggle-multi-select.label=\u30de\u30eb\u30c1\u9078\u629e($M)
+toggle-rect-select.label=\u77e9\u5f62\u9078\u629e($R)
+select-line-range.label=\u884c\u7bc4\u56f2\u3092\u6307\u5b9a\u3057\u3066\u9078\u629e($C)...
+#}}}
+
+#{{{ Text menu
+# text=delete-line \
+     # delete-start-line \
+     # delete-end-line \
+     # join-lines \
+     # - \
+     # format-paragraph \
+     # delete-paragraph \
+     # - \
+     # to-lower \
+     # to-upper
+text.label=\u30c6\u30ad\u30b9\u30c8($T)
+delete-line.label=\u884c\u524a\u9664($D)
+delete-start-line.label=\u884c\u982d\u307e\u3067\u524a\u9664($S)
+delete-end-line.label=\u884c\u672b\u307e\u3067\u524a\u9664($E)
+join-lines.label=\u884c\u7d50\u5408($J)
+delete-paragraph.label=\u6bb5\u843d\u524a\u9664($P)
+format-paragraph.label=\u6bb5\u843d\u6574\u5f62($F)
+to-lower.label=\u5c0f\u6587\u5b57\u306b\u5909\u63db($L)
+to-upper.label=\u5927\u6587\u5b57\u306b\u5909\u63db($U)
+#}}}
+
+#{{{ Indent menu
+# indent=indent-lines \
+       # shift-left \
+       # shift-right \
+       # - \
+       # remove-trailing-ws \
+       # spaces-to-tabs \
+       # tabs-to-spaces
+
+indent.label=\u30a4\u30f3\u30c7\u30f3\u30c8($I)
+indent-lines.label=\u884c\u3092\u30a4\u30f3\u30c7\u30f3\u30c8($I)
+shift-left.label=\u30a4\u30f3\u30c7\u30f3\u30c8\u3092\u5de6\u3078($)
+shift-right.label=\u30a4\u30f3\u30c7\u30f3\u30c8\u3092\u53f3\u3078($)
+remove-trailing-ws.label=\u672b\u5c3e\u7a7a\u767d\u3092\u9664\u53bb($W)
+spaces-to-tabs.label=\u30b9\u30da\u30fc\u30b9\u3092\u30bf\u30d6\u306b\u5909\u63db($S)
+tabs-to-spaces.label=\u30bf\u30d6\u3092\u30b9\u30da\u30fc\u30b9\u306b\u5909\u63db($T)
+#}}}
+
+#{{{ Source menu
+# source=range-comment \
+       # line-comment \
+       # - \
+       # select-block \
+       # match-bracket \
+       # prev-bracket \
+       # next-bracket
+
+source.label=\u30bd\u30fc\u30b9($E)
+range-comment.label=\u7bc4\u56f2\u30b3\u30e1\u30f3\u30c8($R)
+line-comment.label=\u884c\u30b3\u30e1\u30f3\u30c8($L)
+select-block.label=\u30b3\u30fc\u30c9\u30d6\u30ed\u30c3\u30af\u9078\u629e($S)
+match-bracket.label=\u5bfe\u5fdc\u3059\u308b\u62ec\u5f27\u306b\u79fb\u52d5($M)
+prev-bracket.label=\u524d\u306e\u62ec\u5f27\u306b\u79fb\u52d5($P)
+next-bracket.label=\u6b21\u306e\u62ec\u5f27\u306b\u79fb\u52d5($N)
+#}}}
+
+#}}}
+
+#{{{ Search menu
+# search=find \
+       # find-next \
+       # find-prev \
+       # - \
+       # search-in-open-buffers \
+       # search-in-directory \
+       # - \
+       # replace-in-selection \
+       # replace-and-find-next \
+       # replace-all \
+       # - \
+       # quick-search \
+       # hypersearch \
+       # quick-search-word \
+       # hypersearch-word \
+       # - \
+       # ignore-case \
+       # regexp \
+       # - \
+       # hypersearch-results
+search.label=\u691c\u7d22($S)
+find.label=\u691c\u7d22/\u7f6e\u63db($F)...
+find-next.label=\u6b21\u3092\u691c\u7d22($N)
+find-prev.label=\u524d\u3092\u691c\u7d22($V)
+search-in-open-buffers.label=\u64cd\u4f5c\u4e2d\u30d0\u30c3\u30d5\u30a1\u3092\u691c\u7d22($B)...
+search-in-directory.label=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3092\u691c\u7d22($D)...
+replace-in-selection.label=\u9078\u629e\u3092\u7f6e\u63db($R)
+replace-and-find-next.label=\u7f6e\u63db\u3057\u3066\u6b21\u3092\u691c\u7d22($P)
+replace-all.label=\u3059\u3079\u3066\u7f6e\u63db($A)
+quick-search.label=\u30a4\u30f3\u30af\u30ea\u30e1\u30f3\u30bf\u30eb\u691c\u7d22($I)
+hypersearch.label=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1($H)
+quick-search-word.label=\u9078\u629e\u5358\u8a9e\u3092\u30a4\u30f3\u30af\u30ea\u30e1\u30f3\u30bf\u30eb\u691c\u7d22($W)
+hypersearch-word.label=\u9078\u629e\u5358\u8a9e\u3092\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1($Y)
+ignore-case.label=\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u3092\u533a\u5225\u3057\u306a\u3044($C)
+regexp.label=\u6b63\u898f\u8868\u73fe($X)
+hypersearch-results.label=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1\u7d50\u679c
+#}}}
+
+#{{{ Markers menu
+# markers=add-marker \
+	  # add-marker-shortcut \
+	  # - \
+	  # remove-all-markers \
+	  # - \
+	  # goto-marker \
+	  # select-marker \
+	  # swap-marker \
+	  # - \
+	  # prev-marker \
+	  # next-marker \
+	  # - \
+	  # view-markers \
+	  # -
+# markers.code=new MarkersProvider();
+markers.label=\u30de\u30fc\u30ab\u30fc($M)
+add-marker.label=\u30de\u30fc\u30ab\u30fc\u306e\u8ffd\u52a0/\u524a\u9664($A)
+add-marker-shortcut.label=\u30de\u30fc\u30ab\u30fc\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3068\u3057\u3066\u8ffd\u52a0($W)
+remove-all-markers.label=\u30de\u30fc\u30ab\u30fc\u3092\u3059\u3079\u3066\u524a\u9664($M)
+goto-marker.label=\u30de\u30fc\u30ab\u30fc\u3078\u79fb\u52d5($G)
+select-marker.label=\u30de\u30fc\u30ab\u30fc\u307e\u3067\u9078\u629e($S)
+swap-marker.label=\u9078\u629e\u884c\u3092\u73fe\u5728\u306e\u30de\u30fc\u30ab\u30fc\u3068\u5207\u308a\u66ff\u3048($P)
+prev-marker.label=\u524d\u306e\u30de\u30fc\u30ab\u30fc\u3078\u79fb\u52d5($P)
+next-marker.label=\u6b21\u306e\u30de\u30fc\u30ab\u30fc\u3078\u79fb\u52d5($N)
+no-markers.label=\u30de\u30fc\u30ab\u30fc\u304c\u3042\u308a\u307e\u305b\u3093
+markers.blank-line=[Blank line]
+#}}}
+
+#{{{ Folding menu
+# folds=collapse-fold \
+      # expand-one-level \
+      # expand-fold \
+      # - \
+      # collapse-all-folds \
+      # expand-folds \
+      # expand-all-folds \
+      # - \
+      # select-fold \
+      # - \
+      # add-explicit-fold \
+      # - \
+      # narrow-to-fold \
+      # narrow-to-selection \
+      # - \
+      # parent-fold \
+      # prev-fold \
+      # next-fold
+folds.label=\u30d5\u30a9\u30fc\u30eb\u30c9($O)
+collapse-fold.label=\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u9589\u3058\u308b($C)
+expand-one-level.label=\u30d5\u30a9\u30fc\u30eb\u30c9\u968e\u5c64\u3092\u3072\u3068\u3064\u958b\u304f($E)
+expand-fold.label=\u30d5\u30a9\u30fc\u30eb\u30c9\u968e\u5c64\u3092\u3059\u3079\u3066\u958b\u304f($F)
+collapse-all-folds.label=\u3059\u3079\u3066\u306e\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u9589\u3058\u308b($A)
+expand-folds.label=\u968e\u5c64\u3092\u6307\u5b9a\u3057\u3066\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u958b\u304f($L)
+expand-all-folds.label=\u3059\u3079\u3066\u306e\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u958b\u304f($X)
+select-fold.label=\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u9078\u629e($S)
+add-explicit-fold.label=\u660e\u793a\u7684\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u8ffd\u52a0($D)
+narrow-to-fold.label=\u5b50\u968e\u5c64\u306e\u307f\u8868\u793a($R)
+narrow-to-selection.label=\u9078\u629e\u9818\u57df\u306e\u307f\u8868\u793a($W)
+parent-fold.label=\u89aa\u30d5\u30a9\u30fc\u30eb\u30c9\u3078\u79fb\u52d5($G)
+prev-fold.label=\u524d\u306e\u30d5\u30a9\u30fc\u30eb\u30c9\u3078\u79fb\u52d5($P)
+next-fold.label=\u6b21\u306e\u30d5\u30a9\u30fc\u30eb\u30c9\u3078\u79fb\u52d5($N)
+#}}}
+
+#{{{ View menu
+# view=new-view \
+     # new-plain-view \
+     # close-view \
+     # - \
+     # prev-buffer \
+     # next-buffer \
+     # recent-buffer \
+     # show-buffer-switcher \
+     # - \
+     # toggle-line-numbers \
+     # - \
+     # %scrolling \
+     # %splitting \
+     # %docking
+view.label=\u30d3\u30e5\u30fc($V)
+new-view.label=\u65b0\u898f\u30d3\u30e5\u30fc($V)
+new-plain-view.label=\u65b0\u898f\u30d7\u30ec\u30fc\u30f3\u30d3\u30e5\u30fc($W)
+close-view.label=\u30d3\u30e5\u30fc\u3092\u9589\u3058\u308b($C)
+prev-buffer.label=\u524d\u306e\u30d0\u30c3\u30d5\u30a1\u3078\u79fb\u52d5($P)
+next-buffer.label=\u6b21\u306e\u30d0\u30c3\u30d5\u30a1\u3078\u79fb\u52d5($N)
+recent-buffer.label=\u76f4\u524d\u306e\u30d0\u30c3\u30d5\u30a1\u3078\u79fb\u52d5($R)
+show-buffer-switcher.label=\u30d0\u30c3\u30d5\u30a1\u5207\u308a\u66ff\u3048($B)
+toggle-line-numbers.label=\u884c\u756a\u53f7($L)
+show-context-menu.label=\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u30e1\u30cb\u30e5\u30fc\u3092\u8868\u793a
+
+#{{{ Scrolling menu
+# scrolling=scroll-to-current-line \
+	  # center-caret \
+	  # - \
+	  # scroll-up-line \
+	  # scroll-down-line \
+	  # - \
+	  # scroll-up-page \
+	  # scroll-down-page
+scrolling.label=\u30b9\u30af\u30ed\u30fc\u30eb($G)
+scroll-to-current-line.label=\u73fe\u5728\u884c\u307e\u3067\u30b9\u30af\u30ed\u30fc\u30eb($T)
+center-caret.label=\u30ab\u30fc\u30bd\u30eb\u3092\u30b9\u30af\u30ea\u30fc\u30f3\u306e\u4e2d\u592e\u3078($C)
+scroll-up-line.label=\u4e0a\u3078\u884c\u30b9\u30af\u30ed\u30fc\u30eb($U)
+scroll-down-line.label=\u4e0b\u3078\u884c\u30b9\u30af\u30ed\u30fc\u30eb($D)
+scroll-up-page.label=\u524d\u30da\u30fc\u30b8\u306b\u30b9\u30af\u30ed\u30fc\u30eb($P)
+scroll-down-page.label=\u6b21\u30da\u30fc\u30b8\u306b\u30b9\u30af\u30ed\u30fc\u30eb($O)
+#}}}
+
+#{{{ Splitting menu
+# splitting=unsplit-current \
+          # unsplit \
+          # split-horizontal \
+          # split-vertical \
+	  # resplit \
+	  # - \
+          # prev-textarea \
+          # next-textarea
+splitting.label=\u5206\u5272($S)
+split-horizontal.label=\u6c34\u5e73\u5206\u5272($H)
+split-vertical.label=\u5782\u76f4\u5206\u5272($V)
+unsplit-current.label=\u5206\u5272\u89e3\u9664($U)
+unsplit.label=\u3059\u3079\u3066\u5206\u5272\u89e3\u9664($A)
+resplit.label=\u5206\u5272\u3092\u5fa9\u5143($R)
+prev-textarea.label=\u524d\u306e\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u3078($P)
+next-textarea.label=\u6b21\u306e\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u3078($N)
+#}}}
+
+#{{{ Docking menu
+# docking=left-docking-area \
+	# top-docking-area \
+	# right-docking-area \
+	# bottom-docking-area \
+	# - \
+	# close-docking-area
+docking.label=\u30c9\u30c3\u30ad\u30f3\u30b0($D)
+docking.menu.label=\u30c9\u30c3\u30ad\u30f3\u30b0\u53ef\u80fd\u30e1\u30cb\u30e5\u30fc
+left-docking-area.label=\u5de6\u30c9\u30c3\u30ad\u30f3\u30b0\u9818\u57df\u306b\u30d5\u30a9\u30fc\u30ab\u30b9($L)
+top-docking-area.label=\u4e0a\u30c9\u30c3\u30ad\u30f3\u30b0\u9818\u57df\u306b\u30d5\u30a9\u30fc\u30ab\u30b9($T)
+right-docking-area.label=\u53f3\u30c9\u30c3\u30ad\u30f3\u30b0\u9818\u57df\u306b\u30d5\u30a9\u30fc\u30ab\u30b9($R)
+bottom-docking-area.label=\u4e0b\u30c9\u30c3\u30ad\u30f3\u30b0\u9818\u57df\u306b\u30d5\u30a9\u30fc\u30ab\u30b9($B)
+close-docking-area.label=\u73fe\u5728\u306e\u30c9\u30c3\u30ad\u30f3\u30b0\u9818\u57df\u3092\u9589\u3058\u308b($C)
+
+
+#}}}
+
+#}}}
+
+#{{{ Utilities menu
+# utils=vfs.browser \
+      # %recent-directories \
+      # - \
+      # %favorites \
+      # %current-directory \
+      # %jedit-directory \
+      # %settings-directory \
+      # - \
+      # %beanshell \
+      # %troubleshooting \
+      # - \
+      # action-bar \
+      # last-action \
+      # - \
+      # buffer-options \
+      # global-options \
+      # - \
+      # %quick-options
+utils.label=\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3($U)
+vfs.browser.label=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 \u30d6\u30e9\u30a6\u30b6($F)
+action-bar.label=\u30a2\u30af\u30b7\u30e7\u30f3\u30d0\u30fc($A)
+last-action.label=\u6700\u5f8c\u306e\u30a2\u30af\u30b7\u30e7\u30f3\u3092\u7e70\u308a\u8fd4\u3059($P)
+buffer-options.label=\u30d0\u30c3\u30d5\u30a1 \u30aa\u30d7\u30b7\u30e7\u30f3($B)...
+global-options.label=\u30b0\u30ed\u30fc\u30d0\u30eb \u30aa\u30d7\u30b7\u30e7\u30f3($G)...
+
+#{{{ Recent Directories menu
+recent-directories.label=\u6700\u8fd1\u958b\u3044\u305f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea($R)
+# recent-directories.code=new RecentDirectoriesProvider();
+no-recent-dirs.label=\u6700\u8fd1\u958b\u3044\u305f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306f\u3042\u308a\u307e\u305b\u3093
+#}}}
+
+#{{{ Favorites menu
+# favorites=add-buffer-to-favorites add-dir-to-favorites edit-favorites -
+favorites.label=\u304a\u6c17\u306b\u5165\u308a($V)
+# favorites.code=new FavoritesProvider();
+add-buffer-to-favorites.label=\u30d0\u30c3\u30d5\u30a1\u3092\u304a\u6c17\u306b\u5165\u308a\u306b\u8ffd\u52a0
+add-dir-to-favorites.label=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3092\u304a\u6c17\u306b\u5165\u308a\u306b\u8ffd\u52a0
+edit-favorites.label=\u304a\u6c17\u306b\u5165\u308a\u3092\u7de8\u96c6
+#}}}
+
+#{{{ Current Directory menu
+current-directory.label=\u30ab\u30ec\u30f3\u30c8\u30c7\u30a3\u30ec\u30af\u30c8\u30ea($C)
+# current-directory.code=new DirectoryProvider(null)
+#}}}
+
+#{{{ jEdit Home Directory menu
+jedit-directory.label=$jEdit \u30db\u30fc\u30e0\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+# jedit-directory.code=new DirectoryProvider(jEdit.getJEditHome())
+#}}}
+
+#{{{ Settings Directory menu
+settings-directory.label=\u500b\u4eba\u8a2d\u5b9a\u30c7\u30a3\u30ec\u30af\u30c8\u30ea($S)
+# settings-directory.code=settings = jEdit.getSettingsDirectory(); \
+	# if(settings == null) settings = jEdit.getJEditHome(); \
+	# new DirectoryProvider(settings);
+#}}}
+
+#{{{ BeanShell menu
+# beanshell=eval \
+       # eval-for-selected-lines \
+       # eval-selection
+beanshell.label=BeanShell($E)
+eval.label=BeanShell\u5f0f\u3092\u8a55\u4fa1($E)...
+eval-for-selected-lines.label=\u9078\u629e\u884c\u3054\u3068\u306b\u8a55\u4fa1\u5f0f\u3092\u9069\u7528($E)...
+eval-selection.label=\u9078\u629e\u7bc4\u56f2\u3092\u8a55\u4fa1\u3057\u7f6e\u63db($S)
+#}}}
+
+#{{{ Troubleshooting menu
+# troubleshooting=log-viewer \
+		# update-log \
+		# - \
+		# io-progress-monitor \
+		# keyboard-tester \
+		# memory-status \
+		# reload-modes
+troubleshooting.label=\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0($T)
+log-viewer.label=\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0($A)
+update-log.label=\u4fdd\u5b58\u3055\u308c\u305f\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0\u3092\u66f4\u65b0($U)
+io-progress-monitor.label=I/O \u30d7\u30ed\u30bb\u30b9\u30e2\u30cb\u30bf($I)
+keyboard-tester.label=\u30ad\u30fc\u30dc\u30fc\u30c9\u30c6\u30b9\u30bf($K)...
+memory-status.label=\u30e1\u30e2\u30ea\u30b9\u30c6\u30fc\u30bf\u30b9($M)...
+reload-modes.label=\u7de8\u96c6\u30e2\u30fc\u30c9\u3092\u30ea\u30ed\u30fc\u30c9($R)
+#}}}
+
+#{{{ Quick options menu
+# quick-options=edit-syntax-style
+quick-options.label=\u30af\u30a4\u30c3\u30af\u8a2d\u5b9a($Q)
+edit-syntax-style.label=\u30ab\u30fc\u30bd\u30eb\u4f4d\u7f6e\u306e\u30c8\u30fc\u30af\u30f3\u306e\u30b7\u30f3\u30bf\u30af\u30b9\u30b9\u30bf\u30a4\u30eb\u3092\u7de8\u96c6
+
+#}}}
+
+#}}}
+
+#{{{ Macros menu
+# macros=record-macro \
+       # stop-recording \
+       # - \
+       # last-macro \
+       # - \
+       # record-temp-macro \
+       # run-temp-macro \
+       # - \
+       # run-other-macro \
+       # rescan-macros \
+       # -
+# macros.code=new MacrosProvider();
+macros.label=\u30de\u30af\u30ed($C)
+record-macro.label=\u30de\u30af\u30ed\u306e\u8a18\u9332($R)...
+stop-recording.label=\u8a18\u9332\u505c\u6b62($S)
+last-macro.label=\u6700\u5f8c\u306e\u30de\u30af\u30ed\u3092\u7e70\u308a\u8fd4\u3059
+record-temp-macro.label=\u4e00\u6642\u30de\u30af\u30ed\u306e\u8a18\u9332($T)
+run-temp-macro.label=\u4e00\u6642\u30de\u30af\u30ed\u5b9f\u884c($P)
+run-other-macro.label=\u305d\u306e\u4ed6\u306e\u30de\u30af\u30ed\u5b9f\u884c($O)...
+rescan-macros.label=\u30de\u30af\u30ed\u306e\u518d\u30b9\u30ad\u30e3\u30f3($N)
+no-macros.label=\u30de\u30af\u30ed\u304c\u3042\u308a\u307e\u305b\u3093
+#}}}
+
+#{{{ Plugins menu
+# plugins=plugin-manager plugin-options -
+plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3($P)
+# plugins.code=new PluginsProvider();
+plugin-manager.label=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30de\u30cd\u30fc\u30b8\u30e3($M)...
+plugin-options.label=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30aa\u30d7\u30b7\u30e7\u30f3($O)...
+no-plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+#}}}
+
+#{{{ Help menu
+# help-menu=about \
+     # help \
+     # tip-of-the-day
+help-menu.label=\u30d8\u30eb\u30d7($H)
+about.label=jEdit \u306b\u3064\u3044\u3066($A)...
+help.label=jEdit \u30d8\u30eb\u30d7($H)
+tip-of-the-day.label=\u4eca\u65e5\u306e\u30d2\u30f3\u30c8($T)
+#}}}
+
+#}}}
+
+#{{{ Macro strings
+
+# macro.temp.header=// This is a temporary macro. First, check over the\n\
+                  # // commands to make sure this is what you intended.\n\
+                  # // Then, to run this macro, switch to the buffer\n\
+                  # // where you would like to execute it and press C+m C+p.
+# 
+# macro.header=// This is a recorded macro. First, check over the\n\
+             # // commands to make sure this is what you intended. Then,\n\
+             # // save this buffer, and the macro should appear in the\n\
+             # // Macros menu.
+
+#}}}
+
+#{{{ Commands that don't appear in menus
+backspace-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u524a\u9664
+backspace-word-std.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u524a\u9664 (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
+backspace.label=\u76f4\u524d\u306e\u6587\u5b57\u3092\u524a\u9664
+delete-word.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u3092\u524a\u9664
+delete-word-std.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u3092\u524a\u9664 (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
+delete.label=\u76f4\u5f8c\u306e\u6587\u5b57\u3092\u524a\u9664
+document-end.label=\u30d0\u30c3\u30d5\u30a1\u306e\u672b\u5c3e\u306b\u79fb\u52d5
+document-home.label=\u30d0\u30c3\u30d5\u30a1\u306e\u5148\u982d\u306b\u79fb\u52d5
+end.label=\u30b9\u30de\u30fc\u30c8 \u30a8\u30f3\u30c9
+home.label=\u30b9\u30de\u30fc\u30c8 \u30db\u30fc\u30e0
+insert-literal.label=\u76f4\u5f8c\u306b\u30ea\u30c6\u30e9\u30eb\u6587\u5b57\u3092\u633f\u5165
+insert-newline.label=\u6539\u884c\u3092\u633f\u5165
+insert-newline-indent.label=\u6539\u884c\u3068\u30a4\u30f3\u30c7\u30f3\u30c8\u3092\u633f\u5165
+insert-tab.label=\u30bf\u30d6\u6587\u5b57\u3092\u633f\u5165
+insert-tab-indent.label=\u30bf\u30d6\u6587\u5b57\u3068\u30a4\u30f3\u30c7\u30f3\u30c8\u3092\u633f\u5165
+line-end.label=\u884c\u672b\u306b\u79fb\u52d5
+line-home.label=\u884c\u982d\u306b\u79fb\u52d5
+next-char.label=\u76f4\u5f8c\u306e\u6587\u5b57\u306b\u79fb\u52d5
+next-line.label=\u76f4\u5f8c\u306e\u884c\u306b\u79fb\u52d5
+next-page.label=\u76f4\u5f8c\u306e\u30da\u30fc\u30b8\u306b\u79fb\u52d5
+next-paragraph.label=\u76f4\u5f8c\u306e\u6bb5\u843d\u306b\u79fb\u52d5
+next-word.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u306b\u79fb\u52d5
+next-word-std.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u306b\u79fb\u52d5 (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
+overwrite.label=\u4e0a\u66f8\u304d\u30e2\u30fc\u30c9
+prev-char.label=\u76f4\u524d\u306e\u6587\u5b57\u306b\u79fb\u52d5
+prev-line.label=\u76f4\u524d\u306e\u884c\u306b\u79fb\u52d5
+prev-page.label=\u76f4\u524d\u306e\u30da\u30fc\u30b8\u306b\u79fb\u52d5
+prev-paragraph.label=\u76f4\u524d\u306e\u6bb5\u843d\u306b\u79fb\u52d5
+prev-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u306b\u79fb\u52d5
+prev-word-std.label=\u76f4\u524d\u306e\u5358\u8a9e\u306b\u79fb\u52d5 (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
+select-document-end.label=\u30d0\u30c3\u30d5\u30a1\u306e\u672b\u5c3e\u307e\u3067\u3092\u9078\u629e
+select-document-home.label=\u30d0\u30c3\u30d5\u30a1\u306e\u5148\u982d\u307e\u3067\u3092\u9078\u629e
+select-end.label=\u30b9\u30de\u30fc\u30c8\u30a8\u30f3\u30c9\u4f4d\u7f6e\u307e\u3067\u3092\u9078\u629e
+select-home.label=\u30b9\u30de\u30fc\u30c8\u30db\u30fc\u30e0\u4f4d\u7f6e\u307e\u3067\u3092\u9078\u629e
+select-line-end.label=\u884c\u672b\u307e\u3067\u3092\u9078\u629e
+select-line-home.label=\u884c\u982d\u307e\u3067\u3092\u9078\u629e
+select-next-char.label=\u76f4\u5f8c\u306e\u6587\u5b57\u3092\u9078\u629e
+select-next-line.label=\u76f4\u5f8c\u306e\u884c\u3092\u9078\u629e
+select-next-page.label=\u76f4\u5f8c\u306e\u30da\u30fc\u30b8\u3092\u9078\u629e
+select-next-paragraph.label=\u76f4\u5f8c\u306e\u6bb5\u843d\u3092\u9078\u629e
+select-next-word.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u3092\u9078\u629e
+select-next-word-std.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u3092\u9078\u629e (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
+select-prev-char.label=\u76f4\u524d\u306e\u6587\u5b57\u3092\u9078\u629e
+select-prev-line.label=\u76f4\u524d\u306e\u884c\u3092\u9078\u629e
+select-prev-page.label=\u76f4\u524d\u306e\u30da\u30fc\u30b8\u3092\u9078\u629e
+select-prev-paragraph.label=\u76f4\u524d\u306e\u6bb5\u843d\u3092\u9078\u629e
+select-prev-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u9078\u629e
+select-prev-word-std.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u9078\u629e (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
+select-visible-end.label=\u672b\u5c3e\u8868\u793a\u884c\u307e\u3067\u3092\u9078\u629e
+select-visible-home.label=\u5148\u982d\u8868\u793a\u884c\u307e\u3067\u3092\u9078\u629e
+select-whitespace-end.label=\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u306e\u7d42\u4e86\u307e\u3067\u3092\u9078\u629e
+select-whitespace-home.label=\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u306e\u958b\u59cb\u307e\u3067\u3092\u9078\u629e
+toggle-line-separator.label=\u6539\u884c\u6587\u5b57\u3092\u5207\u308a\u66ff\u3048
+toggle-word-wrap.label=\u30ef\u30fc\u30c9\u30e9\u30c3\u30d7\u3092\u5207\u308a\u66ff\u3048
+visible-end.label=\u672b\u5c3e\u8868\u793a\u884c\u306b\u79fb\u52d5
+visible-home.label=\u5148\u982d\u8868\u793a\u884c\u306b\u79fb\u52d5
+whitespace-end.label=\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u306e\u672b\u5c3e\u306b\u79fb\u52d5
+whitespace-home.label=\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u306e\u5148\u982d\u306b\u79fb\u52d5
+#}}}
+
+#{{{ View stuff
+
+# Title
+view.title=jEdit -\ 
+view.title.dirty=\ (\u5909\u66f4)
+
+view.docking.close-tooltip=\u73fe\u5728\u306e\u30c9\u30c3\u30ad\u30f3\u30b0\u30a6\u30a3\u30f3\u30c9\u30a6\u3092\u96a0\u3059
+view.docking.menu-tooltip=\u30c9\u30c3\u30ad\u30f3\u30b0\u30aa\u30d7\u30b7\u30e7\u30f3
+view.docking.menu-floating=\u30d5\u30ed\u30fc\u30c8
+view.docking.menu-top=\u4e0a\u306b\u30c9\u30c3\u30ad\u30f3\u30b0
+view.docking.menu-left=\u5de6\u306b\u30c9\u30c3\u30ad\u30f3\u30b0
+view.docking.menu-bottom=\u4e0b\u306b\u30c9\u30c3\u30ad\u30f3\u30b0
+view.docking.menu-right=\u53f3\u306b\u30c9\u30c3\u30ad\u30f3\u30b0
+view.docking.menu-clone=\u65b0\u898f\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9
+view.docking.menu-close=\u9589\u3058\u308b
+view.docking.menu-undock=\u30c9\u30c3\u30ad\u30f3\u30b0\u304b\u3089\u9664\u53bb
+
+view.docking.toggle.label={0} (\u5207\u308a\u66ff\u3048)
+view.docking.float.label={0} (\u65b0\u898f\u30d5\u30ed\u30fc\u30c8\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9)
+
+directory.not-local=\u30ea\u30e2\u30fc\u30c8\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0\u306e\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3092\u4e00\u89a7\u3067\u304d\u307e\u305b\u3093
+directory.no-files=\u30d5\u30a1\u30a4\u30eb\u304c\u3042\u308a\u307e\u305b\u3093
+
+#{{{ Gutter highlight
+view.gutter.marker.no-name=\u30de\u30fc\u30ab\u30fc
+view.gutter.marker=\u30de\u30fc\u30ab\u30fc: {0}
+#}}}
+
+#{{{ Status messages
+view.status.add-marker=\u65b0\u898f\u30de\u30fc\u30ab\u30fc\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8? [{0}]
+view.status.auto-wrap=\u691c\u7d22\u6587\u5b57\u5217\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3002\u5de1\u56de\u3057\u307e\u3059!
+view.status.bracket=\u4e00\u81f4 \u884c {0}: {1}
+view.status.caret-tooltip=\u884c/\u5217\u756a\u53f7 (\u884c,\u5217[-\u4eee\u60f3] \u76f8\u5bfe%)
+view.status.copy-append-string-register=\u8ffd\u52a0\u30b3\u30d4\u30fc\u3059\u308b\u30ec\u30b8\u30b9\u30bf? [{0}]
+view.status.copy-string-register=\u30b3\u30d4\u30fc\u3059\u308b\u30ec\u30b8\u30b9\u30bf? [{0}]
+view.status.cut-append-string-register=\u8ffd\u52a0\u5207\u308a\u53d6\u308a\u3059\u308b\u30ec\u30b8\u30b9\u30bf? [{0}]
+view.status.cut-string-register=\u5207\u308a\u53d6\u308a\u3059\u308b\u30ec\u30b8\u30b9\u30bf? [{0}]
+view.status.expand-folds=\u30d5\u30a9\u30fc\u30eb\u30c9\u30ec\u30d9\u30eb? [1-9]
+view.status.goto-marker=\u79fb\u52d5\u306b\u4f7f\u7528\u3059\u308b\u30de\u30fc\u30ab\u30fc\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8? [{0}]
+view.status.incomplete-abbrev={0} \u500b\u306e\u30d1\u30e9\u30e1\u30fc\u30bf\u304c\u6307\u5b9a\u3055\u308c\u307e\u3057\u305f\u304c {1} \u500b\u304c\u8981\u6c42\u3055\u308c\u307e\u3059!
+view.status.insert-literal=\u305d\u306e\u307e\u307e\u633f\u5165\u3059\u308b\u30ad\u30fc?
+view.status.io-1=I/O: \u64cd\u4f5c\u304c\u9032\u884c\u4e2d
+view.status.io.done=I/O \u5b8c\u4e86
+view.status.io=I/O: {0} \u4ef6\u306e\u64cd\u4f5c\u304c\u9032\u884c\u4e2d
+view.status.linesep-changed=\u6539\u884c\u6587\u5b57\u3092\u8a2d\u5b9a {0}
+view.status.linesep-tooltip=\u6539\u884c\u6587\u5b57 (\u30af\u30ea\u30c3\u30af\u3067\u5909\u66f4)
+view.status.memory-tooltip=Java \u30d2\u30fc\u30d7\u30e1\u30e2\u30ea: {0}Kb/{1}Kb
+view.status.mode-tooltip=\u7de8\u96c6\u30e2\u30fc\u30c9/\u30d5\u30a9\u30fc\u30eb\u30c9\u30e2\u30fc\u30c9/\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
+view.status.multi-changed=\u30de\u30eb\u30c1\u9078\u629e\u30e2\u30fc\u30c9 {0,choice,0#\u30aa\u30d5|1#\u30aa\u30f3}
+view.status.multi-tooltip=\u30de\u30eb\u30c1\u9078\u629e\u30e2\u30fc\u30c9 (\u30af\u30ea\u30c3\u30af\u3067\u5909\u66f4)
+view.status.narrow=\u3059\u3079\u3066\u306e\u30c6\u30ad\u30b9\u30c8\u3092\u8868\u793a\u3059\u308b\u306b\u306f\u3001"\u3059\u3079\u3066\u306e\u30d5\u30a9\u30fc\u30eb\u30c9\u3092\u958b\u304f"\u3092\u5b9f\u884c
+view.status.no-markers=\u30de\u30fc\u30ab\u30fc\u306f\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+view.status.no-registers=\u30ec\u30b8\u30b9\u30bf\u306f\u5b9a\u7fa9\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+view.status.overwrite-changed=\u4e0a\u66f8\u304d\u30e2\u30fc\u30c9 {0,choice,0#\u30aa\u30d5|1#\u30aa\u30f3}
+view.status.overwrite-tooltip=\u4e0a\u66f8\u304d/\u633f\u5165\u30e2\u30fc\u30c9\u30a4\u30f3\u30b8\u30b1\u30fc\u30bf (\u30af\u30ea\u30c3\u30af\u3057\u3066\u5909\u66f4)
+view.status.paste-string-register=\u3053\u308c\u3092\u8cbc\u308a\u4ed8\u3051\u7528\u306b\u767b\u9332? [{0}]
+view.status.print=\u5370\u5237\u4e2d \u30da\u30fc\u30b8 {0}
+view.status.quick-copy=\u30af\u30a3\u30c3\u30af\u30b3\u30d4\u30fc\u30e2\u30fc\u30c9 - \u30de\u30fc\u30af\u3055\u308c\u305f\u30c6\u30ad\u30b9\u30c8\u306f\u9078\u629e\u7bc4\u56f2\u3067\u7f6e\u63db\u3055\u308c\u307e\u3059
+view.status.recording=\u30de\u30af\u30ed\u8a18\u9332\u4e2d
+view.status.rect-select-changed=\u77e9\u5f62\u9078\u629e {0,choice,0#\u30aa\u30d5|1#\u30aa\u30f3}
+view.status.rect-tooltip=\u77e9\u5f62\u9078\u629e\u30e2\u30fc\u30c9 (\u30af\u30ea\u30c3\u30af\u3067\u5909\u66f4)
+view.status.replace-all={1} \u30d5\u30a1\u30a4\u30eb\u4e2d {0} \u4ef6\u304c\u7f6e\u63db\u3055\u308c\u307e\u3057\u305f
+view.status.search-not-found=\u691c\u7d22\u6587\u5b57\u5217\u306f\u898b\u3064\u304b\u308a\u307e\u305b\u3093!
+view.status.select-marker=\u9078\u629e\u306b\u4f7f\u7528\u3059\u308b\u30de\u30fc\u30ab\u30fc\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8? [{0}]
+view.status.swap-marker=\u30ab\u30fc\u30bd\u30eb\u4f4d\u7f6e\u3068\u7f6e\u304d\u63db\u3048\u308b\u30de\u30fc\u30ab\u30fc\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8? \
+	[{0}]
+view.status.vertical-paste-string-register=\u5782\u76f4\u8cbc\u308a\u4ed8\u3051\u306b\u4f7f\u7528\u3059\u308b\u30ec\u30b8\u30b9\u30bf \
+	[{0}]
+view.status.wrap-changed=\u30ef\u30fc\u30c9\u30e9\u30c3\u30d7\u30e2\u30fc\u30c9\u306f\u73fe\u5728 "{0}" \u3067\u3059
+view.status.wrap-tooltip=\u30ef\u30fc\u30c9\u30e9\u30c3\u30d7\u30e2\u30fc\u30c9 (\u30af\u30ea\u30c3\u30af\u3067\u5909\u66f4)
+#}}}
+
+#{{{ Status bar component visibility
+# view.status.show-caret-status=true
+# view.status.show-edit-mode=true
+# view.status.show-fold-mode=true
+# view.status.show-encoding=true
+# view.status.show-wrap=true
+# view.status.show-multi-select=true
+# view.status.show-overwrite=true
+# view.status.show-line-seperator=true
+# view.status.show-memory=true
+#}}}
+
+#}}}
+
+#{{{ Printing
+
+print.headerText=jEdit - {0}
+print.footerText={0} :: \u30da\u30fc\u30b8 {1}
+
+print-error.title=\u5370\u5237\u30a8\u30e9\u30fc
+print-error.message=\u4ee5\u4e0b\u3092\u5370\u5237\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f:\n\
+	{0}
+#}}}
+
+#{{{ Various dialog boxes
+
+#{{{ About dialog
+about.title=jEdit \u306b\u3064\u3044\u3066
+about.version=jEdit {0} using Java {1}
+
+# This text scrolls by in the about dialog box.
+# Hack: Since StringTokenizer treats two consequent \n as one token, we
+# insert a space by itself in the text to create blank lines.
+# about.text=jEdit is brought to you by\n\
+	# \ \n\
+	# Slava Pestov\n\
+	# Aaron Bell\n\
+	# Adrian Baker\n\
+	# Alan Ezust\n\
+	# Alessandro Falappa\n\
+	# Alex Levin\n\
+	# Alexander Maryanovsky\n\
+	# Alfonso Garcia\n\
+	# Alwyn Barry\n\
+	# Amedeo Farello\n\
+	# Andre Kaplan\n\
+	# Anthony Roy\n\
+	# Artur Biesiadowski\n\
+	# Aziz Sharif\n\
+	# Barry Carr\n\
+	# Beau Tateyama\n\
+	# Ben Glazer\n\
+	# Ben Sarsgard\n\
+	# Ben Williams\n\
+	# Bertalan Fodor\n\
+	# Bill McMilleon\n\
+	# Bj\ue49an "Vampire" Kautler\n\
+	# Brad Mace\n\
+	# Brant Langer Gurganus\n\
+	# Brett Smith\n\
+	# Bruno Tatibouet\n\
+	# Calvin Yu\n\
+	# Carlos Quiroz\n\
+	# Carmine Lucarelli\n\
+	# Chris Kent\n\
+	# Chris Scott\n\
+	# Christoph Daniel Schulze\n\
+	# Claude Eisenhut\n\
+	# Cullen Linn\n\
+	# Dale Anson\n\
+	# Danny Dig\n\
+	# Dante Fabrizio\n\
+	# David Askew\n\
+	# David Moss\n\
+	# David Taylor\n\
+	# Denis Lambot\n\
+	# Dirk Moebius\n\
+	# Dominic Stolerman\n\
+	# Dusty Phillips\n\
+	# Ed Stewart\n\
+	# Eric Benoit\n\
+	# Eric Ladner\n\
+	# Fan Ho Yin\n\
+	# Francesc Roses\n\
+	# George Hovey\n\
+	# George Latkiewicz\n\
+	# Gerd Knops\n\
+	# Gili Tzabari\n\
+	# Giulio Piancastelli\n\
+	# Greg Cooper\n\
+	# Greg Merrill\n\
+	# Horst Eff\n\
+	# Ian Maclean\n\
+	# Igor Lesik\n\
+	# Israel Olalla\n\
+	# Jakub Rozto\u010Dil\n\
+	# Jamie LaScolea\n\
+	# Jason Ginchereau\n\
+	# Jeffrey Hoyt\n\
+	# Jerry McBride\n\
+	# Jiger Patel\n\
+	# Jim Lawton\n\
+	# Jim Wissner\n\
+	# John Gellene\n\
+	# John Perry\n\
+	# Jonathan Revusky\n\
+	# Jorg Winter\n\
+	# Joseph Erickson\n\
+	# Joseph Schroer\n\
+	# Juha Lindfors\n\
+	# Justin Dieters\n\
+	# Justin Hagstrom\n\
+	# Kasper Graversen\n\
+	# Kazutoshi Satoda\n\
+	# Kenrick Drew\n\
+	# Kevin Burton\n\
+	# Kevin McWhirter\n\
+	# Ken Gentry\n\
+	# Ken Turner\n\
+	# Klaus Hartlage\n\
+	# Konstantin Pribluda\n\
+	# Kris Kopicki\n\
+	# Kristian Ovaska\n\
+	# Krzysztof Krzyzaniak\n\
+	# Lionel Fiol\n\
+	# Magnus Henriksson\n\
+	# Maik Schreiber\n\
+	# Marc Rummel\n\
+	# Marcelo Vanzin\n\
+	# Marcio Marchini\n\
+	# Marco Hunsicker\n\
+	# Marco Gotze\n\
+	# Marcus Jonason\n\
+	# Martin Raspe\n\
+	# Matija Kejzar\n\
+	# Matt Albrecht\n\
+	# Matt Price\n\
+	# Matthew Flower\n\
+	# Matthew Payne\n\
+	# Matthew Price\n\
+	# Matthias Schneider\n\
+	# Matthieu Casanova\n\
+	# Michael Jacobson\n\
+	# Michael Taft\n\
+	# Mike Dillon\n\
+	# Mike Gorski\n\
+	# Mike Hansen\n\
+	# Mirco Bova\n\
+	# Nahuel Foronda\n\
+	# Neil Bertram\n\
+	# Nicholas O'Leary\n\
+	# Nils Krahnstoever\n\
+	# Nitsan Vardi\n\
+	# Ollie Rutherfurd\n\
+	# Patrick Tingen\n\
+	# Paul Libbrecht\n\
+	# Peter Cox\n\
+	# Peter Graves\n\
+	# Philipp Janda\n\
+	# Phillip Mateescu\n\
+	# Ralf Engels\n\
+	# Randolf Mock\n\
+	# Randy Hudson\n\
+	# Rex Young\n\
+	# Richard Ashwell\n\
+	# Richard Beton\n\
+	# Rick Gibbs\n\
+	# Rick Owen\n\
+	# Rob Watson\n\
+	# Robert McKinnon\n\
+	# Robert Swarr\n\
+	# Romain Guy\n\
+	# Rudolf Widmann\n\
+	# Ryan Fowler\n\
+	# Ryan Grove\n\
+	# Saimon Moore\n\
+	# Satguru Srivastava\n\
+	# Scott Allen\n\
+	# Scott Willy\n\
+	# Scott Wyatt\n\
+	# Sebastien Pierre\n\
+	# Sergey Udaltsov\n\
+	# Shlomy Reinstein\n\
+	# Silas Smith\n\
+	# Stefan Kost\n\
+	# Stefano Maestri\n\
+	# Stephen Bartlett\n\
+	# Steve Jakob\n\
+	# Stuart Barlow\n\
+	# Tal Davidson\n\
+	# Thomas Alspaugh\n\
+	# Thomas Bock\n\
+	# Thomas Dilts\n\
+	# Thomas Galvin\n\
+	# Todd Papaioannou\n\
+	# Tom Copeland\n\
+	# Tom Locke\n\
+	# Trevor Harmon\n\
+	# Vicente Salvador\n\
+	# Vinod Kiran\n\
+	# Will Sargent\n\
+	# Will Varfar\n\
+	# Wiktor Adamski\n\
+	# Wojciech Stryjewski\n\
+	# Wolfgang Chico-T\u00F6pfer\n\
+	# \ \n\
+	# I'd also like to thank the users for their\n\
+	# comments, feedback and bug reports.
+#}}}
+
+#{{{ Error list dialog, used to report I/O and plugin load errors
+error-list.plugin-manager=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30de\u30cd\u30fc\u30b8\u30e3
+#}}}
+
+#{{{ I/O error dialog box
+ioerror.title=I/O \u30a8\u30e9\u30fc
+ioerror.caption=\u4ee5\u4e0b\u306e {0} \u4ef6\u306e I/O \u64cd\u4f5c\u3092\u5b8c\u4e86\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f:
+ioerror.caption-1=\u4ee5\u4e0b\u306e I/O \u64cd\u4f5c\u3092\u5b8c\u4e86\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f:
+
+ioerror={0}
+ioerror.directory-error=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u304c\u4e00\u89a7\u3067\u304d\u307e\u305b\u3093: {0}
+ioerror.directory-error-nomsg=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u304c\u4e00\u89a7\u3067\u304d\u307e\u305b\u3093\u3002
+ioerror.encoding-error=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0"{0}"\u3067\u306f\u8aad\u307f\u8fbc\u3081\u307e\u305b\u3093\u3067\u3057\u305f\u3002\n\
+	({1})\n\
+	\u7570\u306a\u308b\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u9078\u3093\u3067\u307f\u3066\u304f\u3060\u3055\u3044\u3002\n\
+	\u30e1\u30cb\u30e5\u30fc\u306e \u30d5\u30a1\u30a4\u30eb->\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u6307\u5b9a\u3057\u3066\u518d\u8aad\u307f\u8fbc\u307f \u3067\u9078\u629e\u3067\u304d\u307e\u3059\u3002\n\
+	\u81ea\u52d5\u7684\u306b\u3053\u306e\u64cd\u4f5c\u304c\u5b9f\u884c\u3055\u308c\u308b\u3088\u3046\u306b\u3057\u305f\u3044\u5834\u5408\u3001\u30b0\u30ed\u30fc\u30d0\u30eb\u30aa\u30d7\u30b7\u30e7\u30f3\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\n\
+	\u30da\u30a4\u30f3\u306b\u3042\u308b\u300c\u4ee3\u66ff\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\uff08\u8907\u6570\u53ef\uff09\u300d\u306b\u5019\u88dc\u3092\u8ffd\u52a0\u3057\u307e\u3059\u3002
+ioerror.write-encoding-error=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0"{0}"\u3067\u3001{1}\u884c\u76ee\u306e{2}\u5217\u76ee\u306b\u3042\u308b\n\
+	\u6587\u5b57{3}\u306e\u30a8\u30f3\u30b3\u30fc\u30c9\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002
+ioerror.read-error=\u8aad\u307f\u8fbc\u3081\u307e\u305b\u3093: {0}
+ioerror.write-error=\u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093: {0}
+ioerror.unsupported-encoding-error={0} \u6587\u5b57\u30bb\u30c3\u30c8\u306f\u3053\u306eJVM\u3067\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u3002
+ioerror.open-directory=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306f\u30d0\u30c3\u30d5\u30a1\u3068\u3057\u3066\u958b\u3051\u307e\u305b\u3093\u3002
+ioerror.save-directory=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306b\u306f\u30d0\u30c3\u30d5\u30a1\u3092\u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093\u3002
+ioerror.no-read=\u30d5\u30a1\u30a4\u30eb\u3092\u8aad\u307f\u8fbc\u3080\u306b\u306f\u6a29\u9650\u304c\u4e0d\u8db3\u3057\u3066\u3044\u307e\u3059\u3002
+ioerror.no-write=\u30d5\u30a1\u30a4\u30eb\u3092\u8aad\u307f\u8fbc\u3080\u306b\u306f\u6a29\u9650\u304c\u4e0d\u8db3\u3057\u3066\u3044\u307e\u3059\u3002
+ioerror.write-error-readonly=\u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093\u3002\u30d5\u30a1\u30a4\u30eb\u306f\u8aad\u307f\u8fbc\u307f\u5c02\u7528\u3067\u3059\u3002
+ioerror.save-readonly-twostagefail=\u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093\u3002\u30d5\u30a1\u30a4\u30eb\u304c\u8aad\u307f\u8fbc\u307f\u5c02\u7528\u306e\u305f\u3081\u3001\u30c4\u30fc\u30b9\u30c6\u30fc\u30b8\u4fdd\u5b58\u304c\u4e0d\u53ef\u80fd\u3067\u3059\u3002
+ioerror.badurl=\u4e0d\u6b63\u306a URL: {0}
+ioerror.delete-error=\u30d5\u30a1\u30a4\u30eb\u3092\u524a\u9664\u3067\u304d\u307e\u305b\u3093\u3002
+ioerror.rename-exists=\u65e2\u5b58\u30d5\u30a1\u30a4\u30eb {0} \u3092\u4e0a\u66f8\u304d\u3067\u304d\u307e\u305b\u3093\u3002
+ioerror.rename-error={0} \u306b\u540d\u524d\u3092\u5909\u66f4\u3067\u304d\u307e\u305b\u3093\u3002
+ioerror.mkdir-error=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3092\u4f5c\u6210\u3067\u304d\u307e\u305b\u3093\u3002
+
+vfs.not-supported.list=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 "{0}" \u4e0a\u306e\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306f\u30d6\u30e9\u30a6\u30ba\u3067\u304d\u307e\u305b\u3093\u3002
+vfs.not-supported.load=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 "{0}" \u4e0a\u306e\u30d5\u30a1\u30a4\u30eb\u3092\u958b\u304f\u3053\u3068\u306f\u3067\u304d\u307e\u305b\u3093\u3002
+vfs.not-supported.save=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 "{0}" \u306b\u306f\u4fdd\u5b58\u3059\u308b\u3053\u3068\u304c\u51fa\u6765\u307e\u305b\u3093\u3002
+
+vfs.overwrite-readonly.title=\u30d5\u30a1\u30a4\u30eb\u306f\u8aad\u307f\u8fbc\u307f\u5c02\u7528\u3067\u3059
+vfs.overwrite-readonly.message=\u30d5\u30a1\u30a4\u30eb {0} \u306f\u8aad\u307f\u8fbc\u307f\u5c02\u7528\u3067\u3059\u3002\n\
+	\u30c4\u30fc\u30b9\u30c6\u30fc\u30b8\u4fdd\u5b58(Unix\u3067\u306f\u30d5\u30a1\u30a4\u30eb\u6240\u6709\u8005\u3092\u30ea\u30bb\u30c3\u30c8)\u304c\u4f7f\u7528\u3059\u308b\
+	\u8aad\u307f\u8fbc\u307f\u5c02\u7528\u30d5\u30e9\u30b0\u3092\u30ea\u30bb\u30c3\u30c8\u3057\u3066\u4fdd\u5b58\u3057\u307e\u3059\u304b\u3002
+
+vfs.twostageimpossible.title=\u30c4\u30fc\u30b9\u30c6\u30fc\u30b8\u4fdd\u5b58\u306f\u4f7f\u7528\u3067\u304d\u307e\u305b\u3093\u3002
+vfs.twostageimpossible.message=\u30c4\u30fc\u30b9\u30c6\u30fc\u30b8\u4fdd\u5b58\u306f\u4f7f\u7528\u3067\u304d\u307e\u305b\u304c\u3001\u3069\u3046\u3057\u3066\u3082\n\
+	\u4fdd\u5b58\u3057\u305f\u3044\u3067\u3059\u304b ?
+
+out-of-memory-error=Java\u30d2\u30fc\u30d7\u30e1\u30e2\u30ea\u304c\u4e0d\u8db3\u3057\u3066\u3044\u305f\u305f\u3081\u3001\u3053\u306e\u8981\u6c42\u3092\u5b8c\u4e86\
+	\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u6700\u5927\u30d2\u30fc\u30d7\u30b5\u30a4\u30ba\u3092\u5897\u52a0\u3055\u305b\u3066\u518d\u8a66\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002\n\
+	\n\
+	Java\u30d2\u30fc\u30d7\u30b5\u30a4\u30ba\u306e\u5909\u66f4\u306b\u3064\u3044\u3066\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u306f\u3001\u30e6\u30fc\u30b6\u30fc\u30ac\u30a4\u30c9\u306e\
+	"jEdit Basics" \u7ae0\u306e "Buffers" \u7bc0\u306b\u3042\u308a\u307e\u3059\u3002
+#}}}
+
+#{{{ Old I/O error dialog boxes
+ioerror.message=I/O \u30a8\u30e9\u30fc\u767a\u751f ({0})
+
+read-error.title=\u8aad\u307f\u8fbc\u307f\u30a8\u30e9\u30fc
+# {0} - the path name {1} - the error message
+read-error.message=\u30d5\u30a1\u30a4\u30eb\u540d {0}\n\
+	I/O \u30a8\u30e9\u30fc\u306e\u305f\u3081\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	({1})
+
+write-error.title=\u66f8\u304d\u8fbc\u307f\u30a8\u30e9\u30fc
+# {0} - the path name {1} - the error message
+write-error.message=\u30d5\u30a1\u30a4\u30eb\u540d {0}\n\
+	I/O \u30a8\u30e9\u30fc\u306e\u305f\u3081\u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	({1})
+
+directory-error.title=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea \u30a8\u30e9\u30fc
+# {0} - the path name {1} - the error message
+directory-error.message=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u540d {0}\n\
+	I/O \u30a8\u30e9\u30fc\u306e\u305f\u3081\u4e00\u89a7\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	({1})
+
+directory-error-nomsg.title=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea \u30a8\u30e9\u30fc
+# {0} - the path name
+directory-error-nomsg.message=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u540d {0}\n\
+	I/O \u30a8\u30e9\u30fc\u306e\u305f\u3081\u4e00\u89a7\u3067\u304d\u307e\u305b\u3093\u3002
+
+encoding-error.title=\u975e\u4e92\u63db\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
+encoding-error.message=\u30d5\u30a1\u30a4\u30eb\u540d {0}\n\
+	"{1}" \u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3067\u306f\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	({2})\n\
+	\n\
+	\u7570\u306a\u308b\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u4f7f\u7528\u3059\u308b\u306b\u306f\u3001\u30d5\u30a1\u30a4\u30eb->\u958b\u304f \n\
+	\u306b\u3042\u308b"\u30b3\u30de\u30f3\u30c9"\u306e"\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0"\u30e1\u30cb\u30e5\u30fc\u3092\u8a66\u3057\u3066\u304f\u3060\u3055\u3044\u3002\n\
+	\n\
+	\u672c\u5f53\u306b\u884c\u304d\u8a70\u307e\u308a\u3001\u3069\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u4f7f\u3063\u3066\u3044\u3044\u304b\u308f\u304b\u3089\u306a\u3044\n\
+	\u5834\u5408\u306f\u3001"ASCII" \u304b "8859_1" \u3092\u8a66\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+
+open-directory.title=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306f\u958b\u3051\u307e\u305b\u3093
+open-directory.message={0} \u306f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3067\u3059\u3002\n\
+	\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3092\u7de8\u96c6\u3059\u308b\u305f\u3081\u306b\u958b\u304f\u3053\u3068\u306f\u51fa\u6765\u307e\u305b\u3093\u3002
+
+save-directory.title=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306f\u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093
+save-directory.message={0} \u306f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3067\u3059\u3002\n\
+	\u30d0\u30c3\u30d5\u30a1\u3092\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306b\u4e0a\u66f8\u304d\u4fdd\u5b58\u3059\u308b\u3053\u3068\u306f\u3067\u304d\u307e\u305b\u3093\u3002
+
+no-read.title=\u30d5\u30a1\u30a4\u30eb\u3092\u958b\u3051\u307e\u305b\u3093
+no-read.message={0} \u304b\u3089\u8aad\u307f\u8fbc\u3080\u3053\u3068\u304c\u51fa\u6765\u307e\u305b\u3093\u3002\n\
+	\u6a29\u9650\u304c\u4e0d\u8db3\u3057\u3066\u3044\u308b\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059\u3002
+
+no-write.title=\u30d5\u30a1\u30a4\u30eb\u3092\u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093
+no-write.message={0} \u306b\u4fdd\u5b58\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	\u6a29\u9650\u304c\u4e0d\u8db3\u3057\u3066\u3044\u308b\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059\u3002
+
+badurl.title=\u7121\u52b9\u306aURL
+# {0} - the URL
+# {1} - the error
+badurl.message=\u3053\u306e URL \u306f\u7121\u52b9\u3067\u3059: {0}\n
+	({1})
+#}}}
+
+#{{{ Go to line dialog
+goto-line.title=\u884c\u79fb\u52d5
+goto-line.message=\u79fb\u52d5\u5148\u306e\u884c:
+#}}}
+
+#{{{ Word count dialog
+wordcount.title=\u5358\u8a9e\u30ab\u30a6\u30f3\u30c8
+# {0} - characters
+# {1} - words
+# {2} - lines
+wordcount.message=\u6587\u5b57: {0}\n\u5358\u8a9e: {1}\n\u884c  : {2}
+#}}}
+
+#{{{ Set marker dialog
+setmarker.title=\u30de\u30fc\u30ab\u30fc\u8a2d\u7f6e
+setmarker.message=\u30de\u30fc\u30ab\u30fc\u540d:
+#}}}
+
+#{{{ File not saved dialog
+notsaved.title=\u30d5\u30a1\u30a4\u30eb\u306f\u4fdd\u5b58\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+# {0} - file name
+notsaved.message={0} \u3078\u306e\u5909\u66f4\u3092\u4fdd\u5b58\u3057\u307e\u3059\u304b?
+#}}}
+
+#{{{ File changed, still reload dialog
+changedreload.title=\u30d5\u30a1\u30a4\u30eb\u306f\u5909\u66f4\u3055\u308c\u3066\u3044\u307e\u3059
+changedreload.message=\u30d5\u30a1\u30a4\u30eb {0}\n\
+	\u306f\u6700\u5f8c\u306e\u4fdd\u5b58\u4ee5\u964d\u306b\u5909\u66f4\u3055\u308c\u3066\u3044\u307e\u3059\u3002\u518d\u8aad\u307f\u8fbc\u307f\u3059\u308b\u3068\n\
+	\u5909\u66f4\u306f\u5931\u308f\u308c\u307e\u3059\u3002\u7d9a\u3051\u307e\u3059\u304b?
+#}}}
+
+#{{{ Autosave file exists dialog
+autosave-found.title=\u81ea\u52d5\u4fdd\u5b58\u30d5\u30a1\u30a4\u30eb\u304c\u3042\u308a\u307e\u3059
+# {0} - autosave file name
+autosave-found.message=\u81ea\u52d5\u4fdd\u5b58\u30d5\u30a1\u30a4\u30eb {0}\n\
+	\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f! \u4fdd\u5b58\u3067\u304d\u306a\u3044\u3046\u3061\u306b jEdit \u304c\u30af\u30e9\u30c3\u30b7\u30e5\u3057\u305f\n\
+	\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059\u3002\u81ea\u52d5\u4fdd\u5b58\u30d5\u30a1\u30a4\u30eb\u3092\u958b\u304d\u307e\u3059\u304b?
+
+autosave-loaded.title=\u81ea\u52d5\u4fdd\u5b58\u30d5\u30a1\u30a4\u30eb\u306e\u30ed\u30fc\u30c9\u5b8c\u4e86
+autosave-loaded.message=\u81ea\u52d5\u4fdd\u5b58\u30d5\u30a1\u30a4\u30eb {0}\n\
+	\u3092\u30ed\u30fc\u30c9\u3057\u307e\u3057\u305f\u3002\u3059\u3050\u306b\u3001\u4fdd\u5b58\u3055\u308c\u3066\u3044\u306a\u3044\u30c7\u30fc\u30bf\u3092\u542b\u3093\u3067\u3044\u306a\u3044\u304b\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002\n\
+	\u81ea\u52d5\u4fdd\u5b58\u3055\u308c\u305f\u5909\u66f4\u3092\u7dad\u6301\u3057\u305f\u3044\u5834\u5408\u3001\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u3092\u4fdd\u5b58\u3057\u307e\u3059\u3002\n\
+	\u3053\u308c\u3089\u3092\u7834\u68c4\u3057\u305f\u3044\u5834\u5408\u3001\u30d5\u30a1\u30a4\u30eb->\u518d\u8aad\u307f\u8fbc\u307f \u3092\u5b9f\u884c\u3057\u307e\u3059\u3002
+#}}}
+
+#{{{ Save all confirm dialog
+saveall.title=\u3059\u3079\u3066\u306e\u30d0\u30c3\u30d5\u30a1\u3092\u4fdd\u5b58
+saveall.message=\u4fee\u6b63\u3055\u308c\u305f\u3059\u3079\u3066\u306e\u30d0\u30c3\u30d5\u30a1\u3092\u4fdd\u5b58\u3057\u3066\u3082\u3088\u308d\u3057\u3044\u3067\u3059\u304b?
+#}}}
+
+#{{{ Reload all confirm dialog
+reload-all.title=\u3059\u3079\u3066\u306e\u30d0\u30c3\u30d5\u30a1\u3092\u518d\u8aad\u307f\u8fbc\u307f
+reload-all.message=\u3059\u3079\u3066\u306e\u30d0\u30c3\u30d5\u30a1\u3092\u30c7\u30a3\u30b9\u30af\u304b\u3089\u518d\u8aad\u307f\u8fbc\u307f\u3057\u3066\u3082\u3088\u308d\u3057\u3044\u3067\u3059\u304b?\n\
+	\u958b\u3044\u3066\u3044\u308b\u30d0\u30c3\u30d5\u30a1\u306e\u4fdd\u5b58\u3057\u3066\u3044\u306a\u3044\u5909\u66f4\u306f\u3001\u3059\u3079\u3066\u5931\u308f\u308c\u308b\u3053\u3068\u306b\u306a\u308a\u307e\u3059!
+#}}}
+
+#{{{ Encoding prompt
+encoding-prompt.title=\u7570\u306a\u308b\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3067\u958b\u304f
+encoding-prompt.message=\u4f7f\u7528\u3059\u308b\u6587\u5b57\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0:
+#}}}
+
+#{{{ Macro recording already in progress dialog
+already-recording.title=\u3059\u3067\u306b\u8a18\u9332\u4e2d
+already-recording.message=\u30de\u30af\u30ed\u306e\u8a18\u9332\u306f\u3059\u3067\u306b\u958b\u59cb\u3055\u308c\u3066\u3044\u307e\u3059\u3002
+#}}}
+
+#{{{ No temporary macro dialog
+no-temp-macro.title=\u4e00\u6642\u30de\u30af\u30ed\u306a\u3057
+no-temp-macro.message=\u8a18\u9332\u3055\u308c\u3066\u3044\u308b\u4e00\u6642\u30de\u30af\u30ed\u306f\u3042\u308a\u307e\u305b\u3093\u3002
+#}}}
+
+#{{{ Record macro dialog
+record.title=\u30de\u30af\u30ed\u306e\u8a18\u9332
+record.message=\u30de\u30af\u30ed\u540d:
+#}}}
+
+#{{{ Some features don't work with -nosettings dialog
+no-settings.title=\u6a5f\u80fd\u306f\u7121\u52b9\u3067\u3059
+no-settings.message=jEdit \u306f -nosettings \u30b9\u30a4\u30c3\u30c1\u3067\u8d77\u52d5\u3055\u308c\u3066\u3044\u307e\u3059\u3002\n\
+	\u3053\u306e\u6a5f\u80fd\u3092\u4f7f\u3046\u306b\u306f\u3001\u305d\u306e\u30b9\u30a4\u30c3\u30c1\u306a\u3057\u3067 jEdit \u3092\u8d77\u52d5\u3057\u306a\u3051\u308c\u3070\u306a\u308a\u307e\u305b\u3093\u3002
+#}}}
+
+#{{{ Some features don't work with the web start version
+no-webstart.title=\u6a5f\u80fd\u306f\u7121\u52b9\u3067\u3059
+no-webstart.message=\u3053\u306e\u6a5f\u80fd\u306f WebStart \u7248\u306e jEdit \u3067\u306f\u4f7f\u7528\u3067\u304d\u307e\u305b\u3093\u3002
+#}}}
+
+#{{{ Search and replace dialog
+search.title=\u691c\u7d22/\u7f6e\u63db
+
+search.find=\u691c\u7d22(S):
+search.find.tooltip=PgUp/PgDown\u304b\u53f3\u30af\u30ea\u30c3\u30af\u3067\u5c65\u6b74\u547c\u3073\u51fa\u3057
+search.find.mnemonic=S
+search.replace=\u7f6e\u63db(W):
+search.replace.mnemonic=W
+search.string-replace-btn=\u30c6\u30ad\u30b9\u30c8
+search.beanshell-replace-btn=BeanShell \u30b9\u30cb\u30da\u30c3\u30c8\u304b\u3089\u306e\u623b\u308a\u5024
+
+search.settings=\u30aa\u30d7\u30b7\u30e7\u30f3:
+search.keep=\u30c0\u30a4\u30a2\u30ed\u30b0\u3092\u7dad\u6301(K)
+search.keep.mnemonic=K
+search.case=\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u3092\u533a\u5225\u3057\u306a\u3044(I)
+search.case.mnemonic=I
+search.regexp=\u6b63\u898f\u8868\u73fe(X)
+search.regexp.mnemonic=X
+search.hypersearch=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1(H)
+search.hypersearch.mnemonic=H
+search.wrap=\u81ea\u52d5\u30e9\u30c3\u30d7(T)
+search.wrap.mnemonic=T
+
+search.direction=\u65b9\u5411:
+search.back=\u5f8c\u65b9(B)
+search.back.mnemonic=B
+search.forward=\u524d\u65b9(O)
+search.forward.mnemonic=O
+
+search.fileset=\u691c\u7d22\u5bfe\u8c61:
+search.selection=\u9078\u629e\u7bc4\u56f2(N)
+search.selection.mnemonic=N
+search.current=\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1(C)
+search.current.mnemonic=C
+search.all=\u3059\u3079\u3066\u306e\u30d0\u30c3\u30d5\u30a1(L)
+search.all.mnemonic=L
+search.directory=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea(D):
+search.directory.mnemonic=D
+search.skipHidden=\u96a0\u3057/\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u3092\u7121\u8996(H)
+search.skipBinary=\u30d0\u30a4\u30ca\u30ea\u30d5\u30a1\u30a4\u30eb\u3092\u7121\u8996(B)
+search.skipHidden.mnemonic=H
+search.skipBinary.mnemonic=B
+
+search.directoryField=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea(Y):
+search.directoryField.mnemonic=Y
+search.filterField=\u30d5\u30a3\u30eb\u30bf(F):
+search.filterField.mnemonic=F
+search.filterField.tooltip={*.c,*.h} \u3067\u62e1\u5f35\u5b50\u8907\u6570\u5bfe\u5fdc
+search.subdirs=\u30b5\u30d6\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306e\u691c\u7d22(U)
+search.subdirs.mnemonic=U
+search.choose=\u9078\u629e(E)...
+search.choose.mnemonic=E
+search.synchronize=\u540c\u671f(Z)
+search.synchronize.mnemonic=Z
+search.synchronize.tooltip=\u30d5\u30a3\u30eb\u30bf\u3068\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306b\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u62e1\u5f35\u5b50\u3068\u5834\u6240\u3092\u30bb\u30c3\u30c8\u3057\u307e\u3059\u3002
+search.findBtn=\u691c\u7d22(F)
+search.findBtn.mnemonic=F
+search.replaceAndFindBtn=\u7f6e\u63db\u3057\u3066\u691c\u7d22(R)
+search.replaceAndFindBtn.mnemonic=R
+search.replaceAllBtn=\u3059\u3079\u3066\u7f6e\u63db(A)
+search.replaceAllBtn.mnemonic=A
+
+# Beep when searching automatically wraps?
+# search.beepOnSearchAutoWrap=false
+#}}}
+
+#{{{ Keep searching dialog
+keepsearching.title=\u3053\u308c\u4ee5\u4e0a\u306e\u4e00\u81f4\u306f\u767a\u898b\u3067\u304d\u307e\u305b\u3093
+keepsearching.message=\u3053\u308c\u4ee5\u4e0a\u306e\u4e00\u81f4\u306f\u767a\u898b\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	{0,choice,0#\u5148\u982d|1#\u672b\u5c3e}\u304b\u3089\u691c\u7d22\u3092\u7d9a\u3051\u307e\u3059\u304b?
+#}}}
+
+#{{{ HyperSearch results dialog
+hypersearch-results.title=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1\u7d50\u679c
+hypersearch-results.result-caption={0} ({1} \u7b87\u6240 / {2} \u30d5\u30a1\u30a4\u30eb\u4e2d)
+hypersearch-results.open=\u958b\u304f
+hypersearch-results.open-view=\u65b0\u898f\u30d3\u30e5\u30fc\u3067\u958b\u304f
+hypersearch-results.open-plain-view=\u65b0\u898f\u30d7\u30ec\u30fc\u30f3\u30d3\u30e5\u30fc\u3067\u958b\u304f
+hypersearch-results.open-split=\u65b0\u898f\u30b9\u30d7\u30ea\u30c3\u30c8\u3067\u958b\u304f
+hypersearch-results.remove-node=\u30ce\u30fc\u30c9\u524a\u9664
+hypersearch-results.new-search=\u3053\u3053\u304b\u3089\u65b0\u898f\u691c\u7d22
+hypersearch-results.expand-child-nodes=\u5b50\u30ce\u30fc\u30c9\u306e\u5c55\u958b
+hypersearch-results.collapse-child-nodes=\u5b50\u30ce\u30fc\u30c9\u306e\u6298\u308a\u305f\u305f\u307f
+hypersearch-results.redo=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1 \u3084\u308a\u76f4\u3057
+hypersearch-results.tree-view=\u30c4\u30ea\u30fc\u30d3\u30e5\u30fc\u5207\u308a\u66ff\u3048
+hypersearch-results.clear.label=\u3059\u3079\u3066\u306e\u30ce\u30fc\u30c9\u3092\u524a\u9664
+hypersearch-results.multi.label=\u8907\u6570\u7d50\u679c\u8868\u793a\u306e\u5207\u308a\u66ff\u3048
+hypersearch-results.file-caption={0} ({1} \u7b87\u6240 / {2} \u884c\u4e2d)
+hypersearch-results.searching=\u691c\u7d22\u4e2d...
+hypersearch-results.no-results=\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f\u3002
+hypersearch-results.done=\u5b8c\u4e86\u3002
+
+hypersearch-status=\u691c\u7d22\u4e2d
+#}}}
+
+#{{{ HyperSearch too many results
+hypersearch.tooManyResults.label=\u7d50\u679c\u304c\u591a\u3059\u304e\u307e\u3059
+hypersearch.tooManyResults.title=\u7d50\u679c\u304c\u591a\u3059\u304e\u307e\u3059
+hypersearch.tooManyResults.message=\u3053\u306e\u691c\u7d22\u306f\u307e\u3060\u5b8c\u4e86\u3057\u3066\u3044\u307e\u305b\u3093\u304c\u3001\n\
+	{0}\u4ef6\u3082\u306e\u7d50\u679c\u3092\u8fd4\u3057\u307e\u3057\u305f\u3002\u4e2d\u6b62\u3057\u307e\u3059\u304b?\u3002
+#}}}
+
+
+#{{{ Search and replace error dialog
+searcherror.title=\u691c\u7d22/\u7f6e\u63db\u30a8\u30e9\u30fc
+# {0} - error message
+searcherror.message=\u3053\u306e\u64cd\u4f5c\u3092\u5b9f\u884c\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002
+#}}}
+
+#{{{ Search and replace error dialog
+searcherror-bsh.title=\u691c\u7d22/\u7f6e\u63db\u30a8\u30e9\u30fc
+# {0} - error message
+searcherror-bsh.message=\u3053\u306e\u64cd\u4f5c\u3092\u5b9f\u884c\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\n\
+	\n\
+	\u7f6e\u63db\u6587\u5b57\u5217\u3092BeanShell\u5f0f\u3068\u3057\u3066\u89e3\u91c8\u3059\u308b\u610f\u56f3\u304c\u306a\u3044\u306a\u3089\u3001\n\
+	\u7f6e\u63db\u30e2\u30fc\u30c9\u304c"\u30c6\u30ad\u30b9\u30c8"\u306b\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u308b\u3053\u3068\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+#}}}
+
+#{{{ Empty fileset error dialog
+empty-fileset.title=\u7a7a\u306e\u30d5\u30a1\u30a4\u30eb\u30bb\u30c3\u30c8
+empty-fileset.message=\u6307\u5b9a\u3055\u308c\u305f\u691c\u7d22\u30d5\u30a1\u30a4\u30eb\u30bb\u30c3\u30c8\u306f\u30d5\u30a1\u30a4\u30eb\u3092\u542b\u3093\u3067\u3044\u307e\u305b\u3093\u3002
+	\u30d5\u30a1\u30a4\u30eb\u540d\u30d5\u30a3\u30eb\u30bf\u3068\u691c\u7d22\u5bfe\u8c61\u30c7\u30a3\u30ec\u30af\u30c8\u30ea(\u9069\u7528\u53ef\u80fd\u306a\u3089)\u3092\n\
+	\u6b63\u3057\u304f\u8a2d\u5b9a\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+#}}}
+
+#{{{ Reverse regular expression search not supported dialog
+regexp-reverse.title=\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+regexp-reverse.message=\u6b63\u898f\u8868\u73fe\u306e\u5f8c\u65b9\u691c\u7d22\u306f\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	\u524d\u65b9\u691c\u7d22\u3092\u4f7f\u7528\u3059\u308b\u304b\u6b63\u898f\u8868\u73fe\u3092\u7121\u52b9\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+#}}}
+
+#{{{ Can only search local directories dialog
+remote-dir-search.title=\u975e\u30ed\u30fc\u30ab\u30eb\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306e\u9078\u629e
+remote-dir-search.message=\u975e\u30ed\u30fc\u30ab\u30eb\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3078\u306e\u691c\u7d22\u3092\u5b9f\u884c\u3057\u307e\u3057\u305f\u3002\n\
+	\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u9045\u5ef6\u7b49\u306e\u305f\u3081\u306b\u975e\u5e38\u306b\u9045\u304f\u306a\u308b\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002\n\
+	\u7d99\u7d9a\u3057\u3066\u3082\u3088\u308d\u3057\u3044\u3067\u3059\u304b?
+#}}}
+
+#{{{ "Search in selection" active but nothing selected in text area
+search-no-selection.title=\u4f55\u3082\u9078\u629e\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+search-no-selection.message=\u3044\u304f\u3089\u304b\u306e\u30c6\u30ad\u30b9\u30c8\u3092\u9078\u629e\u3059\u308b\u304b\u3001"\u9078\u629e\u7bc4\u56f2\u3092\n\
+	\u691c\u7d22"\u30aa\u30d7\u30b7\u30e7\u30f3\u3092\u7121\u52b9\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+#}}}
+
+#{{{ Paste previous and paste deleted dialogs
+paste-from-list.whitespace=<\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9>
+paste-previous.title=\u5c65\u6b74\u304b\u3089\u8cbc\u308a\u4ed8\u3051
+paste-previous.caption=\u6700\u8fd1 \u30b3\u30d4\u30fc/\u5207\u308a\u53d6\u308a \u3055\u308c\u305f\u30c6\u30ad\u30b9\u30c8:
+paste-deleted.title=\u524a\u9664\u5c65\u6b74\u304b\u3089\u8cbc\u308a\u4ed8\u3051
+paste-deleted.caption=\u6700\u8fd1\u524a\u9664\u3055\u308c\u305f\u30c6\u30ad\u30b9\u30c8:
+#}}}
+
+#{{{ File changed on disk dialog
+filechanged-save.title=\u30c7\u30a3\u30b9\u30af\u4e0a\u306e\u30d5\u30a1\u30a4\u30eb\u5909\u66f4
+filechanged-save.message=\u30d5\u30a1\u30a4\u30eb {0} \u306f\n\
+	\u30c7\u30a3\u30b9\u30af\u4e0a\u3067\u4ed6\u306e\u30d7\u30ed\u30b0\u30e9\u30e0\u306b\u3088\u3063\u3066\u5909\u66f4\u3055\u308c\u3066\u3044\u307e\u3059\u3002\n\
+	\u4fdd\u5b58\u51e6\u7406\u3092\u7d99\u7d9a\u3057\u3066\u3082\u3088\u308d\u3057\u3044\u3067\u3059\u304b?
+#}}}
+
+#{{{ File exists dialog
+fileexists.title=\u65e2\u5b58\u30d5\u30a1\u30a4\u30eb\u3042\u308a
+fileexists.message=\u30d5\u30a1\u30a4\u30eb {0} \u306f\u3059\u3067\u306b\u5b58\u5728\u3057\u307e\u3059\u3002\n\
+	\u4e0a\u66f8\u304d\u3057\u3066\u3082\u3088\u308d\u3057\u3044\u3067\u3059\u304b?
+#}}}
+
+#{{{ Select line range dialog
+selectlinerange.title=\u884c\u7bc4\u56f2\u3092\u6307\u5b9a\u3057\u3066\u9078\u629e
+selectlinerange.caption=\u9078\u629e\u3059\u308b\u884c\u7bc4\u56f2:
+selectlinerange.start=\u958b\u59cb\u884c:
+selectlinerange.end=\u7d42\u4e86\u884c:
+#}}}
+
+#{{{ View registers dialog
+view-registers.title=\u30ec\u30b8\u30b9\u30bf
+view-registers.caption=\u30ec\u30b8\u30b9\u30bf:
+view-registers.clipboard=$ (\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9)
+view-registers.selection=% (\u9078\u629e\u7bc4\u56f2)
+view-registers.none=\u30ec\u30b8\u30b9\u30bf\u306f\u5b9a\u7fa9\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+view-registers.register=\u30ec\u30b8\u30b9\u30bf:
+view-registers.contents=\u5185\u5bb9:
+#}}}
+
+#{{{ Close all buffers dialog
+close.title=\u672a\u4fdd\u5b58\u306e\u5909\u66f4
+close.caption=\u4ee5\u4e0b\u306e\u30d0\u30c3\u30d5\u30a1\u306b\u306f\u672a\u4fdd\u5b58\u306e\u5909\u66f4\u304c\u3042\u308a\u307e\u3059:
+close.selectAll=\u3059\u3079\u3066\u9078\u629e(A)
+close.selectAll.mnemonic=A
+close.save=\u9078\u629e\u3092\u4fdd\u5b58(S)
+close.save.mnemonic=S
+close.discard=\u9078\u629e\u3092\u7834\u68c4(D)
+close.discard.mnemonic=D
+#}}}
+
+#{{{ Files changed on disk dialog
+files-changed.title=\u30c7\u30a3\u30b9\u30af\u4e0a\u3067\u306e\u30d5\u30a1\u30a4\u30eb\u5909\u66f4
+files-changed.caption=\u4ee5\u4e0b\u306e\u30d5\u30a1\u30a4\u30eb\u306f\u30c7\u30a3\u30b9\u30af\u4e0a\u3067\u4ed6\u306e\u30d7\u30ed\u30b0\u30e9\u30e0\u306b\u3088\u3063\u3066\u5909\u66f4\u3055\u308c\u307e\u3057\u305f:
+files-changed.deleted=\u30c7\u30a3\u30b9\u30af\u4e0a\u3067\u524a\u9664\u3055\u308c\u305f\u306e\u3067\u518d\u4f5c\u6210\u3057\u3066\u4fdd\u5b58:
+files-changed.changed-auto=\u81ea\u52d5\u7684\u306b\u518d\u8aad\u307f\u8fbc\u307f:
+files-changed.changed=\u30c7\u30a3\u30b9\u30af\u4e0a\u3067\u306e\u5909\u66f4:
+files-changed.changed-dirty-auto=\u30d0\u30c3\u30d5\u30a1\u7de8\u96c6\u4e2d\u306e\u305f\u3081\u518d\u8aad\u307f\u8fbc\u307f\u3055\u308c\u307e\u305b\u3093:
+files-changed.changed-dirty=\u30d0\u30c3\u30d5\u30a1\u7de8\u96c6\u4e2d\u3067\u30c7\u30a3\u30b9\u30af\u4e0a\u306e\u30d5\u30a1\u30a4\u30eb\u5909\u66f4:
+files-changed.select-all=\u3059\u3079\u3066\u9078\u629e
+files-changed.select-all.mnemonic=A
+files-changed.reload=\u518d\u8aad\u307f\u8fbc\u307f
+files-changed.reload.mnemonic=R
+files-changed.ignore=\u7121\u8996
+files-changed.ignore.mnemonic=I
+#}}}
+
+#{{{ Abbrev dialogs
+add-abbrev.title=\u7701\u7565\u8a9e\u306e\u8ffd\u52a0
+add-abbrev.mode=\u30e2\u30fc\u30c9\u5225\u8ffd\u52a0
+add-abbrev.global=\u30b0\u30ed\u30fc\u30d0\u30eb\u8ffd\u52a0
+
+edit-abbrev.title=\u7701\u7565\u8a9e\u306e\u7de8\u96c6
+
+edit-abbrev.duplicate.title=\u7701\u7565\u8a9e\u306e\u91cd\u8907
+edit-abbrev.duplicate.message=\
+	\u3053\u306e\u7701\u7565\u8a9e\u306b\u306f\u3059\u3067\u306b\u4ed6\u306e\u5c55\u958b\u5f8c\u304c\u5b58\u5728\u3057\u307e\u3059\u3002\n\
+	\n\
+	\u65e2\u5b58\u306e\u5c55\u958b\u8a9e\u3092\u30aa\u30fc\u30d0\u30fc\u30e9\u30a4\u30c9\u3057\u307e\u3059\u304b?
+
+abbrev-editor.abbrev=\u7701\u7565\u8a9e:
+abbrev-editor.before=\u30ab\u30fc\u30bd\u30eb\u306e\u524d\u306b\u633f\u5165\u3059\u308b\u30c6\u30ad\u30b9\u30c8:
+abbrev-editor.after=\u30ab\u30fc\u30bd\u30eb\u306e\u5f8c\u306b\u633f\u5165\u3059\u308b\u30c6\u30ad\u30b9\u30c8:
+#}}}
+
+#{{{ XMode errors
+xmode-error.title=XML \u30d1\u30fc\u30b5\u30a8\u30e9\u30fc
+# {2} is the column number, but it's not too useful so we don't show it
+xmode-error.message={0} \u306e\u30d1\u30fc\u30b9\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u884c {1}:\n\
+	{3}
+xmode-error.dtd=DTD\u3092\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093\u3002\n({0})
+xmode-error.termchar-invalid=AT_CHAR \u5c5e\u6027\u306e\u5024\u304c\u4e0d\u6b63\u3067\u3059 ({0})
+xmode-error.doctype-invalid=MODE \u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u30bf\u30a4\u30d7\u304c\u671f\u5f85\u3055\u308c\u307e\u3059\u304c\u3001\u5b58\u5728\u3059\u308b\u306e\u306f {0} \u3067\u3057\u305f
+xmode-error.empty-tag={0} \u30bf\u30b0\u306f\u7a7a\u306b\u3067\u304d\u307e\u305b\u3093
+xmode-error.token-invalid=\u30c8\u30fc\u30af\u30f3\u30bf\u30a4\u30d7 {0} \u306f\u4e0d\u6b63\u3067\u3059
+xmode-error.empty-keyword=\u30ad\u30fc\u30ef\u30fc\u30c9\u30c6\u30ad\u30b9\u30c8\u306f\u7a7a\u306b\u3067\u304d\u307e\u305b\u3093
+xmode-error.regexp=\u4e0d\u6b63\u306a\u6b63\u898f\u8868\u73fe\n({0})
+xmode-error.hash-char-and-hash-chars-mutually-exclusive=HASH_CHAR \u3068 HASH_CHARS \u3092\u4e21\u65b9\u6307\u5b9a\u3059\u308b\u3053\u3068\u306f\u3067\u304d\u307e\u305b\u3093
+xmode-error.delegate-invalid=\u4e0d\u6b63\u306a\u30c7\u30ea\u30b2\u30fc\u30c8: {0}
+#}}}
+
+#{{{ JARClassLoader errors
+plugin-error.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u30a8\u30e9\u30fc
+plugin-error.caption=\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093:
+plugin-error.caption-1=\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093:
+
+plugin-error.load-error=\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093: {0}\n\
+	\u3082\u3063\u3068\u3082\u6709\u529b\u306a\u539f\u56e0\u306f\u3001JAR\u30d5\u30a1\u30a4\u30eb\u304c\u58ca\u308c\u3066\u3044\u308b\u3053\u3068\u3067\u3059\u3002\n\
+	\u518d\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002\u5b8c\u5168\u306a\u30b9\u30bf\u30c3\u30af\u30c8\u30ec\u30fc\u30b9\u3092\u898b\u308b\u306b\u306f\u3001\n\
+	\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3->\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30f3\u30b0->\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0 \u3092\u53c2\u7167\n\
+	\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+plugin-error.start-error=\u958b\u59cb\u3067\u304d\u307e\u305b\u3093: {0}\n\
+	\u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u3088\u308a\u6700\u65b0\u306e\u30d0\u30fc\u30b8\u30e7\u30f3\u306b\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002
+plugin-error.already-loaded=\u3075\u305f\u3064\u306e\u30b3\u30d4\u30fc\u304c\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3055\u308c\u3066\u3044\u307e\u3059\u3002\
+	\u3075\u305f\u3064\u306e\u30b3\u30d4\u30fc\u306e\u3046\u3061\u4e00\u65b9\u3092\u524a\u9664\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+plugin-error.dep-jdk=Java {0} \u304b\u305d\u308c\u4ee5\u964d\u304c\u5fc5\u8981\u3067\u3059\u304c\u3001\u30d0\u30fc\u30b8\u30e7\u30f3 {1} \u3057\u304b\u3042\u308a\u307e\u305b\u3093\u3002
+plugin-error.dep-jedit=jEdit {0} \u304b\u305d\u308c\u4ee5\u964d\u304c\u5fc5\u8981\u3067\u3059\u304c\u3001\u30d0\u30fc\u30b8\u30e7\u30f3 {1} \u3057\u304b\u3042\u308a\u307e\u305b\u3093\u3002\n\
+	\u65b0\u3057\u3044\u30d0\u30fc\u30b8\u30e7\u30f3\u306e jEdit \u3092 <http://www.jedit.org> \u304b\u3089\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u3057\u3066\u304f\u3060\u3055\u3044\u3002.
+plugin-error.dep-plugin.no-version={1] \u306e\u30d0\u30fc\u30b8\u30e7\u30f3 {0} \u304b\u305d\u308c\u4ee5\u964d\u304c\u5fc5\u8981\u3067\u3059\u304c\u3001\
+	{1} \u306f\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u3002
+plugin-error.dep-plugin.broken={0} \u304c\u5fc5\u8981\u3067\u3059\u304c\u3001{0}\n\
+	\u3092\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093\u3002
+plugin-error.dep-plugin={1] \u306e\u30d0\u30fc\u30b8\u30e7\u30f3 {0} \u304b\u305d\u308c\u4ee5\u964d\u304c\u5fc5\u8981\u3067\u3059\u304c\u3001\
+	{1} \u306f\u30d0\u30fc\u30b8\u30e7\u30f3 {2} \u3057\u304b\u3042\u308a\u307e\u305b\u3093\u3002
+plugin-error.dep-class=\u30af\u30e9\u30b9 {0} \u304c\u5fc5\u8981\u3067\u3059\u3002\n\
+	\u9069\u5207\u306a\u30d7\u30e9\u30b0\u30a4\u30f3\u304b\u30af\u30e9\u30b9\u30e9\u30a4\u30d6\u30e9\u30ea\u3092\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002
+plugin-error.missing-jar=JAR \u30d5\u30a1\u30a4\u30eb {0} \u304c\u5fc5\u8981\u3067\u3059\u3002\n\
+	\u3053\u306e JAR \u30d5\u30a1\u30a4\u30eb\u306f\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u4e00\u90e8\u3067\u3059\u304c\u3001\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3002\n\
+	\u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u518d\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u3066\u307f\u3066\u304f\u3060\u3055\u3044\u3002
+plugin-error.obsolete=\u3053\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u5ec3\u6b62\u3055\u308c\u3066\u3044\u307e\u3059\u3002\u524a\u9664\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+plugin-error.not-42=\u3053\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u52d5\u7684\u30ed\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u305b\u3093\u3002\n\
+	\u3053\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb/\u524a\u9664\u5f8c\u306b\u3001jEdit \u3092\u518d\u8d77\u52d5\u3059\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059\u3002
+
+plugin-error-download.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u30a8\u30e9\u30fc
+plugin-error-download.message=\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u4ed6\u306e\u30df\u30e9\u30fc\u3092\u8a66\u3057\u3066\u304f\u3060\u3055\u3044\u3002\n{0}
+#}}}
+
+#{{{ Macro dialogs
+macro-input.title=\u30de\u30af\u30ed \u5165\u529b
+macro-error.title=\u30de\u30af\u30ed \u30a8\u30e9\u30fc
+macro-message.title=\u30de\u30af\u30ed \u30e1\u30c3\u30bb\u30fc\u30b8
+macro-confirm.title=\u30de\u30af\u30ed \u78ba\u8a8d
+#}}}
+
+#{{{ BeanShell stuff
+beanshell-error.title=BeanShell \u30a8\u30e9\u30fc
+beanshell-error.message=BeanShell\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002
+
+beanshell-eval-input.title=BeanShell\u5f0f\u306e\u8a55\u4fa1
+beanshell-eval-input.message=BeanShell\u5f0f:\n\
+	\n\
+	\u5909\u6570:\n\
+	view - \u73fe\u5728\u306e\u30d3\u30e5\u30fc\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\n\
+	editPane - \u73fe\u5728\u306e\u7de8\u96c6\u30da\u30a4\u30f3\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\n\
+	textArea - \u73fe\u5728\u306e\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\n\
+	buffer - \u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1
+
+beanshell-eval.title=BeanShell\u8a55\u4fa1
+beanshell-eval.message={0}
+
+beanshell-eval-line.title=BeanShell\u5f0f\u306e\u8a55\u4fa1
+beanshell-eval-line.message=\u5404\u9078\u629e\u884c\u3092\u8a55\u4fa1\u3059\u308bBeanShell\u5f0f:\n\
+	\n\
+	\u5909\u6570:\n\
+	line - \u30d0\u30c3\u30d5\u30a1\u306e\u958b\u59cb\u304b\u3089\u306e\u884c\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\n\
+	index - \u9078\u629e\u7bc4\u56f2\u958b\u59cb\u304b\u3089\u306e\u884c\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\n\
+	text - \u884c\u306e\u30c6\u30ad\u30b9\u30c8\n\
+	view - \u73fe\u5728\u306e\u30d3\u30e5\u30fc\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\n\
+	editPane - \u73fe\u5728\u306e\u7de8\u96c6\u30da\u30a4\u30f3\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\n\
+	textArea - \u73fe\u5728\u306e\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\n\
+	buffer - \u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1
+#}}}
+
+#{{{ Macro not recording dialog
+macro-not-recording.title=\u8a18\u9332\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+macro-not-recording.message=\u73fe\u5728\u30de\u30af\u30ed\u306f\u8a18\u9332\u3055\u308c\u3066\u3044\u307e\u305b\u3093\u3002
+#}}}
+
+#{{{ Large repeat count warning
+large-repeat-count.title=\u975e\u5e38\u306b\u591a\u3044\u53cd\u5fa9\u56de\u6570
+large-repeat-count.message=\u672c\u5f53\u306b "{0}" \u3092 {1} \u56de\u5b9f\u884c\u3057\u307e\u3059\u304b?
+
+large-repeat-count.user-input.title=\u975e\u5e38\u306b\u591a\u3044\u53cd\u5fa9\u56de\u6570
+large-repeat-count.user-input.message=\u672c\u5f53\u306b "{0}" \u3092 {1} \u56de\u633f\u5165\u3057\u307e\u3059\u304b?
+
+#}}}
+
+#{{{ Wrong fold mode dialog
+folding-not-explicit.title=\u8aa4\u3063\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u30e2\u30fc\u30c9
+folding-not-explicit.message=\u3053\u306e\u30b3\u30de\u30f3\u30c9\u306f\u660e\u793a\u7684\u306a\u30d5\u30a9\u30fc\u30eb\u30c9\u30e2\u30fc\u30c9\u3067\u306e\u307f\u4f7f\u7528\u3067\u304d\u307e\u3059\u3002
+#}}}
+
+#{{{ Memory status dialog box
+memory-status.title=Java \u30d2\u30fc\u30d7\u30e1\u30e2\u30ea
+memory-status.gc=\u30ac\u30d9\u30fc\u30b8\u30b3\u30ec\u30af\u30b7\u30e7\u30f3\u3067 {0} Kb \u89e3\u653e\u3055\u308c\u307e\u3057\u305f\u3002
+memory-status.use=\u4f7f\u7528 {0} Kb / \u5408\u8a08 {1} Kb 
+#}}}
+
+#{{{ Multiple I/O request errors
+buffer-multiple-io.title=I/O \u30a8\u30e9\u30fc
+buffer-multiple-io.message=\u5404\u30d0\u30c3\u30d5\u30a1\u306f\u3001\u3044\u3061\u3069\u306b\u3072\u3068\u3064\u306e\u5165\u51fa\u529b\u64cd\u4f5c\u3057\u304b\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	\u4ed6\u306e\u64cd\u4f5c\u3092\u958b\u59cb\u3059\u308b\u306e\u306f\u3001\u73fe\u5728\u306e\u64cd\u4f5c\u304c\u5b8c\u4e86\uff08\u3082\u3057\u304f\u306fI/O\n\
+	\u9032\u6357\u30e2\u30cb\u30bf\u3067\u4e2d\u6b62\uff09\u3059\u308b\u307e\u3067\u5f85\u3063\u3066\u304f\u3060\u3055\u3044\u3002
+
+
+browser-multiple-io.title=I/O \u30a8\u30e9\u30fc
+browser-multiple-io.message=\u5404\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0\u30d6\u30e9\u30a6\u30b6\u306f\u3001\u3044\u3061\u3069\u306b\u3072\u3068\u3064\u306e\u5165\u51fa\u529b\u64cd\u4f5c\u3057\u304b\u3067\u304d\u307e\u305b\u3093\u3002\n\
+	\u4ed6\u306e\u64cd\u4f5c\u3092\u958b\u59cb\u3059\u308b\u306e\u306f\u3001\u73fe\u5728\u306e\u64cd\u4f5c\u304c\u5b8c\u4e86\uff08\u3082\u3057\u304f\u306fI/O\n\
+	\u9032\u6357\u30e2\u30cb\u30bf\u3067\u4e2d\u6b62\uff09\u3059\u308b\u307e\u3067\u5f85\u3063\u3066\u304f\u3060\u3055\u3044\u3002
+#}}}
+
+#{{{ maxLineLen=0 warning
+format-maxlinelen.title=\u30e9\u30c3\u30d7\u30de\u30fc\u30b8\u30f3
+format-maxlinelen.message=\u3053\u306e\u30b3\u30de\u30f3\u30c9\u3092\u5b9f\u884c\u3059\u308b\u306b\u306f\u3001\u30e9\u30c3\u30d7\u30de\u30fc\u30b8\u30f3\u30920\u306b\n\
+	\u8a2d\u5b9a\u3057\u306a\u3051\u308c\u3070\u306a\u308a\u307e\u305b\u3093\u3002
+#}}}
+
+#{{{ maxLineLen=0 warning
+format-maxlinelen.title=\u30e9\u30c3\u30d7\u30de\u30fc\u30b8\u30f3
+format-maxlinelen.message=\u3053\u306e\u30b3\u30de\u30f3\u30c9\u304c\u6a5f\u80fd\u3059\u308b\u306b\u306f\u3001\u30e9\u30c3\u30d7\u30de\u30fc\u30b8\u30f3\u306b\u975e\u30bc\u30ed\u5024\u3092\n\
+	\u8a2d\u5b9a\u3057\u3066\u3044\u306a\u3051\u308c\u3070\u306a\u308a\u307e\u305b\u3093\u3002
+#}}}
+
+#}}}
+
+#{{{ Buffer options dialog
+buffer-options.title=\u30d0\u30c3\u30d5\u30a1 \u30aa\u30d7\u30b7\u30e7\u30f3
+buffer-options.caption=\u3053\u306e\u30c0\u30a4\u30a2\u30ed\u30b0\u30dc\u30c3\u30af\u30b9\u306f\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u307f\u8a2d\u5b9a\u3092\u5909\u66f4\u3057\u307e\u3059\u3002\n\
+	\u7de8\u96c6\u30e2\u30fc\u30c9\u306e\u30c7\u30d5\u30a9\u30eb\u30c8\u8a2d\u5b9a\u3092\u5909\u66f4\u3059\u308b\u306b\u306f\u3001\n\n
+	\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3->\u30b0\u30ed\u30fc\u30d0\u30eb \u30aa\u30d7\u30b7\u30e7\u30f3->\u7de8\u96c6 \u30c0\u30a4\u30a2\u30ed\u30b0\u3092\u53c2\u7167\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+buffer-options.loading-saving=\u8aad\u307f\u8fbc\u307f/\u4fdd\u5b58
+buffer-options.lineSeparator=\u6539\u884c\u6587\u5b57:
+buffer-options.encoding=\u6587\u5b57\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0:
+buffer-options.gzipped=GZIP(\u5727\u7e2e)\u30d5\u30a1\u30a4\u30eb
+buffer-options.editing=\u7de8\u96c6
+buffer-options.mode=\u7de8\u96c6\u30e2\u30fc\u30c9:
+#}}}
+
+#{{{ Global options dialog
+options.title=\u30aa\u30d7\u30b7\u30e7\u30f3
+options.title-template={0}: {1}
+options.jedit.label=jEdit
+
+# Option pane to show by default
+# options.last=editing
+
+#{{{ General pane
+options.general.label=\u4e00\u822c
+# options.general.code=new GeneralOptionPane();
+options.general.lineSeparator=\u30c7\u30d5\u30a9\u30eb\u30c8\u6539\u884c\u6587\u5b57:
+options.general.encoding=\u30c7\u30d5\u30a9\u30eb\u30c8\u6587\u5b57\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0:
+options.general.encodingAutodetect=\u53ef\u80fd\u306a\u5834\u5408\u30d5\u30a1\u30a4\u30eb\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u81ea\u52d5\u691c\u51fa
+options.general.checkModStatus=\u7de8\u96c6\u4e2d\u306e\u30d5\u30a1\u30a4\u30eb\u304c\u30c7\u30a3\u30b9\u30af\u4e0a\u3067\u5909\u66f4\u3055\u308c\u305f\u3068\u304d:
+options.general.checkModStatus.nothing=\u4f55\u3082\u3057\u306a\u3044
+options.general.checkModStatus.prompt=\u554f\u3044\u5408\u308f\u305b\u308b
+options.general.checkModStatus.reload=\u81ea\u52d5\u7684\u306b\u66f4\u65b0\u3057\u901a\u77e5\u3059\u308b
+options.general.checkModStatus.silentReload=\u901a\u77e5\u305b\u305a\u306b\u81ea\u52d5\u66f4\u65b0
+options.general.checkModStatusUpon=\u30d5\u30a1\u30a4\u30eb\u5909\u66f4\u3092\u78ba\u8a8d\u3059\u308b\u304d\u3063\u304b\u3051:
+options.general.checkModStatusUpon.focus=\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u30d5\u30a9\u30fc\u30ab\u30b9
+options.general.checkModStatusUpon.all=\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u30d5\u30a9\u30fc\u30ab\u30b9 \u5bfe\u8c61\u30d0\u30c3\u30d5\u30a1\u8868\u793a \u4ed6\u30d0\u30c3\u30d5\u30a1\u306e\u4fdd\u5b58
+options.general.checkModStatusUpon.operations=\u5bfe\u8c61\u30d0\u30c3\u30d5\u30a1\u8868\u793a \u4ed6\u30d0\u30c3\u30d5\u30a1\u306e\u4fdd\u5b58
+options.general.checkModStatusUpon.focusBuffer=\u5bfe\u8c61\u30d0\u30c3\u30d5\u30a1\u8868\u793a\u304a\u3088\u3073\u4fdd\u5b58
+options.general.checkModStatusUpon.none=\u5bfe\u8c61\u30d0\u30c3\u30d5\u30a1\u306e\u4fdd\u5b58
+options.general.recentFiles=\u6700\u8fd1\u958b\u3044\u305f\u30d5\u30a1\u30a4\u30eb\u306e\u8a18\u61b6:
+options.general.hypersearch.maxWarningResults=\u30cf\u30a4\u30d1\u30fc\u30b5\u30fc\u30c1\u306e\u4e2d\u6b62\u3092\u554f\u3046\u95be\u5024:
+options.general.sortRecent=\u6700\u8fd1\u958b\u3044\u305f\u30d5\u30a1\u30a4\u30eb\u3092\u30bd\u30fc\u30c8
+options.general.saveCaret=\u6700\u8fd1\u958b\u3044\u305f\u30d5\u30a1\u30a4\u30eb\u306e\u30ab\u30fc\u30bd\u30eb\u4f4d\u7f6e\u3092\u4fdd\u5b58
+options.general.persistentMarkers=\u30de\u30fc\u30ab\u30fc\u306e\u4f4d\u7f6e\u3092\u4fdd\u5b58
+options.general.resetUndo=\u4fdd\u5b58\u6642\u306b\u5143\u306b\u623b\u3059\u5c65\u6b74\u3092\u30ea\u30bb\u30c3\u30c8
+options.general.restore=\u8d77\u52d5\u6642\u306b\u524d\u56de\u958b\u3044\u3066\u3044\u305f\u30d5\u30a1\u30a4\u30eb\u3092\u958b\u304f
+options.general.restore.remote=... VFS\u7d4c\u7531\u306e\u30ea\u30e2\u30fc\u30c8\u30d5\u30a1\u30a4\u30eb\u3082\u958b\u304f
+options.general.restore.cli=... \u30b3\u30de\u30f3\u30c9\u30e9\u30a4\u30f3\u3067\u30d5\u30a1\u30a4\u30eb\u540d\u304c\u6307\u5b9a\u3055\u308c\u305f\u5834\u5408\u3082\u958b\u304f
+options.general.sortBuffers=\u30d0\u30c3\u30d5\u30a1\u30ea\u30b9\u30c8\u3092\u30bd\u30fc\u30c8 (\u518d\u8d77\u52d5\u5f8c\u306b\u6709\u52b9)
+options.general.sortByName=\u30d1\u30b9\u540d\u306e\u4ee3\u308f\u308a\u306b\u30d5\u30a1\u30a4\u30eb\u540d\u3067\u30d0\u30c3\u30d5\u30a1\u30ea\u30b9\u30c8\u3092\u30bd\u30fc\u30c8
+options.general.newkeyhandling=\u65b0\u578b\u30ad\u30fc\u30dc\u30fc\u30c9\u30cf\u30f3\u30c9\u30ea\u30f3\u30b0\u3092\u4f7f\u7528 (\u8a66\u9a13\u7684)
+options.general.newkeyhandling.tooltip=(\u8a66\u9a13\u7684)\u3044\u304f\u3089\u304b\u306e\u6d77\u5916\u306eLinux\u30e6\u30fc\u30b6\u306f\u3053\u306e\u30e2\u30fc\u30c9\u3092\u597d\u3093\u3067\u3044\u308b\u3088\u3046\u3060\u304c\u3001\u6b63\u898f\u306e\u30ad\u30fc\u30dc\u30fc\u30c9\u30cf\u30f3\u30c9\u30ea\u30f3\u30b0\u304c\u3088\u308a\u826f\u304f\u6a5f\u80fd\u3059\u308c\u3070\u3001\u3053\u308c\u306f\u3059\u3050\u306b\u306a\u304f\u306a\u308b\u3060\u308d\u3046\u3002
+options.general.encodingDetectors=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u691c\u51fa\u65b9\u6cd5(\u8907\u6570\u53ef):
+options.general.fallbackEncodings=\u4ee3\u66ff\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0(\u8907\u6570\u53ef):
+options.general.fallbackEncodings.tooltip=(\u8a66\u9a13\u7684)\u30ed\u30fc\u30c9\u4e2d\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30a8\u30e9\u30fc\u306b\u5bfe\u3057\u3066\u518d\u8a66\u884c\u3059\u308b\u3001\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3067\u5206\u5272\u3055\u308c\u305f\u8907\u6570\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
+#}}}
+
+#{{{ Abbreviations pane
+options.abbrevs.label=\u7701\u7565\u8a9e
+# options.abbrevs.code=new AbbrevsOptionPane();
+options.abbrevs.set=\u7565\u8a9e\u30bb\u30c3\u30c8:
+options.abbrevs.expandOnInput=\u30b9\u30da\u30fc\u30b9\u30ad\u30fc\u3067\u7565\u8a9e\u3092\u5c55\u958b\u3059\u308b
+options.abbrevs.abbrev=\u7565\u8a9e
+options.abbrevs.expand=\u5c55\u958b
+options.abbrevs.add=\u8ffd\u52a0...
+options.abbrevs.edit=\u7de8\u96c6...
+options.abbrevs.remove=\u524a\u9664
+#}}}
+
+#{{{ Appearance pane
+options.appearance.label=\u5916\u89b3
+# options.appearance.code=new AppearanceOptionPane();
+options.appearance.fonts.antialias=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u4ee5\u5916\u306e\u30d5\u30a9\u30f3\u30c8\u3092\u30a2\u30f3\u30c1\u30a8\u30a4\u30ea\u30a2\u30b9
+options.appearance.lf.note=Look&Feel \u306e\u5909\u66f4\u3092\u6709\u52b9\u306b\u3059\u308b\u306b\u306f jEdit \u306e\u518d\u8d77\u52d5\u304c\u5fc5\u8981\u3067\u3059
+options.appearance.lf=Swing Look&Feel:
+options.appearance.primaryFont=\u30dc\u30bf\u30f3/\u30e1\u30cb\u30e5\u30fc/\u30e9\u30d9\u30eb\u306e\u30d5\u30a9\u30f3\u30c8:
+options.appearance.secondaryFont=\u30ea\u30b9\u30c8/\u30c6\u30ad\u30b9\u30c8\u30d5\u30a3\u30fc\u30eb\u30c9\u306e\u30d5\u30a9\u30f3\u30c8:
+options.appearance.history=\u30c6\u30ad\u30b9\u30c8\u30d5\u30a3\u30fc\u30eb\u30c9\u5165\u529b\u306e\u5c65\u6b74\u6570:
+options.appearance.menuSpillover=\u3053\u308c\u4ee5\u4e0a\u306e\u30e1\u30cb\u30e5\u30fc\u9805\u76ee\u306f\u3042\u3075\u308c\u51fa\u3059:
+options.appearance.startup.label=\u8d77\u52d5\u30aa\u30d7\u30b7\u30e7\u30f3
+options.appearance.showSplash=\u8d77\u52d5\u6642\u306b\u30b9\u30d7\u30e9\u30c3\u30b7\u30e5\u30b9\u30af\u30ea\u30fc\u30f3\u3092\u8868\u793a
+options.appearance.showTips=\u8d77\u52d5\u6642\u306b\u5c0f\u6280\u3092\u8868\u793a
+options.appearance.experimental.label=\u8a66\u9a13\u7684\u306a\u30aa\u30d7\u30b7\u30e7\u30f3
+options.appearance.experimental.caption=Java\u306e\u30d0\u30fc\u30b8\u30e7\u30f3\u306b\u3088\u3063\u3066\u306f\u4ee5\u4e0b\u306e\
+	\u30aa\u30d7\u30b7\u30e7\u30f3\u304c\u6b63\u3057\u304f\u6a5f\u80fd\u3057\u306a\u3044\n\
+	\u304b\u3082\u3057\u308c\u307e\u305b\u3093\u3002\u554f\u984c\u304c\u3042\u308b\u5834\u5408\u306f\u3053\u308c\u3089\u3092\u30aa\u30d5\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+
+options.appearance.textColors=\u3059\u3079\u3066\u306e\u30c6\u30ad\u30b9\u30c8\u30b3\u30f3\u30dd\u30fc\u30cd\u30f3\u30c8\u306b jEdit\u30c6\u30ad\u30b9\u30c8\
+	\u30a8\u30ea\u30a2\u306e\u8272\u3092\u53cd\u6620
+options.appearance.decorateFrames=Swing\u306eLook&Feel\u3092\u4f7f\u3063\u3066\u30a6\u30a3\u30f3\u30c9\u30a6\u306e\u5883\u754c\u3092\u63cf\u753b
+options.appearance.decorateDialogs=Swing\u306eLook&Feel\u3092\u4f7f\u3063\u3066\u30c0\u30a4\u30a2\u30ed\u30b0\u30dc\u30c3\u30af\u30b9\u306e\u5883\u754c\u3092\u63cf\u753b
+options.appearance.continuousLayout.label=\u30b9\u30d7\u30ea\u30c3\u30c8\u30da\u30a4\u30f3\u3067\u7d99\u7d9a\u7684\u30ec\u30a4\u30a2\u30a6\u30c8\u3092\u4f7f\u7528
+#}}}
+
+#{{{ Context Menu pane
+options.context.label=\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u30e1\u30cb\u30e5\u30fc
+# options.context.code=new ContextOptionPane();
+options.context.caption=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u53f3\u30af\u30ea\u30c3\u30af\u30e1\u30cb\u30e5\u30fc\u306e\u9805\u76ee:
+options.context.add=\u8ffd\u52a0...
+options.context.remove=\u524a\u9664
+options.context.moveUp=\u4e0a\u3078
+options.context.moveDown=\u4e0b\u3078
+options.context.add.title=\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u30e1\u30cb\u30e5\u30fc\u306b\u8ffd\u52a0
+options.context.add.caption=\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u30e1\u30cb\u30e5\u30fc\u306b\u8ffd\u52a0:
+options.context.add.separator=\u30bb\u30d1\u30ec\u30fc\u30bf
+options.context.add.action=\u30b3\u30de\u30f3\u30c9/\u30de\u30af\u30ed:
+#}}}
+
+#{{{ Docking pane
+options.docking.label=\u30c9\u30c3\u30ad\u30f3\u30b0
+# options.docking.code=new DockingOptionPane();
+options.docking.title=\u30a6\u30a3\u30f3\u30c9\u30a6
+options.docking.dockPosition=\u30c9\u30c3\u30ad\u30f3\u30b0\u4f4d\u7f6e
+#}}}
+
+#{{{ Editing pane
+options.editing.label=\u7de8\u96c6
+# options.editing.code=new EditingOptionPane();
+options.editing.defaultMode=\u30c7\u30d5\u30a9\u30eb\u30c8\u7de8\u96c6\u30e2\u30fc\u30c9:
+options.editing.undoCount=\u30a2\u30f3\u30c9\u30a5\u56de\u6570:
+options.editing.caption-0=\
+	\u30e2\u30fc\u30c9\u3054\u3068\u306e\u8a2d\u5b9a\u3092\u30ab\u30b9\u30bf\u30de\u30a4\u30ba\u3059\u308b\u306b\u306f\u3001\u4ee5\u4e0b\u306e\u30e1\u30cb\u30e5\u30fc\u304b\u3089\n\
+	\u7de8\u96c6\u30e2\u30fc\u30c9\u3092\u9078\u629e\u3057\u307e\u3059\u3002\u73fe\u5728\u306f\u30b0\u30ed\u30fc\u30d0\u30eb\u30c7\u30d5\u30a9\u30eb\u30c8\u304c\u8868\u793a\n\
+	\u3055\u308c\u3066\u3044\u307e\u3059\u3002
+options.editing.caption-1=\
+	\u30e2\u30fc\u30c9\u3054\u3068\u306e\u8a2d\u5b9a\u3092\u30ab\u30b9\u30bf\u30de\u30a4\u30ba\u3059\u308b\u306b\u306f\u3001"\u30c7\u30d5\u30a9\u30eb\u30c8\u8a2d\u5b9a\u3092\u4f7f\u7528"\n\
+	\u30c1\u30a7\u30c3\u30af\u3092\u5916\u3057\u307e\u3059\u3002\u305d\u3046\u3067\u306a\u3051\u308c\u3070\u3001<\u30b0\u30ed\u30fc\u30d0\u30eb\u30c7\u30d5\u30a9\u30eb\u30c8>\u30bb\u30af\n\
+	\u30b7\u30e7\u30f3\u306e\u8a2d\u5b9a\u304c\u4f7f\u7528\u3055\u308c\u307e\u3059\u3002
+options.editing.mode=\u8a2d\u5b9a\u3092\u5909\u66f4\u3059\u308b\u30e2\u30fc\u30c9:
+options.editing.global=<\u30b0\u30ed\u30fc\u30d0\u30eb\u30c7\u30d5\u30a9\u30eb\u30c8>
+options.editing.useDefaults=\u30c7\u30d5\u30a9\u30eb\u30c8\u8a2d\u5b9a\u3092\u4f7f\u7528
+options.editing.filenameGlob=\u30d5\u30a1\u30a4\u30eb\u540d\u30d5\u30a3\u30eb\u30bf:
+options.editing.firstlineGlob=\u5148\u982d\u884c\u30d5\u30a3\u30eb\u30bf:
+options.editing.folding=\u30d5\u30a9\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30e2\u30fc\u30c9:
+options.editing.collapseFolds=\u521d\u671f\u72b6\u614b\u3067\u9589\u3058\u3066\u3044\u308b\u30d5\u30a9\u30fc\u30eb\u30c9\u968e\u5c64:
+options.editing.wrap=\u30ef\u30fc\u30c9\u30e9\u30c3\u30d7:
+options.editing.maxLineLen=\u30e9\u30c3\u30d7\u30de\u30fc\u30b8\u30f3:
+options.editing.maxLineLen.tooltip=0\u3067\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u306e\u5e45\u306b\u4e00\u81f4 (\u30bd\u30d5\u30c8\u30e9\u30c3\u30d7\u306e\u307f)
+options.editing.tabSize=\u30bf\u30d6\u5e45:
+options.editing.indentSize=\u30a4\u30f3\u30c7\u30f3\u30c8\u5e45:
+options.editing.noWordSep=\u7981\u5247\u6587\u5b57:
+options.editing.camelCasedWords=\u30ad\u30e3\u30e1\u30eb\u30b1\u30fc\u30b9\u306e\u5358\u8a9e\u3092\u5206\u96e2
+options.editing.noTabs=\u30bd\u30d5\u30c8\u30bf\u30d6 (\u30b9\u30da\u30fc\u30b9\u3067\u8fd1\u4f3c)
+options.editing.deepIndent=\u6df1\u3044\u30a4\u30f3\u30c7\u30f3\u30c8
+#}}}
+
+#{{{ Encodings pane
+options.encodings.label=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
+# options.encodings.code=new EncodingsOptionPane();
+options.encodings.selectEncodings=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30c0\u30a4\u30a2\u30ed\u30b0\u3067\u8868\u793a\u3055\u308c\u308b\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044:
+options.encodings.selectAll=\u3059\u3079\u3066\u9078\u629e
+options.encodings.selectNone=\u9078\u629e\u89e3\u9664
+#}}}
+
+#{{{ Gutter pane
+options.gutter.label=\u30ac\u30bf\u30fc
+# options.gutter.code=new GutterOptionPane();
+options.gutter.lineNumbers=\u884c\u756a\u53f7
+options.gutter.font=\u30ac\u30bf\u30fc\u30d5\u30a9\u30f3\u30c8:
+options.gutter.foreground=\u884c\u756a\u53f7\u306e\u8272:
+options.gutter.background=\u80cc\u666f\u8272:
+options.gutter.borderWidth=\u30ac\u30bf\u30fc\u5883\u754c\u5e45:
+options.gutter.numberAlignment=\u884c\u756a\u53f7\u4f4d\u7f6e\u63c3\u3048:
+options.gutter.interval-1=\u5468\u671f\u884c\u30cf\u30a4\u30e9\u30a4\u30c8
+options.gutter.interval-2=:
+options.gutter.currentLineHighlight=\u73fe\u5728\u884c\u30cf\u30a4\u30e9\u30a4\u30c8:
+options.gutter.structureHighlight=\u69cb\u9020\u30b9\u30b3\u30fc\u30d7\u306e\u8868\u793a:
+options.gutter.markerHighlight=\u30de\u30fc\u30ab\u30fc\u4f4d\u7f6e\u306e\u8868\u793a:
+options.gutter.foldColor=\u30d5\u30a9\u30fc\u30eb\u30c9\u30de\u30fc\u30ab\u30fc:
+options.gutter.focusBorderColor=\u30d5\u30a9\u30fc\u30ab\u30b9\u3092\u6301\u3064\u30ac\u30bf\u30fc\u306e\u5883\u754c:
+options.gutter.noFocusBorderColor=\u30d5\u30a9\u30fc\u30ab\u30b9\u3092\u6301\u305f\u306a\u3044\u30ac\u30bf\u30fc\u306e\u5883\u754c:
+#}}}
+
+#{{{ Mouse pane
+options.mouse.label=\u30de\u30a6\u30b9
+# options.mouse.code=new MouseOptionPane();
+options.mouse.dragAndDrop=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u3078\u306e\u30c9\u30e9\u30c3\u30b0&\u30c9\u30ed\u30c3\u30d7
+options.mouse.joinNonWordChars=\u30c0\u30d6\u30eb\u30af\u30ea\u30c3\u30af\u30c9\u30e9\u30c3\u30b0\u306f\u975e\u30a2\u30eb\u30d5\u30a1\u30d9\u30c3\u30c8\u6587\u5b57\u3092\u7d50\u5408
+options.mouse.middleMousePaste=\u30af\u30a3\u30c3\u30af\u30b3\u30d4\u30fc\u306b\u4e2d\u30de\u30a6\u30b9\u30dc\u30bf\u30f3\u3092\u4f7f\u7528
+options.mouse.ctrlForRectangularSelection=Ctrl\u30ad\u30fc\u304c\u62bc\u3055\u308c\u3066\u3044\u308b\u9593\u77e9\u5f62\u9078\u629e\u306b\u5207\u308a\u66ff\u3048\u308b
+options.mouse.gutter.foldClick=\u30ac\u30bf\u30fc\u306e\u30af\u30ea\u30c3\u30af:
+options.mouse.gutter.SfoldClick=\u30ac\u30bf\u30fc\u306eShift+\u30af\u30ea\u30c3\u30af:
+options.mouse.gutter.toggle-fold=\u30d5\u30a9\u30fc\u30eb\u30c9\u306e\u958b\u9589
+options.mouse.gutter.toggle-fold-fully=\u4e0b\u4f4d\u30d5\u30a9\u30fc\u30eb\u30c9\u968e\u5c64\u3059\u3079\u3066\u306e\u958b\u9589
+#}}}
+
+#{{{ Plugin Manager pane
+options.plugin-manager.label=\u30d7\u30e9\u30b0\u30a4\u30f3\u30de\u30cd\u30fc\u30b8\u30e3
+# options.plugin-manager.code=new PluginManagerOptionPane();
+options.plugin-manager.updateMirrors=\u30df\u30e9\u30fc\u30ea\u30b9\u30c8\u306e\u66f4\u65b0
+options.plugin-manager.workthread=\u30df\u30e9\u30fc\u30ea\u30b9\u30c8\u306e\u66f4\u65b0\u4e2d ...
+options.plugin-manager.downloadSource=\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30bd\u30fc\u30b9\u30b3\u30fc\u30c9\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9
+options.plugin-manager.deleteDownloads=\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5f8c\u306b\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\
+	\u306e\u5727\u7e2e\u30d5\u30a1\u30a4\u30eb\u3092\u524a\u9664
+options.plugin-manager.mirror=\u9078\u629e\u4e2d\u306e\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u30df\u30e9\u30fc:
+options.plugin-manager.location=\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u5148:
+options.plugin-manager.settings-dir=jEdit \u500b\u4eba\u8a2d\u5b9a\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+options.plugin-manager.app-dir=jEdit \u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+options.plugin-manager.none=\u30c7\u30d5\u30a9\u30eb\u30c8\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u30bb\u30f3\u30bf\u30fc
+#}}}
+
+#{{{ Printing pane
+options.print.label=\u5370\u5237
+# options.print.code=new PrintOptionPane();
+options.print.font=\u5370\u5237\u30d5\u30a9\u30f3\u30c8:
+options.print.fontstyle=\u5370\u5237\u30d5\u30a9\u30f3\u30c8\u30b9\u30bf\u30a4\u30eb:
+options.print.fontsize=\u5370\u5237\u30d5\u30a9\u30f3\u30c8\u30b5\u30a4\u30ba:
+options.print.header=\u30d5\u30a1\u30a4\u30eb\u540d\u3092\u30d8\u30c3\u30c0\u306b\u5370\u5237
+options.print.footer=\u65e5\u4ed8/\u6642\u523b/\u30da\u30fc\u30b8\u756a\u53f7\u3092\u30d5\u30c3\u30bf\u306b\u5370\u5237
+options.print.lineNumbers=\u884c\u756a\u53f7\u3092\u5370\u5237
+options.print.color=\u5370\u5237\u306b\u8272\u3092\u53cd\u6620
+options.print.tabSize=\u5370\u5237\u6642\u306e\u30bf\u30d6\u5e45:
+options.print.workarounds=Java \u30d0\u30b0\u306e\u554f\u984c\u56de\u907f
+options.print.glyphVector=\u7a7a\u767d\u5370\u5237\u306e\u554f\u984c\u56de\u907f (\u30b9\u30d7\u30fc\u30eb\u306e\u30d5\u30a1\u30a4\u30eb\u30b5\u30a4\u30ba\u304c\u5897\u52a0\u3057\u307e\u3059)
+options.print.force13=\u65e7\u5f0f\u306e\u5370\u5237API\u3092\u4f7f\u7528 (\u5370\u5237\u6642\u306b jEdit \u304c\u30cf\u30f3\u30b0\u30a2\u30c3\u30d7\u3059\u308b\
+	\u5834\u5408\u306b\u6709\u52b9\u5316\u3057\u3066\u304f\u3060\u3055\u3044)
+options.print.folds=\u30d5\u30a9\u30fc\u30eb\u30c9\u3055\u308c\u305f\u30ea\u30fc\u30b8\u30e7\u30f3\u3092\u5370\u5237
+#}}}
+
+#{{{ Proxy pane
+options.firewall.label=\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0
+# options.firewall.code=new FirewallOptionPane();
+options.firewall.http.enabled=HTTP\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0\u3092\u4f7f\u7528
+options.firewall.http.host=HTTP\u30d7\u30ed\u30ad\u30b7 \u30db\u30b9\u30c8:
+options.firewall.http.port=HTTP\u30d7\u30ed\u30ad\u30b7 \u30dd\u30fc\u30c8:
+options.firewall.http.user=\u30e6\u30fc\u30b6\u540d:
+options.firewall.http.password=\u30d1\u30b9\u30ef\u30fc\u30c9:
+options.firewall.http.nonProxy=\u76f4\u63a5\u63a5\u7d9a\u3059\u308b\u63a5\u7d9a\u5148:
+options.firewall.socks.enabled=SOCKS\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0\u3092\u4f7f\u7528
+options.firewall.socks.host=SOCKS\u30d7\u30ed\u30ad\u30b7 \u30db\u30b9\u30c8:
+options.firewall.socks.port=SOCKS\u30d7\u30ed\u30ad\u30b7 \u30dd\u30fc\u30c8:
+#}}}
+
+#{{{ Save & Backup pane
+options.save-back.label=\u4fdd\u5b58 & \u30d0\u30c3\u30af\u30a2\u30c3\u30d7
+# options.save-back.code=new SaveBackupOptionPane();
+options.save-back.autosave=\u81ea\u52d5\u4fdd\u5b58\u306e\u5468\u671f (\u79d2):
+options.save-back.backups=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u306e\u6700\u5927\u6570:
+options.save-back.backupDirectory=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u30c7\u30a3\u30ec\u30af\u30c8\u30ea:
+options.save-back.backupPrefix=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u30d5\u30a1\u30a4\u30eb\u540d\u30d7\u30ec\u30d5\u30a3\u30af\u30b9:
+options.save-back.backupSuffix=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u30d5\u30a1\u30a4\u30eb\u540d\u30b5\u30d5\u30a3\u30af\u30b9:
+options.save-back.backupEverySave=\u4fdd\u5b58\u306e\u305f\u3073\u306b\u30d0\u30c3\u30af\u30a2\u30c3\u30d7
+options.save-back.twoStageSave=\u30c4\u30fc\u30fb\u30b9\u30c6\u30fc\u30b8 \u30bb\u30fc\u30d6 (\u3088\u308a\u5b89\u5168\u3067\u3059\u304c\u3001Unix\u3067\u306f\u30d5\u30a1\u30a4\u30eb\u6240\u6709\u8005\u304c\u30ea\u30bb\u30c3\u30c8\u3055\u308c\u307e\u3059)
+options.save-back.confirmSaveAll="\u3059\u3079\u3066\u4fdd\u5b58"\u30b3\u30de\u30f3\u30c9\u306f\u78ba\u8a8d\u30c0\u30a4\u30a2\u30ed\u30b0\u3092\u8868\u793a
+options.save-back.autosaveUntitled=\u7121\u984c\u30d0\u30c3\u30d5\u30a1\u3092\u81ea\u52d5\u4fdd\u5b58
+#}}}
+
+#{{{ Shortcuts pane
+options.shortcuts.label=\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8
+# options.shortcuts.code=new ShortcutsOptionPane();
+options.shortcuts.select.label=\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u306e\u7de8\u96c6:
+options.shortcuts.select.tooltip=\u30b0\u30ed\u30fc\u30d0\u30eb/\u30de\u30af\u30ed/\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3092\u9078\u629e\u3067\u304d\u307e\u3059
+options.shortcuts.name=\u30b3\u30de\u30f3\u30c9
+options.shortcuts.shortcut1=\u512a\u5148\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8
+options.shortcuts.shortcut2=\u4ee3\u66ff\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8
+options.shortcuts.filter.label=\u30d5\u30a3\u30eb\u30bf:
+options.shortcuts.filter.tooltip=\u540d\u79f0\u304c\u3053\u306e\u6587\u5b57\u5217\u3092\u542b\u3080\u30a2\u30af\u30b7\u30e7\u30f3\u3060\u3051\u3092\u8868\u793a
+options.shortcuts.clear.label=\u30af\u30ea\u30a2
+
+grab-key.title=\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3092\u6307\u5b9a\u3057\u3066\u304f\u3060\u3055\u3044
+grab-key.caption="{0}"\u306b\u5272\u5f53\u3066\u305f\u3044\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u30ad\u30fc\u3092\u62bc\u3057\u3001\u4e86\u89e3\u3092\u30af\u30ea\u30c3\u30af\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+grab-key.keyboard-test=\u554f\u984c\u3092\u8d77\u3053\u3057\u3066\u3044\u308b\u30ad\u30fc\u30b9\u30c8\u30ed\u30fc\u30af\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+grab-key.assigned-to=\u73fe\u5728\u306e\u5272\u5f53: {0}
+grab-key.assigned-to.none=<\u306a\u3057>
+grab-key.assigned-to.prefix={0} \u30d7\u30ec\u30d5\u30a3\u30af\u30b9
+grab-key.clear=\u30af\u30ea\u30a2
+grab-key.remove=\u5272\u5f53\u306e\u89e3\u9664
+
+grab-key.remove-ask.title=\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3092\u89e3\u9664\u3057\u307e\u3059\u304b?
+grab-key.remove-ask.message=\
+	\u65b0\u305f\u306a\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u304c\u6307\u5b9a\u3055\u308c\u307e\u305b\u3093\u3067\u3057\u305f\u3002\n\
+	\u73fe\u5728\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3092\u89e3\u9664\u3057\u307e\u3059\u304b?
+
+grab-key.duplicate-alt-shortcut.title=\u91cd\u8907\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8
+grab-key.duplicate-alt-shortcut.message=\
+	\u9078\u629e\u3055\u308c\u305f\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u306f\u3053\u306e\u9805\u76ee\u306e\u5225\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u3068\n\n
+	\u91cd\u8907\u3057\u307e\u3059\u3002\u4ed6\u306e\u3082\u306e\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+
+grab-key.duplicate-shortcut.title=\u91cd\u8907\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8
+grab-key.duplicate-shortcut.message=\
+	\u3053\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u306f\u3059\u3067\u306b\u4ee5\u4e0b\u306b\u5272\u5f53\u3066\u3089\u308c\u3066\u3044\u307e\u3059\u3002\n\
+	"{0}".\n\
+	\n\
+	\u3053\u306e\u5272\u5f53\u3092\u30aa\u30fc\u30d0\u30fc\u30e9\u30a4\u30c9\u3057\u307e\u3059\u304b?
+
+grab-key.prefix-shortcut.title=\u4e0d\u9069\u5207\u306a\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8
+grab-key.prefix-shortcut.message=\
+	\u4ed6\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u306e\u30d7\u30ec\u30d5\u30a3\u30af\u30b9\u3068\u4e00\u81f4\u3059\u308b\u305f\u3081\u3001\n\
+	\u3053\u306e\u30b7\u30e7\u30fc\u30c8\u30ab\u30c3\u30c8\u306f\u4f7f\u3048\u307e\u305b\u3093\u3002\n\
+	\u4ed6\u306e\u3082\u306e\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+#}}}
+
+#{{{ Status bar pane
+options.status.label=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc
+# options.status.code=new StatusBarOptionPane();
+options.status.visible=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u306e\u8868\u793a
+options.status.foreground=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u306e\u30c6\u30ad\u30b9\u30c8:
+options.status.background=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u306e\u80cc\u666f:
+options.status.show-caret-status=\u30ab\u30fc\u30bd\u30eb\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
+options.status.show-encoding=\u30d0\u30c3\u30d5\u30a1\u306e\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u8868\u793a
+options.status.show-edit-mode=\u7de8\u96c6\u30e2\u30fc\u30c9\u3092\u8868\u793a
+options.status.show-fold-mode=\u30d5\u30a9\u30fc\u30eb\u30c9\u30e2\u30fc\u30c9\u3092\u8868\u793a
+options.status.show-wrap=\u30e9\u30c3\u30d7\u30e2\u30fc\u30c9\u3092\u8868\u793a
+options.status.show-multi-select=\u30de\u30eb\u30c1\u9078\u629e\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
+options.status.show-rect-select=\u77e9\u5f62\u9078\u629e\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
+options.status.show-overwrite=\u4e0a\u66f8\u30b9\u30c6\u30fc\u30bf\u30b9\u3092\u8868\u793a
+options.status.show-line-seperator=\u30d0\u30c3\u30d5\u30a1\u306e\u6539\u884c\u30b3\u30fc\u30c9\u3092\u8868\u793a
+options.status.show-memory=\u30e1\u30e2\u30ea\u30a4\u30f3\u30b8\u30b1\u30fc\u30bf\u3092\u8868\u793a
+options.status.memory.foreground=\u30e1\u30e2\u30ea\u30a4\u30f3\u30b8\u30b1\u30fc\u30bf\u524d\u666f:
+options.status.memory.background=\u30e1\u30e2\u30ea\u30a4\u30f3\u30b8\u30b1\u30fc\u30bf\u80cc\u666f:
+options.status.show-clock=\u6642\u8a08\u3092\u8868\u793a
+#}}}
+
+#{{{ Syntax Highlighting pane
+options.syntax.label=\u30b7\u30f3\u30bf\u30af\u30b9 \u30cf\u30a4\u30e9\u30a4\u30c8
+# options.syntax.code=new SyntaxHiliteOptionPane();
+options.syntax.object=\u30c8\u30fc\u30af\u30f3\u30bf\u30a4\u30d7
+options.syntax.style=\u30c6\u30ad\u30b9\u30c8\u30b9\u30bf\u30a4\u30eb
+options.syntax.foldLine.1=\u9589\u3058\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u884c \u30ec\u30d9\u30eb 1
+options.syntax.foldLine.2=\u9589\u3058\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u884c \u30ec\u30d9\u30eb 2
+options.syntax.foldLine.3=\u9589\u3058\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u884c \u30ec\u30d9\u30eb 3
+options.syntax.foldLine.0=\u9589\u3058\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u884c \u30ec\u30d9\u30eb 3\u4ee5\u4e0a
+#}}}
+
+#{{{ Text Area pane
+options.textarea.label=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2
+# options.textarea.code=new TextAreaOptionPane();
+options.textarea.font=\u30c6\u30ad\u30b9\u30c8\u30d5\u30a9\u30f3\u30c8:
+options.textarea.foreground=\u30c6\u30ad\u30b9\u30c8\u8272:
+options.textarea.background=\u80cc\u666f\u8272:
+options.textarea.caret=\u30ab\u30fc\u30bd\u30eb:
+options.textarea.blinkCaret=\u70b9\u6ec5
+options.textarea.blockCaret=\u30d6\u30ed\u30c3\u30af
+options.textarea.selection=\u5358\u4e00\u9078\u629e:
+options.textarea.multipleSelection=\u30de\u30eb\u30c1\u9078\u629e:
+options.textarea.lineHighlight=\u73fe\u5728\u884c\u306e\u30cf\u30a4\u30e9\u30a4\u30c8:
+options.textarea.structureHighlight=\u4e00\u81f4\u8981\u7d20\u30cf\u30a4\u30e9\u30a4\u30c8:
+options.textarea.eolMarkers=\u884c\u672b\u30de\u30fc\u30ab\u30fc:
+options.textarea.wrapGuide=\u30e9\u30c3\u30d7\u30ac\u30a4\u30c9:
+options.textarea.electricBorders=\u81ea\u52d5\u30b9\u30af\u30ed\u30fc\u30eb
+options.textarea.stdNextPrevWord=\u6b21/\u524d\u306e\u5358\u8a9e\u3078\u79fb\u52d5\u3059\u308b\u3068\u304d\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080
+options.textarea.antiAlias=\u30a2\u30f3\u30c1\u30a8\u30a4\u30ea\u30a2\u30b9 \u30b9\u30e0\u30fc\u30ba\u30d5\u30a9\u30f3\u30c8
+options.textarea.antiAlias.tooltip=\u30a2\u30f3\u30c1\u30a8\u30a4\u30ea\u30a2\u30b9\u30d5\u30a9\u30f3\u30c8\u3092\u4f7f\u3046\u3068\u3001\u3044\u304f\u3064\u304b\u306e\
+	\u30b7\u30b9\u30c6\u30e0\u3067\u8868\u793a\u304c\u9045\u304f\u306a\u308a\u307e\u3059\u3002\u30b5\u30d6\u30d4\u30af\u30bb\u30eb\u306f JDK 1.6 \u4ee5\u964d\u3067\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u307e\u3059\u3002
+options.textarea.fracFontMetrics=Fractional \u30d5\u30a9\u30f3\u30c8\u30e1\u30c8\u30ea\u30af\u30b9 (\u6587\u5b57\u306e\u8868\u793a\u304c\
+	\u3088\u308a\u30b9\u30e0\u30fc\u30ba\u306b\u306a\u308a\u307e\u3059)
+options.textArea.stripTrailingEOL=\u6700\u7d42\u884c\u672b\u3092\u96a0\u3059 (\u4efb\u610f)
+#}}}
+
+#{{{ Tool Bar pane
+options.toolbar.label=\u30c4\u30fc\u30eb\u30d0\u30fc
+# options.toolbar.code=new ToolBarOptionPane();
+options.toolbar.showToolbar=\u30c4\u30fc\u30eb\u30d0\u30fc\u306e\u8868\u793a
+options.toolbar.caption=\u30c4\u30fc\u30eb\u30d0\u30fc\u306b\u8868\u793a\u3055\u308c\u308b\u30dc\u30bf\u30f3:
+options.toolbar.add=\u8ffd\u52a0...
+options.toolbar.edit=\u7de8\u96c6...
+options.toolbar.remove=\u524a\u9664
+options.toolbar.moveUp=\u4e0a\u3078
+options.toolbar.moveDown=\u4e0b\u3078
+options.toolbar.edit.title=\u30c4\u30fc\u30eb\u30d0\u30fc\u30a8\u30f3\u30c8\u30ea\u306e\u7de8\u96c6
+options.toolbar.edit.caption=\u30bf\u30a4\u30d7:
+options.toolbar.edit.separator=\u30bb\u30d1\u30ec\u30fc\u30bf
+options.toolbar.edit.action=\u30b3\u30de\u30f3\u30c9/\u30de\u30af\u30ed:
+options.toolbar.edit.icon=\u30a2\u30a4\u30b3\u30f3:
+options.toolbar.edit.builtin=\u30d3\u30eb\u30c8\u30a4\u30f3\u30a2\u30a4\u30b3\u30f3\u3092\u4f7f\u7528:
+options.toolbar.edit.file=\u30d5\u30a1\u30a4\u30eb\u304b\u3089\u30a2\u30a4\u30b3\u30f3\u3092\u30ed\u30fc\u30c9:
+options.toolbar.edit.choose=\u9078\u629e
+options.toolbar.edit.no-icon=\u30a2\u30a4\u30b3\u30f3\u304c\u9078\u629e\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+#}}}
+
+#{{{ View pane
+options.view.label=\u30d3\u30e5\u30fc
+# options.view.code=new ViewOptionPane();
+options.view.viewLayout=\u30d3\u30e5\u30fc\u30ec\u30a4\u30a2\u30a6\u30c8
+options.view.alternateDockingLayout=\u5225\u306e\u30c9\u30c3\u30ad\u30f3\u30b0\u30a6\u30a3\u30f3\u30c9\u30a6\u914d\u7f6e
+options.view.alternateToolBarLayout=\u5225\u306e\u30c4\u30fc\u30eb\u30d0\u30fc\u914d\u7f6e
+options.view.showFullPath=\u30bf\u30a4\u30c8\u30eb\u30d0\u30fc\u306b\u30d0\u30c3\u30d5\u30a1\u306e\u30d5\u30eb\u30d1\u30b9\u3092\u8868\u793a
+options.view.showSearchbar=\u691c\u7d22\u30d0\u30fc\u3092\u5e38\u306b\u8868\u793a
+options.view.beepOnSearchAutoWrap=\u691c\u7d22\u304c\u81ea\u52d5\u7684\u306b\u5de1\u56de\u3057\u305f\u3068\u304d\u97f3\u3092\u9cf4\u3089\u3059
+options.view.showBufferSwitcher=\u30d0\u30c3\u30d5\u30a1\u30b9\u30a4\u30c3\u30c1\u30e3\u3092\u8868\u793a
+options.view.bufferSwitcherMaxRowsCount=\u30d0\u30c3\u30d5\u30a1\u30b9\u30a4\u30c3\u30c1\u30e3\u5185\u306e\u8868\u793a\u884c\u6570:
+#}}}
+
+#{{{ File System Browser panes
+options.browser.label=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 \u30d6\u30e9\u30a6\u30b6
+
+options.browser.colors.label=\u8272
+# options.browser.colors.code=new BrowserColorsOptionPane();
+options.browser.colors.glob=\u30d5\u30a1\u30a4\u30eb\u540d\u30d5\u30a3\u30eb\u30bf
+options.browser.colors.color=\u8272
+options.browser.colors.add=\u8ffd\u52a0
+options.browser.colors.remove=\u524a\u9664
+
+options.browser.general.label=\u4e00\u822c
+# options.browser.general.code=new BrowserOptionPane();
+options.browser.general.defaultPath=\u30c7\u30d5\u30a9\u30eb\u30c8\u30d1\u30b9:
+options.browser.general.defaultPath.favorites=\u304a\u6c17\u306b\u5165\u308a
+options.browser.general.defaultPath.home=\u30db\u30fc\u30e0\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+options.browser.general.defaultPath.last=\u6700\u8fd1\u958b\u3044\u305f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+options.browser.general.defaultPath.buffer=\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u89aa\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+options.browser.general.defaultPath.working=jEdit \u30d7\u30ed\u30bb\u30b9\u306e\u4f5c\u696d\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+options.browser.general.showMenubar=\u30e1\u30cb\u30e5\u30fc\u30d0\u30fc\u3092\u8868\u793a
+options.browser.general.showToolbar=\u30c4\u30fc\u30eb\u30d0\u30fc\u3092\u8868\u793a
+options.browser.general.showIcons=\u30a2\u30a4\u30b3\u30f3\u3092\u8868\u793a
+options.browser.general.showHiddenFiles=\u96a0\u3057\u30d5\u30a1\u30a4\u30eb\u3092\u8868\u793a
+options.browser.general.sortIgnoreCase=\u30bd\u30fc\u30c8\u6642\u306b\u5927\u6587\u5b57\u5c0f\u6587\u5b57\u3092\u533a\u5225\u3057\u306a\u3044
+options.browser.general.sortMixFilesAndDirs=\u30d5\u30a1\u30a4\u30eb\u3068\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u3092\u6df7\u5728\u3055\u305b\u308b
+options.browser.general.doubleClickClose=\u958b\u3044\u3066\u3044\u308b\u30d5\u30a1\u30a4\u30eb\u3092\u30c0\u30d6\u30eb\u30af\u30ea\u30c3\u30af\u3057\u305f\u3068\u304d\u306f\u9589\u3058\u308b
+options.browser.general.currentBufferFilter=\u30d5\u30a1\u30a4\u30eb\u30c0\u30a4\u30a2\u30ed\u30b0\u306e\u30d5\u30a3\u30eb\u30bf\u3092 \
+	\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u62e1\u5f35\u5b50\u306b\u3059\u308b
+options.browser.general.useDefaultIcons=\u30c7\u30d5\u30a9\u30eb\u30c8\u30a2\u30a4\u30b3\u30f3\u3092\u4f7f\u7528
+#}}}
+
+#{{{ Font selector
+font-selector.title=\u30d5\u30a9\u30f3\u30c8\u306e\u9078\u629e
+font-selector.family=\u30d5\u30a9\u30f3\u30c8\u540d:
+font-selector.size=\u30b5\u30a4\u30ba:
+font-selector.style=\u30b9\u30bf\u30a4\u30eb:
+font-selector.plain=\u6a19\u6e96
+font-selector.bold=\u592a\u5b57
+font-selector.italic=\u659c\u4f53
+font-selector.bolditalic=\u592a\u5b57 \u659c\u4f53
+font-selector.preview=\u30d7\u30ec\u30d3\u30e5\u30fc
+# font-selector.long-text=The quick brown fox jumps over the lazy dog.
+#}}}
+
+#{{{ Color chooser, used by options.syntaxs
+colorChooser.title=\u8272\u306e\u9078\u629e
+#}}}
+
+#{{{ Style editor, used by options.syntaxs
+style-editor.title=\u30b9\u30bf\u30a4\u30eb\u30a8\u30c7\u30a3\u30bf
+style-editor.tokenType=\u30c8\u30fc\u30af\u30f3\u306e\u533a\u5206:
+style-editor.italics=\u659c\u4f53
+style-editor.bold=\u592a\u5b57
+style-editor.fgColor=\u6587\u5b57\u8272:
+style-editor.bgColor=\u80cc\u666f\u8272:
+#}}}
+
+#}}}
+
+#{{{ Plugin options dialog
+plugin-options.title=\u30aa\u30d7\u30b7\u30e7\u30f3
+options.plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3
+options.no-plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3\u30aa\u30d7\u30b7\u30e7\u30f3\u306f\u3042\u308a\u307e\u305b\u3093
+#}}}
+
+#{{{ Help viewer
+helpviewer.title=jEdit \u30d8\u30eb\u30d7
+helpviewer.loading=\u30ed\u30fc\u30c9\u4e2d...
+helpviewer.back.label=\u623b\u308b
+# helpviewer.back.icon=ArrowL.png
+helpviewer.forward.label=\u9032\u3080
+# helpviewer.forward.icon=ArrowR.png
+
+helpviewer.toc.loading=\u30ed\u30fc\u30c9\u4e2d...
+# helpviewer.toc.label=Contents
+# helpviewer.toc.welcome=Welcome to jEdit
+# helpviewer.toc.readme=General Information
+# helpviewer.toc.changes=Detailed Change Log
+# helpviewer.toc.todo=To Do List and Known Bugs
+# helpviewer.toc.copying=GNU General Public License
+# helpviewer.toc.copying-doc=GNU Free Documentation License
+# helpviewer.toc.copying-apache=Apache License
+# helpviewer.toc.copying-plugins=Plugin Licensing Amendment
+# helpviewer.toc.plugins=Plugins
+
+helpviewer.search.label=\u691c\u7d22
+helpviewer.search.caption=\u691c\u7d22\u8a9e:
+helpviewer.searching=\u691c\u7d22\u4e2d...
+helpviewer.no-results=\u8a72\u5f53\u306a\u3057
+#}}}
+
+#{{{ Tip of the day window
+tip.title=\u4eca\u65e5\u306e\u30d2\u30f3\u30c8
+tip.caption=\u3054\u5b58\u77e5\u3067\u3059\u304b...
+tip.show-next-time=\u8d77\u52d5\u6642\u306b\u30d2\u30f3\u30c8\u3092\u8868\u793a
+tip.next-tip=\u6b21\u306e\u30d2\u30f3\u30c8
+
+tip.not-found=doc/tips \u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u304c\u3042\u308a\u307e\u305b\u3093
+# Show on startup?
+tip.show=true
+#}}}
+
+#{{{ Activity log
+log-viewer.title=\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0
+log-viewer.caption=\u30ed\u30b0\u306e\u5168\u30c6\u30ad\u30b9\u30c8\u306e\u4fdd\u5b58\u5148 {0}
+log-viewer.copy=\u30b3\u30d4\u30fc
+log-viewer.tail.label=\u672b\u5c3e
+#}}}
+
+#{{{ Marker Viewer
+view-markers.label=\u30de\u30fc\u30ab\u30fc\u30ea\u30b9\u30c8\u3092\u8868\u793a($W)
+view-markers.title=\u30de\u30fc\u30ab\u30fc\u30ea\u30b9\u30c8
+#}}}
+
+#{{{ I/O progress monitor
+io-progress-monitor.title=I/O \u9032\u6357\u30e2\u30cb\u30bf
+io-progress-monitor.caption={0} \u4ef6\u3092\u4fdd\u7559\u4e2d.
+io-progress-monitor.idle=\u30b9\u30ec\u30c3\u30c9 \u30a2\u30a4\u30c9\u30eb\u4e2d
+io-progress-monitor.abort=\u4e2d\u65ad
+
+#{{{ I/O abort dialog box
+abort.title=I/O \u306e\u4e2d\u65ad
+abort.message=\u73fe\u5728\u306e\u5165\u51fa\u529b\u8981\u6c42\u3092\u672c\u5f53\u306b\u4e2d\u65ad\u3057\u307e\u3059\u304b?\n\
+	\u30d5\u30a1\u30a4\u30eb\u306e\u4fdd\u5b58\u3092\u4e2d\u65ad\u3057\u305f\u5834\u5408\u3001\u30c7\u30fc\u30bf\u304c\u5931\u308f\u308c\u308b\u304b\u3082\u3057\u308c\u307e\u305b\u3093\u3002
+
+#}}}
+
+#}}}
+
+#{{{ VFS browser
+vfs.browser.title=\u30d5\u30a1\u30a4\u30eb\u30d6\u30e9\u30a6\u30b6
+vfs.browser.longtitle=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0 \u30d6\u30e9\u30a6\u30b6
+vfs.browser.path=\u30d1\u30b9:
+vfs.browser.path.mnemonic=p
+vfs.browser.filter=\u30d5\u30a3\u30eb\u30bf:
+vfs.browser.default-filter=*[^~#]
+vfs.browser.filter-enabled=true
+vfs.browser.tree.loading=\u30ed\u30fc\u30c9\u4e2d...
+
+vfs.browser.name=\u540d\u524d
+vfs.browser.type=\u7a2e\u985e
+vfs.browser.type.file=\u30d5\u30a1\u30a4\u30eb
+vfs.browser.type.directory=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+vfs.browser.type.filesystem=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0
+vfs.browser.status=\u72b6\u614b
+vfs.browser.status.no=\u30a2\u30af\u30bb\u30b9\u7981\u6b62
+vfs.browser.status.ro=\u8aad\u307f\u53d6\u308a\u5c02\u7528
+vfs.browser.status.append=\u8ffd\u8a18\u5c02\u7528
+vfs.browser.status.rw=\u8aad\u307f\u66f8\u304d\u53ef\u80fd
+vfs.browser.size=\u30b5\u30a4\u30ba
+vfs.browser.modified=\u6700\u7d42\u66f4\u65b0\u65e5
+
+vfs.browser.file_filter.glob=\u30d5\u30a1\u30a4\u30eb\u30d5\u30a3\u30eb\u30bf
+vfs.browser.file_filter.dir_only=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306e\u307f
+
+#{{{ Actions
+vfs.browser.browse-window.label=\u65b0\u898f\u30a6\u30a3\u30f3\u30c9\u30a6\u3067\u30d6\u30e9\u30a6\u30ba
+vfs.browser.browse.label=\u30d6\u30e9\u30a6\u30ba
+vfs.browser.close.label=\u9589\u3058\u308b
+vfs.browser.copy-path.label=\u30d1\u30b9\u540d\u306e\u30b3\u30d4\u30fc
+vfs.browser.delete.label=\u524a\u9664...
+vfs.browser.delete.shortcut=DELETE
+# vfs.browser.home.icon=Home.png
+vfs.browser.home.label=\u30db\u30fc\u30e0\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+# vfs.browser.home.shortcut=~
+vfs.browser.insert.label=\u633f\u5165
+# vfs.browser.new-directory.icon=NewDir.png
+vfs.browser.new-directory.label=\u65b0\u898f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea...
+vfs.browser.new-directory.shortcut=INSERT
+# vfs.browser.new-file.icon=New.png
+vfs.browser.new-file.label=\u65b0\u898f\u30d5\u30a1\u30a4\u30eb
+# vfs.browser.new-file.shortcut=C+n
+vfs.browser.open.label=\u958b\u304f
+vfs.browser.other-encoding-2.label=\u305d\u306e\u4ed6 ({0})...
+vfs.browser.other-encoding.label=\u305d\u306e\u4ed6...
+# vfs.browser.reload.icon=Reload.png
+vfs.browser.reload.label=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306e\u518d\u8aad\u307f\u8fbc\u307f
+# vfs.browser.reload.shortcut=F5
+vfs.browser.rename.label=\u540d\u524d\u306e\u5909\u66f4...
+# vfs.browser.rename.shortcut=F2
+# vfs.browser.roots.icon=Drive.png
+vfs.browser.roots.label=\u30eb\u30fc\u30c8\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+# vfs.browser.roots.shortcut=/
+# vfs.browser.search-directory.icon=FindInDir.png
+vfs.browser.search-directory.label=\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u5185\u691c\u7d22...
+vfs.browser.show-hidden-files.label=\u96a0\u3057\u30d5\u30a1\u30a4\u30eb\u306e\u8868\u793a
+# vfs.browser.synchronize.icon=CurrentDir.png
+vfs.browser.synchronize.label=\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+# vfs.browser.synchronize.shortcut=-
+# vfs.browser.up.icon=ParentDir.png
+vfs.browser.up.label=\u89aa\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+# vfs.browser.up.shortcut=BACK_SPACE
+
+#}}}
+
+#{{{ Tool bar
+# vfs.browser.toolbar-browser=vfs.browser.up \
+			    # vfs.browser.reload \
+			    # vfs.browser.roots \
+			    # vfs.browser.home \
+			    # vfs.browser.synchronize \
+			    # vfs.browser.new-file \
+			    # vfs.browser.new-directory \
+			    # vfs.browser.search-directory
+# vfs.browser.toolbar-dialog=vfs.browser.up \
+			   # vfs.browser.reload \
+			   # vfs.browser.roots \
+			   # vfs.browser.home \
+			   # vfs.browser.synchronize \
+			   # vfs.browser.new-directory
+#}}}
+
+#{{{ Commands menu
+vfs.browser.commands.label=\u30b3\u30de\u30f3\u30c9
+vfs.browser.commands.encoding.label=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
+vfs.browser.commands.encoding.auto-detect=\u81ea\u52d5\u691c\u51fa
+
+vfs.browser.open-in.label=\u3053\u3053\u3067\u958b\u304f
+# vfs.browser.open-in=vfs.browser.open-view \
+                    # vfs.browser.open-plain-view \
+                    # vfs.browser.open-split
+vfs.browser.open-view.label=\u65b0\u898f\u30d3\u30e5\u30fc
+vfs.browser.open-plain-view.label=\u65b0\u898f\u30d7\u30ec\u30fc\u30f3\u30d3\u30e5\u30fc
+vfs.browser.open-split.label=\u65b0\u898f\u30b9\u30d7\u30ea\u30c3\u30c8
+#}}}
+
+#{{{ Plugins menu
+vfs.browser.plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3
+vfs.browser.plugins.plugin-manager.label=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30de\u30cd\u30fc\u30b8\u30e3...
+vfs.browser.plugins.plugin-options.label=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30aa\u30d7\u30b7\u30e7\u30f3...
+vfs.browser.plugins.no-plugins.label=\u30d7\u30e9\u30b0\u30a4\u30f3\u306f\u3042\u308a\u307e\u305b\u3093
+#}}}
+
+#{{{ Favorites menu
+vfs.browser.favorites.label=\u304a\u6c17\u306b\u5165\u308a
+vfs.browser.favorites.add-to-favorites.label=\u304a\u6c17\u306b\u5165\u308a\u306b\u8ffd\u52a0
+vfs.browser.favorites.edit-favorites.label=\u304a\u6c17\u306b\u5165\u308a\u306e\u7de8\u96c6
+vfs.browser.favorites.no-favorites.label=\u304a\u6c17\u306b\u5165\u308a\u306f\u3042\u308a\u307e\u305b\u3093
+#}}}
+
+vfs.browser.dialog.open=\u958b\u304f
+vfs.browser.dialog.save=\u4fdd\u5b58
+vfs.browser.dialog.choose-dir=\u9078\u629e
+vfs.browser.dialog.filename=\u30d5\u30a1\u30a4\u30eb\u540d:
+# vfs.browser.dialog.filename.mnemonic=f
+
+#{{{ Dialogs
+vfs.browser.bad-filter.title=\u7121\u52b9\u306a\u30d5\u30a3\u30eb\u30bf
+vfs.browser.bad-filter.message=\u30d5\u30a3\u30eb\u30bf {0} \u306f\u7121\u52b9\u3067\u3059 ({1})
+
+vfs.browser.recurse-favorites.title=\u81ea\u5df1\u5faa\u74b0\u3059\u308b\u304a\u6c17\u306b\u5165\u308a\u306e\u7981\u6b62
+vfs.browser.recurse-favorites.message=\u304a\u6c17\u306b\u5165\u308a\u30ea\u30b9\u30c8\u3092\u305d\u308c\u81ea\u8eab\u306b\u8ffd\u52a0\u3059\u308b\u3053\u3068\u306f\u3067\u304d\u307e\u305b\u3093\u3002
+
+vfs.browser.delete-confirm.title=\u30d5\u30a1\u30a4\u30eb\u524a\u9664\u306e\u78ba\u8a8d
+vfs.browser.delete-confirm.message=\u4ee5\u4e0b\u306e{1}\u3092\u672c\u5f53\u306b\u524a\u9664\u3057\u307e\u3059\u304b?\n\n\
+	{0}
+
+vfs.browser.delete-favorites.title=\u304a\u6c17\u306b\u5165\u308a\u304b\u3089\u306e\u524a\u9664
+vfs.browser.delete-favorites.message=\u4ee5\u4e0b\u306e\u30d5\u30a1\u30a4\u30eb\u3092\u672c\u5f53\u306b\u304a\u6c17\u306b\u5165\u308a\u304b\u3089\u524a\u9664\u3057\u307e\u3059\u304b?\n\n\
+	{0}
+
+vfs.browser.rename.title=\u30d5\u30a1\u30a4\u30eb\u540d\u306e\u5909\u66f4
+vfs.browser.rename.message={0}\u306e\u65b0\u3057\u3044\u30d5\u30a1\u30a4\u30eb\u540d\u3092\u5165\u529b:
+
+vfs.browser.mkdir.title=\u65b0\u898f\u30c7\u30a3\u30ec\u30af\u30c8\u30ea
+vfs.browser.mkdir.message=\u65b0\u3057\u3044\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306e\u540d\u524d(\u307e\u305f\u306f\u30d1\u30b9):
+#}}}
+
+#}}}
+
+#{{{ I/O status messages
+vfs.status.load=\u30ed\u30fc\u30c9\u4e2d {0}
+vfs.status.load-markers=\u30de\u30fc\u30ab\u30fc\u306e\u30ed\u30fc\u30c9\u4e2d {0}
+vfs.status.save=\u4fdd\u5b58\u4e2d {0}
+vfs.status.save-markers=\u30de\u30fc\u30ab\u30fc\u306e\u4fdd\u5b58\u4e2d {0}
+vfs.status.autosave=\u81ea\u52d5\u4fdd\u5b58\u4e2d {0}
+vfs.status.listing-directory=\u8aad\u307f\u8fbc\u307f\u4e2d {0}
+vfs.status.deleting=\u524a\u9664\u4e2d {0}
+vfs.status.renaming=\u540d\u524d\u5909\u66f4\u4e2d {0} \u304b\u3089 {1}
+#}}}
+
+#{{{ Plugin manager
+
+plugin-manager.title=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30de\u30cd\u30fc\u30b8\u30e3
+
+# plugin-manager.export-url=http://plugins.jedit.org/export/gzip_plugin_manager.php
+# plugin-manager.mirror-url=http://plugins.jedit.org/export/mirror_list.php
+
+plugin-manager.hide-libraries=\u30e9\u30a4\u30d6\u30e9\u30ea\u3092\u975e\u8868\u793a
+
+plugin-manager.mgr-options=\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9 \u30aa\u30d7\u30b7\u30e7\u30f3...
+plugin-manager.plugin-options=\u30d7\u30e9\u30b0\u30a4\u30f3 \u30aa\u30d7\u30b7\u30e7\u30f3...
+plugin-manager.done=\u9589\u3058\u308b
+
+plugin-manager.remove-confirm.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u524a\u9664
+plugin-manager.remove-confirm.message=\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3092\u672c\u5f53\u306b\u524a\u9664\u3057\u307e\u3059\u304b?
+
+plugin-manager.dependency.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u4f9d\u5b58\u95a2\u4fc2
+plugin-manager.dependency.message={0} \u306f\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u304c\u5229\u7528\u3057\u307e\u3059\u3002\n\
+	{0} \u3092\u9078\u629e\u89e3\u9664\u3059\u308b\u3068\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3082\u9078\u629e\u89e3\u9664\u3055\u308c\u307e\u3059:
+
+plugin-manager.cleanup.label=\u30af\u30ea\u30fc\u30f3\u30a2\u30c3\u30d7
+plugin-manager.cleanup.title=\u30d7\u30e9\u30b0\u30a4\u30f3\u30c7\u30fc\u30bf\u3092\u30af\u30ea\u30fc\u30f3\u30a2\u30c3\u30d7
+plugin-manager.cleanup.message=\u4ee5\u4e0b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u306e\u30c7\u30fc\u30bf\u3092\u524a\u9664:
+
+plugin-manager.noOrphan.label=\u672a\u4f7f\u7528\u306e\u691c\u7d22
+plugin-manager.noOrphan.title=\u672a\u4f7f\u7528\u306ejar\u306f\u3042\u308a\u307e\u305b\u3093
+plugin-manager.noOrphan.message=\u3053\u306ejEdit\u30a4\u30f3\u30b9\u30c8\u30ec\u30fc\u30b7\u30e7\u30f3\u306b\u306f\u672a\u4f7f\u7528\u306ejar\u304c\u3072\u3068\u3064\u3082\u3042\u308a\u307e\u305b\u3093\u3067\u3057\u305f
+
+plugin-manager.findOrphan.label=\u672a\u4f7f\u7528\u306e\u691c\u7d22
+plugin-manager.findOrphan.title=\u672a\u4f7f\u7528\u306ejar\u3092\u767a\u898b
+plugin-manager.findOrphan.message=\u4ee5\u4e0b\u306ejar\u306f\u3069\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u306b\u3082\u5c5e\u3057\u3066\u3044\u307e\u305b\u3093\n\
+	\u524a\u9664\u3057\u307e\u3059\u304b?\n (\u6ce8 \u3053\u308c\u3089\u306fJDBC\u30c9\u30e9\u30a4\u30d0\u306e\u3088\u3046\u306b\u3001\u306a\u3093\u3089\u304b\u306e\u30d7\u30e9\u30b0\u30a4\u30f3\u3067\u52d5\u7684\u306b\n\
+	\u5ba3\u8a00\u3055\u308c\u308b\u3053\u3068\u304c\u3042\u308a\u3048\u307e\u3059):
+
+install-plugins.depend.title=\u4f9d\u5b58\u6027\u306e\u8981\u6c42
+install-plugins.depend.message=\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u3088\u3046\u3068\u3057\u3066\u3044\u308b\u30d7\u30e9\u30b0\u30a4\u30f3\u306b\u306f\u3001\u3055\u3089\u306b\n\
+	\u30d7\u30e9\u30b0\u30a4\u30f3\u304c\u5fc5\u8981\u3067\u3059\u3002\u3053\u306e\u307e\u307e\u7d99\u7d9a\u3059\u308b\u3068\u305d\u308c\u3089\u304c\u81ea\u52d5\u7684\u306b\n\
+	\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3055\u308c\u307e\u3059\u3002
+
+plugin-manager.status.loaded=\u30ed\u30fc\u30c9\u3055\u308c\u3066\u3044\u307e\u3059
+plugin-manager.status.not-loaded=\u30ed\u30fc\u30c9\u3055\u308c\u3066\u3044\u307e\u305b\u3093
+plugin-manager.status.error=\u30a8\u30e9\u30fc
+
+plugin-manager.list-download-connect=plugins.jedit.org \u306b\u63a5\u7d9a\u4e2d
+plugin-manager.list-download=\u30d7\u30e9\u30b0\u30a4\u30f3\u30ea\u30b9\u30c8\u3092 plugins.jedit.org \u304b\u3089\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u4e2d
+plugin-manager.filterField=\u540d\u79f0\u306b\u3053\u306e\u6587\u5b57\u5217\u3092\u542b\u3080\u30d7\u30e9\u30b0\u30a4\u30f3\u3060\u3051\u3092\u8868\u793a
+
+#{{{ Error while loading plugin list
+plugin-list.ioerror.title=I/O \u30a8\u30e9\u30fc
+plugin-list.ioerror.message=\u30d7\u30e9\u30b0\u30a4\u30f3\u30ea\u30b9\u30c8\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f\u3002\n\
+	({0})\n\
+	\n\
+	HTTP\u307e\u305f\u306fSOCKS\u30d7\u30ed\u30ad\u30b7\u306e\u5185\u5074\u306b\u3042\u308b\u5834\u5408\u306f\u3001\n\
+	"\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0" \u3092\u30af\u30ea\u30c3\u30af\u3057\u3066\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0\u8a2d\u5b9a\u3092\n\
+	\u884c\u3063\u3066\u304b\u3089\u518d\u8a66\u884c\u3057\u3066\u304f\u3060\u3055\u3044\u3002
+plugin-list.ioerror.proxy-servers=\u30d7\u30ed\u30ad\u30b7\u30b5\u30fc\u30d0...
+
+plugin-list.xmlerror.title=XML \u30d1\u30fc\u30b5\u30a8\u30e9\u30fc
+plugin-list.xmlerror.message={0}\u3092\u30d1\u30fc\u30b9\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u884c {1}:\n\
+	{2}
+#}}}
+
+#{{{ Plugin management
+manage-plugins.title=\u7ba1\u7406
+
+manage-plugins.info.name=\u540d\u524d
+manage-plugins.info.version=\u30d0\u30fc\u30b8\u30e7\u30f3
+manage-plugins.info.status=\u30b9\u30c6\u30fc\u30bf\u30b9
+manage-plugins.info.data=\u30c7\u30fc\u30bf
+
+manage-plugins.data-size.unknown=<\u4e0d\u660e>
+
+manage-plugins.remove=\u524a\u9664...
+manage-plugins.help=\u30d8\u30eb\u30d7...
+#}}}
+
+#{{{ Plugin installation
+install-plugins.title=\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb
+
+install-plugins.info.name=\u540d\u524d
+install-plugins.info.size=\u30b5\u30a4\u30ba
+install-plugins.info.version=\u30d0\u30fc\u30b8\u30e7\u30f3
+install-plugins.info.category=\u30ab\u30c6\u30b4\u30ea
+
+install-plugins.totalSize=\u7dcf\u30b5\u30a4\u30ba:\ 
+install-plugins.select-all=\u3059\u3079\u3066\u9078\u629e
+install-plugins.install=\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb
+install-plugins.show-updates=\u66f4\u65b0\u306e\u8868\u793a
+
+install-plugins.info=Author: {0}\n\
+	Released: {1}\n\
+	{2}
+
+update-plugins.title=\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8
+
+plugin-manager.progress=\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u4e2d {0} from mirror {1}
+plugin-manager.progress.stop=\u4e2d\u6b62
+#}}}
+
+#{{{ Plugin remove error
+plugin-manager.remove-failed.title=\u524a\u9664\u5931\u6557
+plugin-manager.remove-failed.message=\u30d7\u30e9\u30b0\u30a4\u30f3 {0} \u306f\n\
+	\u524a\u9664\u3055\u308c\u307e\u305b\u3093\u3067\u3057\u305f.
+#}}}
+
+#}}}
