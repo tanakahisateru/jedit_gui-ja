@@ -10,7 +10,7 @@ Note: UAC might blocks your copy operation.
 Copy jedit_gui.props to
   /Applications/jEdit.app/Contents/Resources/Java/properties
 e.x.
-$ cp jedit_gui.props /usr/share/jedit/****/properties
+$ cp jedit_gui.props /Applications/jEdit.app/Contents/Resources/Java/properties
   
 * Linux or other unix:
 Copy jedit_gui.props to
