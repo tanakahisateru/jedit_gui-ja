@@ -19,3 +19,27 @@ Copy jedit_gui.props to
 
   e.g.
   $ sudo cp jedit_gui.props /usr/share/jedit/****/properties
+
+日本語(Japanese)
+
+jEditを日本語のUIにするためのファイルです。
+
+* Windows:
+jedit_gui.props を以下にコピーします。
+  C:\Program Files\jEdit\properties
+
+注: UACに引っかかっていないか確かめましょう。
+
+* Mac:
+jedit_gui.props を以下にコピーします。
+  /Applications/jEdit.app/Contents/Resources/Java/properties
+
+  例
+  $ cp jedit_gui.props /Applications/jEdit.app/Contents/Resources/Java/properties
+  
+* Linux やその他 Unix:
+jedit_gui.props を以下にコピーします。
+  /usr/share/jedit/(ver)/properties
+
+  例
+  $ sudo cp jedit_gui.props /usr/share/jedit/****/properties
