@@ -223,14 +223,14 @@ reload.label=\u518d\u8aad\u307f\u8fbc\u307f($R)
 
 reload-all.label=\u3059\u3079\u3066\u518d\u8aad\u307f\u8fbc\u307f($D)...
 close-buffer.label=\u9589\u3058\u308b($C)
-close-buffer.tooltip=Close buffer in EditPane's BufferSet only.
+close-buffer.tooltip=\u3053\u306e\u7de8\u96c6\u30da\u30a4\u30f3\u3067\u306e\u307f\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8\u3092\u9589\u3058\u307e\u3059\u3002
 
 global-close-buffer.label=\u9589\u3058\u308b (\u30b0\u30ed\u30fc\u30d0\u30eb)
-global-close-buffer.tooltip=Close buffer in all editpanes and views
-closeall-except-active.tooltip=Clear current editpane's BufferSet except for buffer(s) currently showing
-closeall-except-active.label=Close O$thers
-bufferset-toggle-exclusive.label=Toggle E$xclusive BufferSets
-bufferset-toggle-exclusive.tooltip=When a buffer is opened, close it in other non-intersecting buffersets.
+global-close-buffer.tooltip=\u3059\u3079\u3066\u306e\u7de8\u96c6\u30da\u30a4\u30f3\u3068\u30d3\u30e5\u30fc\u3067\u30d0\u30c3\u30d5\u30a1\u3092\u9589\u3058\u307e\u3059\u3002
+closeall-except-active.tooltip=\u73fe\u5728\u306e\u7de8\u96c6\u30da\u30a4\u30f3\u304b\u3089\u73fe\u5728\u8868\u793a\u3055\u308c\u3066\u3044\u308b\u30d0\u30c3\u30d5\u30a1\u4ee5\u5916\u3092\u30af\u30ea\u30a2\u3057\u307e\u3059\u3002
+closeall-except-active.label=\u4ed6\u3092\u9589\u3058\u308b($T)
+bufferset-toggle-exclusive.label=\u6392\u4ed6\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8\u306e\u5207\u308a\u66ff\u3048($X)
+bufferset-toggle-exclusive.tooltip=\u30d0\u30c3\u30d5\u30a1\u304c\u958b\u304b\u308c\u308b\u3068\u304d\u3001\u4ed6\u306e\u7121\u95a2\u4fc2\u306a\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8\u4e2d\u306b\u3042\u308c\u3070\u9589\u3058\u307e\u3059\u3002
 
 
 close-all.label=\u3059\u3079\u3066\u9589\u3058\u308b($E)
@@ -239,7 +239,7 @@ save.label=\u4fdd\u5b58($S)
 
 save-as.label=\u540d\u524d\u3092\u4ed8\u3051\u3066\u4fdd\u5b58($A)...
 save-a-copy-as.label=\u8907\u88fd\u306b\u540d\u524d\u3092\u4ed8\u3051\u3066\u4fdd\u5b58($Y)...
-save-a-copy-as.tooltip=Does not change the current buffer's path
+save-a-copy-as.tooltip=\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u30d1\u30b9\u306f\u5909\u5316\u3057\u307e\u305b\u3093\u3002
 save-all.label=\u3059\u3079\u3066\u4fdd\u5b58($L)...
 print.label=\u5370\u5237($P)...
 
@@ -324,7 +324,7 @@ copy-append.label=\u8ffd\u52a0\u30b3\u30d4\u30fc($O)
 vertical-paste.label=\u5782\u76f4\u8cbc\u308a\u4ed8\u3051($V)
 paste-previous.label=\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u5c65\u6b74\u304b\u3089\u8cbc\u308a\u4ed8\u3051($U)...
 paste-deleted.label=\u524a\u9664\u5c65\u6b74\u304b\u3089\u8cbc\u308a\u4ed8\u3051($D)...
-paste-special.label=Paste Special...
+paste-special.label=\u5f62\u5f0f\u3092\u9078\u629e\u3057\u3066\u8cbc\u308a\u4ed8\u3051...
 cut-string-register.label=\u30ec\u30b8\u30b9\u30bf\u306b\u5207\u308a\u53d6\u308a($T)
 copy-string-register.label=\u30ec\u30b8\u30b9\u30bf\u306b\u30b3\u30d4\u30fc($P)
 paste-string-register.label=\u30ec\u30b8\u30b9\u30bf\u3092\u8cbc\u308a\u4ed8\u3051($R)
@@ -558,8 +558,8 @@ toggle-line-numbers.label=\u884c\u756a\u53f7($L)
 toggle-statusbar.label=\u30b9\u30c6\u30fc\u30bf\u30b9\u30d0\u30fc\u306e\u8868\u793a($T)
 toggle-gutter.label=\u30ac\u30bf\u30fc\u306e\u8868\u793a($G)
 show-context-menu.label=\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u30e1\u30cb\u30e5\u30fc\u3092\u8868\u793a
-set-view-title.label=Set view title...
-set-view-title.tooltip=Set the title of the main window for easy identification from your desktop.
+set-view-title.label=\u30d3\u30e5\u30fc\u306e\u30bf\u30a4\u30c8\u30eb\u3092\u8a2d\u5b9a...
+set-view-title.tooltip=\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u4e0a\u3067\u533a\u5225\u3057\u3084\u3059\u3044\u3088\u3046\u3001\u30e1\u30a4\u30f3\u30a6\u30a3\u30f3\u30c9\u30a6\u306e\u30bf\u30a4\u30c8\u30eb\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002
 toggle-full-screen.label=\u30d5\u30eb\u30b9\u30af\u30ea\u30fc\u30f3\u30e2\u30fc\u30c9\u306b\u5207\u308a\u66ff\u3048($F)
 
 #{{{ Scrolling menu
@@ -602,11 +602,11 @@ next-textarea.label=\u6b21\u306e\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2\u3078
 buffersets.label=\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8($B)
 
 global-bufferset.label=\u30b0\u30ed\u30fc\u30d0\u30eb\u30b9\u30b3\u30fc\u30d7($G)
-global-bufferset.tooltip=All EditPanes share the same BufferSet.
+global-bufferset.tooltip=\u3059\u3079\u3066\u306e\u7de8\u96c6\u30da\u30a4\u30f3\u3067\u540c\u3058\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8\u3092\u5171\u6709\u3057\u307e\u3059\u3002
 view-bufferset.label=\u30d3\u30e5\u30fc\u30b9\u30b3\u30fc\u30d7($V)
-view-bufferset.tooltip=EditPanes in the same View share the same BufferSet.
+view-bufferset.tooltip=\u540c\u3058\u30d3\u30e5\u30fc\u306b\u3042\u308b\u7de8\u96c6\u30da\u30a4\u30f3\u306f\u540c\u3058\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8\u3092\u5171\u6709\u3057\u307e\u3059\u3002
 editpane-bufferset.label=\u7de8\u96c6\u30da\u30a4\u30f3\u30b9\u30b3\u30fc\u30d7($E)
-editpane-bufferset.tooltip=Each Editpane has its own BufferSet.
+editpane-bufferset.tooltip=\u5404\u7de8\u96c6\u30da\u30a4\u30f3\u304c\u305d\u308c\u305e\u308c\u500b\u5225\u306b\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8\u6301\u3061\u307e\u3059\u3002
 
 
 #}}}
@@ -725,7 +725,7 @@ troubleshooting.label=\u30c8\u30e9\u30d6\u30eb\u30b7\u30e5\u30fc\u30c6\u30a3\u30
 log-viewer.label=\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0($A)
 update-log.label=\u4fdd\u5b58\u3055\u308c\u305f\u30a2\u30af\u30c6\u30a3\u30d3\u30c6\u30a3 \u30ed\u30b0\u3092\u66f4\u65b0($U)
 io-progress-monitor.label=I/O \u30d7\u30ed\u30bb\u30b9\u30e2\u30cb\u30bf($I)
-task-monitor.label=$Task Monitor
+task-monitor.label=\u30bf\u30b9\u30af\u30e2\u30cb\u30bf($T)
 keyboard-tester.label=\u30ad\u30fc\u30dc\u30fc\u30c9\u30c6\u30b9\u30bf($K)...
 memory-status.label=\u30e1\u30e2\u30ea\u30b9\u30c6\u30fc\u30bf\u30b9($M)...
 reload-modes.label=\u7de8\u96c6\u30e2\u30fc\u30c9\u3092\u518d\u8aad\u307f\u8fbc\u307f($R)
@@ -804,7 +804,7 @@ tip-of-the-day.label=\u4eca\u65e5\u306e\u30d2\u30f3\u30c8($T)
 #{{{ Commands that don't appear in menus
 backspace-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u524a\u9664
 backspace-word-std.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u524a\u9664 (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
-backspace-word-std-after.label=Delete Previous Word (Eat Whitespace after word)
+backspace-word-std-after.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u524a\u9664 (\u5358\u8a9e\u306e\u5f8c\u306e\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
 backspace.label=\u76f4\u524d\u306e\u6587\u5b57\u3092\u524a\u9664
 delete-word.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u3092\u524a\u9664
 delete-word-std.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u3092\u524a\u9664 (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
@@ -835,7 +835,7 @@ prev-page.label=\u76f4\u524d\u306e\u30da\u30fc\u30b8\u306b\u79fb\u52d5
 prev-paragraph.label=\u76f4\u524d\u306e\u6bb5\u843d\u306b\u79fb\u52d5
 prev-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u306b\u79fb\u52d5
 prev-word-std.label=\u76f4\u524d\u306e\u5358\u8a9e\u306b\u79fb\u52d5 (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
-prev-word-std-after.label=Go to Previous Word (Eat Whitespace after word)
+prev-word-std-after.label=\u76f4\u524d\u306e\u5358\u8a9e\u306b\u79fb\u52d5 (\u5358\u8a9e\u306e\u5f8c\u306e\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
 select-document-end.label=\u30d0\u30c3\u30d5\u30a1\u306e\u672b\u5c3e\u307e\u3067\u3092\u9078\u629e
 select-document-home.label=\u30d0\u30c3\u30d5\u30a1\u306e\u5148\u982d\u307e\u3067\u3092\u9078\u629e
 select-end.label=\u30b9\u30de\u30fc\u30c8\u30a8\u30f3\u30c9\u4f4d\u7f6e\u307e\u3067\u3092\u9078\u629e
@@ -854,7 +854,7 @@ select-prev-page.label=\u76f4\u524d\u306e\u30da\u30fc\u30b8\u3092\u9078\u629e
 select-prev-paragraph.label=\u76f4\u524d\u306e\u6bb5\u843d\u3092\u9078\u629e
 select-prev-word.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u9078\u629e
 select-prev-word-std.label=\u76f4\u524d\u306e\u5358\u8a9e\u3092\u9078\u629e (\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
-select-prev-word-std-after.label=Select Previous Word (Eat Whitespace after word)
+select-prev-word-std-after.label=\u76f4\u5f8c\u306e\u5358\u8a9e\u3092\u9078\u629e (\u5358\u8a9e\u306e\u5f8c\u306e\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u3092\u542b\u3080)
 select-visible-end.label=\u672b\u5c3e\u8868\u793a\u884c\u307e\u3067\u3092\u9078\u629e
 select-visible-home.label=\u5148\u982d\u8868\u793a\u884c\u307e\u3067\u3092\u9078\u629e
 select-whitespace-end.label=\u30db\u30ef\u30a4\u30c8\u30b9\u30da\u30fc\u30b9\u306e\u7d42\u4e86\u307e\u3067\u3092\u9078\u629e
@@ -936,7 +936,7 @@ view.status.swap-marker=\u30ab\u30fc\u30bd\u30eb\u4f4d\u7f6e\u3068\u7f6e\u304d\u
 view.status.vertical-paste-string-register=\u5782\u76f4\u8cbc\u308a\u4ed8\u3051\u306b\u4f7f\u7528\u3059\u308b\u30ec\u30b8\u30b9\u30bf \
 	[{0}]
 view.status.wrap-changed=\u30ef\u30fc\u30c9\u30e9\u30c3\u30d7\u30e2\u30fc\u30c9\u306f\u73fe\u5728 "{0}" \u3067\u3059
-view.status.wrap-tooltip=<html>Word wrap mode is {0} (click to change)</html>
+view.status.wrap-tooltip=<html>\u30ef\u30fc\u30c9\u30e9\u30c3\u30d7\u30e2\u30fc\u30c9\u306f {0} \u3067\u3059\u3002(\u30af\u30ea\u30c3\u30af\u3067\u5909\u66f4)</html>
 view.status.bufferset-tooltip=\u30d0\u30c3\u30d5\u30a1\u30bb\u30c3\u30c8\u30b9\u30b3\u30fc\u30d7 {0}
 wrap.none=disabled
 wrap.hard=hard
@@ -1433,7 +1433,7 @@ search.synchronize.mnemonic=Z
 search.synchronize.tooltip=\u30d5\u30a3\u30eb\u30bf\u3068\u30c7\u30a3\u30ec\u30af\u30c8\u30ea\u306b\u73fe\u5728\u306e\u30d0\u30c3\u30d5\u30a1\u306e\u62e1\u5f35\u5b50\u3068\u5834\u6240\u3092\u30bb\u30c3\u30c8\u3057\u307e\u3059\u3002
 search.findBtn=\u691c\u7d22(F)
 search.findBtn.mnemonic=F
-search.replaceBtn=Replace
+search.replaceBtn=\u7f6e\u63db
 search.replaceAndFindBtn=\u7f6e\u63db\u3057\u3066\u691c\u7d22(R)
 search.replaceAndFindBtn.mnemonic=R
 search.replaceAllBtn=\u3059\u3079\u3066\u7f6e\u63db(A)
@@ -1748,7 +1748,7 @@ syntax-style-no-token.message=\u30ab\u30fc\u30bd\u30eb\u4f4d\u7f6e\u306e\u30c6\u
 #}}}
 
 #{{{ View title dialog
-view.title.select=Please enter a title for this view:
+view.title.select=\u3053\u306e\u30d3\u30e5\u30fc\u306e\u30bf\u30a4\u30c8\u30eb\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044:
 #}}}
 #}}}
 
@@ -1915,8 +1915,8 @@ options.editing.deepIndent=\u6df1\u3044\u30a4\u30f3\u30c7\u30f3\u30c8
 options.encodings.label=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
 
 options.encodings.selectEncodings=\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30c0\u30a4\u30a2\u30ed\u30b0\u3067\u8868\u793a\u3055\u308c\u308b\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u9078\u629e\u3057\u3066\u304f\u3060\u3055\u3044:
-options.encodings.available=Available encoding(s)
-options.encodings.selected=Selected encoding(s)
+options.encodings.available=\u4f7f\u7528\u53ef\u80fd\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
+options.encodings.selected=\u9078\u629e\u6e08\u307f\u30a8\u30f3\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0
 options.encodings.available.tooltip=<html>Encodings in this column will <b>not</b> be listed in encoding dialogs.\
   Drag them to the right column to activate them</html>
 options.encodings.selected.tooltip=Encodings in this column be shown in encoding dialogs.\
@@ -1940,8 +1940,8 @@ options.gutter.foreground=\u884c\u756a\u53f7\u306e\u8272:
 options.gutter.background=\u80cc\u666f\u8272:
 options.gutter.borderWidth=\u30ac\u30bf\u30fc\u5883\u754c\u5e45:
 options.gutter.numberAlignment=\u884c\u756a\u53f7\u4f4d\u7f6e\u63c3\u3048:
-options.gutter.interval-1=\u5468\u671f\u7684\u306b\u884c\u30cf\u30a4\u30e9\u30a4\u30c8
-options.gutter.interval-2=\u884c\u6570:
+options.gutter.interval-1=\u5468\u671f\u7684\u306b\u30cf\u30a4\u30e9\u30a4\u30c8
+options.gutter.interval-2=\u884c:
 options.gutter.currentLineHighlight=\u73fe\u5728\u884c\u30cf\u30a4\u30e9\u30a4\u30c8:
 options.gutter.structureHighlight=\u69cb\u9020\u30b9\u30b3\u30fc\u30d7\u306e\u8868\u793a:
 options.gutter.markerHighlight=\u30de\u30fc\u30ab\u30fc\u4f4d\u7f6e\u306e\u8868\u793a:
@@ -2023,7 +2023,7 @@ options.save-back.backupDirectory=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u30c7\u30
 options.save-back.backupPrefix=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u30d5\u30a1\u30a4\u30eb\u540d\u30d7\u30ec\u30d5\u30a3\u30af\u30b9:
 options.save-back.backupSuffix=\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u30d5\u30a1\u30a4\u30eb\u540d\u30b5\u30d5\u30a3\u30af\u30b9:
 options.save-back.backupEverySave=\u4fdd\u5b58\u306e\u305f\u3073\u306b\u30d0\u30c3\u30af\u30a2\u30c3\u30d7
-options.save-back.backupEverySave.tooltip=Resets file permissions on some file systems
+options.save-back.backupEverySave.tooltip=\u30d5\u30a1\u30a4\u30eb\u30b7\u30b9\u30c6\u30e0\u306b\u3088\u3063\u3066\u306f\u30d5\u30a1\u30a4\u30eb\u6a29\u9650\u304c\u30ea\u30bb\u30c3\u30c8\u3055\u308c\u307e\u3059
 options.save-back.twoStageSave=\u30c4\u30fc\u30fb\u30b9\u30c6\u30fc\u30b8 \u30bb\u30fc\u30d6 (\u3088\u308a\u5b89\u5168\u3067\u3059\u304c\u3001Unix\u3067\u306f\u30d5\u30a1\u30a4\u30eb\u6240\u6709\u8005\u304c\u30ea\u30bb\u30c3\u30c8\u3055\u308c\u307e\u3059)
 options.save-back.twoStageSave.tooltip=\u30b9\u30c6\u30fc\u30b8 1: \u53e4\u3044\u30d5\u30a1\u30a4\u30eb\u3092\u30ea\u30cd\u30fc\u30e0\u3002 \u30b9\u30c6\u30fc\u30b8 2: \u305d\u306e\u5834\u306b\u65b0\u898f\u30d5\u30a1\u30a4\u30eb\u3092\u4f5c\u6210\u3002
 options.save-back.confirmSaveAll="\u3059\u3079\u3066\u4fdd\u5b58"\u30b3\u30de\u30f3\u30c9\u306f\u78ba\u8a8d\u30c0\u30a4\u30a2\u30ed\u30b0\u3092\u8868\u793a
@@ -2114,7 +2114,7 @@ options.syntax.foldLine.0=\u9589\u3058\u305f\u30d5\u30a9\u30fc\u30eb\u30c9\u884c
 options.textarea.label=\u30c6\u30ad\u30b9\u30c8\u30a8\u30ea\u30a2
 
 options.textarea.font=\u30c6\u30ad\u30b9\u30c8\u30d5\u30a9\u30f3\u30c8:
-options.textarea.fontsubst=Automatic font substitution
+options.textarea.fontsubst=\u81ea\u52d5\u30d5\u30a9\u30f3\u30c8\u7f6e\u63db
 options.textarea.fontsubst.tooltip=Automatically select the appropriate font \
 if the chosen one can't display characters.
 options.textarea.fontsubstlist=Preferred fonts:
@@ -2126,7 +2126,7 @@ options.textarea.blockCaret=\u30d6\u30ed\u30c3\u30af
 options.textarea.thickCaret=\u5e45\u5e83
 options.textarea.selection=\u5358\u4e00\u9078\u629e:
 options.textarea.multipleSelection=\u30de\u30eb\u30c1\u9078\u629e:
-options.textarea.selectionFg=Selection foreground:
+options.textarea.selectionFg=\u9078\u629e\u4e2d\u306e\u6587\u5b57\u8272:
 options.textarea.lineHighlight=\u73fe\u5728\u884c\u306e\u30cf\u30a4\u30e9\u30a4\u30c8:
 options.textarea.structureHighlight=\u4e00\u81f4\u8981\u7d20\u30cf\u30a4\u30e9\u30a4\u30c8:
 options.textarea.eolMarkers=\u884c\u672b\u30de\u30fc\u30ab\u30fc:
@@ -2138,7 +2138,7 @@ options.textarea.antiAlias.tooltip=\u30a2\u30f3\u30c1\u30a8\u30a4\u30ea\u30a2\u3
 	\u30b7\u30b9\u30c6\u30e0\u3067\u8868\u793a\u304c\u9045\u304f\u306a\u308a\u307e\u3059\u3002\u30b5\u30d6\u30d4\u30af\u30bb\u30eb\u306f JDK 1.6 \u4ee5\u964d\u3067\u30b5\u30dd\u30fc\u30c8\u3055\u308c\u307e\u3059\u3002
 options.textarea.fracFontMetrics=Fractional \u30d5\u30a9\u30f3\u30c8\u30e1\u30c8\u30ea\u30af\u30b9 (\u6587\u5b57\u306e\u8868\u793a\u304c\
 	\u3088\u308a\u30b9\u30e0\u30fc\u30ba\u306b\u306a\u308a\u307e\u3059)
-options.textarea.fracFontMetrics.tooltip=Not recommended with subpixel antialiasing
+options.textarea.fracFontMetrics.tooltip=\u30b5\u30d6\u30d4\u30af\u30bb\u30eb\u30a2\u30f3\u30c1\u30a8\u30a4\u30ea\u30a2\u30b9\u3068\u306e\u4f75\u7528\u306f\u304a\u85a6\u3081\u3057\u307e\u305b\u3093\u3002
 options.textArea.stripTrailingEOL=\u6700\u7d42\u884c\u672b\u3092\u96a0\u3059 (\u3042\u308c\u3070)
 options.textArea.completeFromAllBuffers=\u958b\u3044\u3066\u3044\u308b\u3059\u3079\u3066\u306e\u30d0\u30c3\u30d5\u30a1\u304b\u3089\u5358\u8a9e\u88dc\u5b8c (\u30c7\u30d5\u30a9\u30eb\u30c8\
     \u3067\u306f\u73fe\u5728\u753b\u9762\u8868\u793a\u4e2d\u306e\u30d0\u30c3\u30d5\u30a1\u304b\u3089\u306e\u691c\u7d22\u306b\u5236\u9650\u3055\u308c\u307e\u3059)
@@ -2333,7 +2333,7 @@ abort.message=\u73fe\u5728\u306e\u5165\u51fa\u529b\u8981\u6c42\u3092\u672c\u5f53
 #}}}
 
 #{{{ Task  monitor
-task-monitor.title=Task Monitor
+task-monitor.title=\u30bf\u30b9\u30af\u30e2\u30cb\u30bf
 #}}}
 
 #{{{ VFS browser
@@ -2641,4 +2641,4 @@ log-viewer.message.error.label=Error
 
 logs-remove-all-errors.label=\u3059\u3079\u3066\u306e\u30a8\u30e9\u30fc\u3092\u524a\u9664
 
-taskmanager.remainingtasks.label={0} remaining task(s)
+taskmanager.remainingtasks.label=\u6b8b\u308a\u30bf\u30b9\u30af {0}
