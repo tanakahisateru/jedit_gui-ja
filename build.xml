@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jedit_gui-ja" default="main" basedir="." >
+	<target name="main">
+		<native2ascii dest="."
+		    ext=".props" encoding="UTF-8" includes="*.properties" />
+	</target>
+</project>
