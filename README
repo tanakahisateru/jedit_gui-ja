@@ -7,11 +7,11 @@ Copy jedit_gui.props to
 Note: Be sure to pass UAC.
 
 * Mac:
-Copy jedit_gui.props to
+Copy jedit_gui-mac.props to
   /Applications/jEdit.app/Contents/Resources/Java/properties
 
   e.g.
-  $ cp jedit_gui.props /Applications/jEdit.app/Contents/Resources/Java/properties
+  $ cp jedit_gui-mac.props /Applications/jEdit.app/Contents/Resources/Java/properties
   
 * Linux or other unix:
 Copy jedit_gui.props to
@@ -31,11 +31,11 @@ jedit_gui.props を以下にコピーします。
 注: UACに引っかかっていないか確かめましょう。
 
 * Mac:
-jedit_gui.props を以下にコピーします。
+jedit_gui-mac.props を以下にコピーします。
   /Applications/jEdit.app/Contents/Resources/Java/properties
 
   例
-  $ cp jedit_gui.props /Applications/jEdit.app/Contents/Resources/Java/properties
+  $ cp jedit_gui-mac.props /Applications/jEdit.app/Contents/Resources/Java/properties
   
 * Linux やその他 Unix:
 jedit_gui.props を以下にコピーします。
