@@ -1,2 +1,2 @@
 #!/bin/env ruby
-$stdin.lines.map {|l| puts l.gsub /([^ ])\(\$?[A-Z0-9]\)/, '\1' }
+puts $stdin.lines.map {|l| l.gsub /([^ ])\(\$?[A-Z0-9]\)/, '\1' }
